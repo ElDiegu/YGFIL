@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace EventSystem.Utils
+namespace Systems.EventSystem.Utils
 {
 	public class PredefinedAssemblyUtil
 	{

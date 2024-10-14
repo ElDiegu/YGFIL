@@ -1,9 +1,12 @@
-using EventSystem;
-using UnityEngine;
+using Systems.EventSystem;
 
-namespace YGFIL
+namespace YGFIL.Events
 {
     public struct LoveValueUpdatedEvent : IEvent 
+    {
+        public float loveValue;
+    }
+    public struct UpdateLoveValueEvent : IEvent 
     {
         public float loveValue;
     }

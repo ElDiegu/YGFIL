@@ -1,8 +1,9 @@
-using EventSystem;
+using Systems.EventSystem;
 using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
 using YGFIL.ScriptableObjects;
+using YGFIL.Events;
 
 namespace YGFIL.Monsters 
 {
@@ -12,10 +13,25 @@ namespace YGFIL.Monsters
         public ScriptableObject ScriptableObject { get => monsterSO; set {} }
         
         public float loveValue = 50f;
-
-        public void UpdateLoveValue(float amount) 
+        
+        EventBinding<UpdateLoveValueEvent> updateLoveValueEventBinding;
+        
+#region Unity Methods
+        private void OnEnable()
         {
-            loveValue += amount;
+            updateLoveValueEventBinding = new EventBinding<UpdateLoveValueEvent>(UpdateLoveValue);
+            EventBus<UpdateLoveValueEvent>.Register(updateLoveValueEventBinding);
+        }
+        
+        private void OnDisable()
+        {
+            EventBus<UpdateLoveValueEvent>.Deregister(updateLoveValueEventBinding);
+        }
+#endregion
+
+        public void UpdateLoveValue(UpdateLoveValueEvent updateLoveValueEvent) 
+        {
+            loveValue += updateLoveValueEvent.loveValue;
             
             EventBus<LoveValueUpdatedEvent>.Raise(new LoveValueUpdatedEvent() 
             {

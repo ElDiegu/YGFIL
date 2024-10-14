@@ -1,6 +1,6 @@
 using System;
 
-namespace EventSystem
+namespace Systems.EventSystem
 {
     internal interface IEventBinding<T>
     {

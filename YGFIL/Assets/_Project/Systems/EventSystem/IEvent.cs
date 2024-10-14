@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace EventSystem
+namespace Systems.EventSystem
 {
     public interface IEvent { }
 }

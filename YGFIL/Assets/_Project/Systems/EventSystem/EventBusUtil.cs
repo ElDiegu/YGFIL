@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace EventSystem.Utils
+namespace Systems.EventSystem.Utils
 {
 	public static class EventBusUtil
 	{
