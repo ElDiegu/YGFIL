@@ -9,7 +9,7 @@ namespace YGFIL.Minigames.PhaseTwo
 {
     public class OptionCard : MonoBehaviour, IDraggable, ISOContainer
     {
-        [SerializeField] private OptionSO optionSO;
+        [SerializeField] private IntroductionOptionSO optionSO;
         public ScriptableObject ScriptableObject { get => optionSO; set {} }
         
         [SerializeField] private Vector3 originalPosition;

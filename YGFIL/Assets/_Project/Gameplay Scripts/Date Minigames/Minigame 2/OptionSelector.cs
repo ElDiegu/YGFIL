@@ -5,10 +5,10 @@ namespace YGFIL.Minigames.PhaseTwo
 {
     public class OptionSelector : MonoBehaviour
     {
-        [SerializeField] private OptionSO optionSO;
+        [SerializeField] private IntroductionOptionSO optionSO;
         
-        public void SetSelectedOption(OptionSO optionSO) => this.optionSO = optionSO;
+        public void SetSelectedOption(IntroductionOptionSO optionSO) => this.optionSO = optionSO;
         
-        public OptionSO GetSelectedOption() => optionSO;
+        public IntroductionOptionSO GetSelectedOption() => optionSO;
     }
 }
