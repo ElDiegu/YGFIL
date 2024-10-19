@@ -153,7 +153,7 @@ TextureImporter:
         width: 362
         height: 358
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +175,7 @@ TextureImporter:
         width: 379
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,56 +192,12 @@ TextureImporter:
       name: IceCubes_2
       rect:
         serializedVersion: 2
-        x: 1021
-        y: 1495
-        width: 362
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16f755f1cec374dc0800000000000000
-      internalID: -3654885587752222879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_3
-      rect:
-        serializedVersion: 2
-        x: 1443
-        y: 1517
-        width: 379
-        height: 434
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7276b98dd66dc4500800000000000000
-      internalID: 381915835693492007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_4
-      rect:
-        serializedVersion: 2
         x: 122
         y: 1046
         width: 403
         height: 335
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,7 +211,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IceCubes_5
+      name: IceCubes_3
       rect:
         serializedVersion: 2
         x: 581
@@ -263,7 +219,7 @@ TextureImporter:
         width: 399
         height: 388
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -276,231 +232,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: IceCubes_6
-      rect:
-        serializedVersion: 2
-        x: 1070
-        y: 1042
-        width: 403
-        height: 335
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47516f52b079effb0800000000000000
-      internalID: -4612082894243490444
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_7
-      rect:
-        serializedVersion: 2
-        x: 1529
-        y: 1057
-        width: 399
-        height: 388
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f930d6361f523fa50800000000000000
-      internalID: 6553623601439638431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_8
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 485
-        width: 362
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d4a1c9a9a49df790800000000000000
-      internalID: -7494670748456213292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_9
-      rect:
-        serializedVersion: 2
-        x: 497
-        y: 511
-        width: 379
-        height: 434
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d4d276ccdd0c59950800000000000000
-      internalID: 6455277699755093325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_10
-      rect:
-        serializedVersion: 2
-        x: 1026
-        y: 489
-        width: 362
-        height: 358
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f2fe32be0a2c33ab0800000000000000
-      internalID: -5029462362447155409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_11
-      rect:
-        serializedVersion: 2
-        x: 1460
-        y: 515
-        width: 379
-        height: 434
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e4c668cfb529dbaa0800000000000000
-      internalID: -6143593392887141298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_12
-      rect:
-        serializedVersion: 2
-        x: 124
-        y: 36
-        width: 403
-        height: 335
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f6e711e221892550800000000000000
-      internalID: 6136577954074322675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_13
-      rect:
-        serializedVersion: 2
-        x: 589
-        y: 51
-        width: 399
-        height: 388
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fa738b42181d45200800000000000000
-      internalID: 167989438716589999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_14
-      rect:
-        serializedVersion: 2
-        x: 1087
-        y: 40
-        width: 403
-        height: 335
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4246b91cbdfa0baf0800000000000000
-      internalID: -382612609945607132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceCubes_15
-      rect:
-        serializedVersion: 2
-        x: 1552
-        y: 55
-        width: 399
-        height: 388
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 84027805e78e3cb40800000000000000
-      internalID: 5459462802517729352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cc242f13815931e4dad3a51c7a17ffa2
     internalID: 0
     vertices: []
     indices: 
@@ -509,7 +245,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IceCubes_0: -6780571676119717613
+      IceCubes_1: -2810783186812644078
+      IceCubes_10: -5029462362447155409
+      IceCubes_11: -6143593392887141298
+      IceCubes_12: 6136577954074322675
+      IceCubes_13: 167989438716589999
+      IceCubes_14: -382612609945607132
+      IceCubes_15: 5459462802517729352
+      IceCubes_2: 2642073520484269928
+      IceCubes_3: 720136119087737894
+      IceCubes_6: -4612082894243490444
+      IceCubes_7: 6553623601439638431
+      IceCubes_8: -7494670748456213292
+      IceCubes_9: 6455277699755093325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

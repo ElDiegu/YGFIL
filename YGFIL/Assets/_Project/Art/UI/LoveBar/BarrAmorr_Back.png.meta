@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BarrAmorr_Back_0: 1948023184988557132
+      BarrAmorr_Back_1: 7463184224400038242
+      BarrAmorr_Back_2: 1416610205275165391
+      BarrAmorr_Back_3: 4889114111837823387
+      BarrAmorr_Back_4: 2595587816212696464
+      BarrAmorr_Back_5: -8466993309173186986
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

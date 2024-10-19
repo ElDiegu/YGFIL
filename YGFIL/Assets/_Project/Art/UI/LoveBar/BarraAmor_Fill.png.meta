@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BarraAmor_Fill_0: 8688780751867397197
+      BarraAmor_Fill_1: 7304388738209674179
+      BarraAmor_Fill_2: -7952050807090910411
+      BarraAmor_Fill_3: 9087168072698012370
+      BarraAmor_Fill_4: 5841846257631884822
+      BarraAmor_Fill_5: 4861951169365312690
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
