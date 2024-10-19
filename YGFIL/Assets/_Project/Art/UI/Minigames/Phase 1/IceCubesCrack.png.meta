@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IceCubesCrack_0: -1513695986545304574
+      IceCubesCrack_1: 4542512965523905108
+      IceCubesCrack_2: -4282199798748160983
+      IceCubesCrack_3: 4840131192339402470
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
