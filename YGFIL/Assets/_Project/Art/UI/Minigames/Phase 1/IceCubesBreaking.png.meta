@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: d0994c5a3300d8d48afd34663da9d36d
+guid: 50b9e6f62b40b6c44bef85b783dd0508
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8774971877192577746
-    second: Napkin2_0
+      213: 7069643339387110176
+    second: IceCubesBreaking_0
+  - first:
+      213: -7067916739614291212
+    second: IceCubesBreaking_1
+  - first:
+      213: -1930870565199804580
+    second: IceCubesBreaking_2
+  - first:
+      213: -3630597668295857552
+    second: IceCubesBreaking_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Napkin2_0
+      name: IceCubesBreaking_0
       rect:
         serializedVersion: 2
-        x: 1201
-        y: 0
-        width: 1647
-        height: 1254
+        x: 96
+        y: 522
+        width: 362
+        height: 358
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d23b163e66f6c970800000000000000
-      internalID: 8774971877192577746
+      spriteID: 02300ec192b6c1260800000000000000
+      internalID: 7069643339387110176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCubesBreaking_1
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 544
+        width: 379
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fac0493c27b9ed90800000000000000
+      internalID: -7067916739614291212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCubesBreaking_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 70
+        width: 403
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57020e737b2435e0800000000000000
+      internalID: -1930870565199804580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCubesBreaking_3
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 84
+        width: 399
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a2dda08a68d9dc0800000000000000
+      internalID: -3630597668295857552
       vertices: []
       indices: 
       edges: []
@@ -134,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Napkin2_0: 8774971877192577746
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: d0994c5a3300d8d48afd34663da9d36d
+guid: b4e1b57a2f2d71048a1cb767b3b74f78
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8774971877192577746
-    second: Napkin2_0
+      213: -1513695986545304574
+    second: IceCubesCrack_0
+  - first:
+      213: 4542512965523905108
+    second: IceCubesCrack_1
+  - first:
+      213: -4282199798748160983
+    second: IceCubesCrack_2
+  - first:
+      213: 4840131192339402470
+    second: IceCubesCrack_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Napkin2_0
+      name: IceCubesCrack_0
       rect:
         serializedVersion: 2
-        x: 1201
-        y: 0
-        width: 1647
-        height: 1254
+        x: 1053
+        y: 1495
+        width: 362
+        height: 358
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d23b163e66f6c970800000000000000
-      internalID: 8774971877192577746
+      spriteID: 20c580825854efae0800000000000000
+      internalID: -1513695986545304574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCubesCrack_1
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1517
+        width: 379
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a98a1997f3a0f30800000000000000
+      internalID: 4542512965523905108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCubesCrack_2
+      rect:
+        serializedVersion: 2
+        x: 1102
+        y: 1042
+        width: 403
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cdd5a98f19294c0800000000000000
+      internalID: -4282199798748160983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCubesCrack_3
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 1057
+        width: 399
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee8da1eca99b2340800000000000000
+      internalID: 4840131192339402470
       vertices: []
       indices: 
       edges: []
@@ -134,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Napkin2_0: 8774971877192577746
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

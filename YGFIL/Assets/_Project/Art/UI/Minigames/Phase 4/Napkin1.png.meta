@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Napkin1_0: -7748143170770512922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
