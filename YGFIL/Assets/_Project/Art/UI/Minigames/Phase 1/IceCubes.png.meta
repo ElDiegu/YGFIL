@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: b1e6a63ab371b5941a9db337c1a2e0c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6780571676119717613
+    second: IceCubes_0
+  - first:
+      213: -2810783186812644078
+    second: IceCubes_1
+  - first:
+      213: -3654885587752222879
+    second: IceCubes_2
+  - first:
+      213: 381915835693492007
+    second: IceCubes_3
+  - first:
+      213: 2642073520484269928
+    second: IceCubes_4
+  - first:
+      213: 720136119087737894
+    second: IceCubes_5
+  - first:
+      213: -4612082894243490444
+    second: IceCubes_6
+  - first:
+      213: 6553623601439638431
+    second: IceCubes_7
+  - first:
+      213: -7494670748456213292
+    second: IceCubes_8
+  - first:
+      213: 6455277699755093325
+    second: IceCubes_9
+  - first:
+      213: -5029462362447155409
+    second: IceCubes_10
+  - first:
+      213: -6143593392887141298
+    second: IceCubes_11
+  - first:
+      213: 6136577954074322675
+    second: IceCubes_12
+  - first:
+      213: 167989438716589999
+    second: IceCubes_13
+  - first:
+      213: -382612609945607132
+    second: IceCubes_14
+  - first:
+      213: 5459462802517729352
+    second: IceCubes_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IceCubes_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1499
+        width: 362
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3192fce4cf196e1a0800000000000000
+      internalID: -6780571676119717613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCubes_1
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1521
+        width: 379
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215546175971ef8d0800000000000000
+      internalID: -2810783186812644078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCubes_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1046
+        width: 403
+        height: 335
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f3eea5ed78aa420800000000000000
+      internalID: 2642073520484269928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceCubes_3
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 1061
+        width: 399
+        height: 388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c27202cff6ef900800000000000000
+      internalID: 720136119087737894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cc242f13815931e4dad3a51c7a17ffa2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IceCubes_0: -6780571676119717613
+      IceCubes_1: -2810783186812644078
+      IceCubes_10: -5029462362447155409
+      IceCubes_11: -6143593392887141298
+      IceCubes_12: 6136577954074322675
+      IceCubes_13: 167989438716589999
+      IceCubes_14: -382612609945607132
+      IceCubes_15: 5459462802517729352
+      IceCubes_2: 2642073520484269928
+      IceCubes_3: 720136119087737894
+      IceCubes_6: -4612082894243490444
+      IceCubes_7: 6553623601439638431
+      IceCubes_8: -7494670748456213292
+      IceCubes_9: 6455277699755093325
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
