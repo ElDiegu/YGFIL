@@ -282,7 +282,7 @@ Transform:
   m_GameObject: {fileID: 6785424266428043141}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.9747207, w: -0.22342688}
-  m_LocalPosition: {x: -0.63154626, y: 1.0083971, z: 0}
+  m_LocalPosition: {x: -0.6315463, y: 1.0083971, z: 0}
   m_LocalScale: {x: 3.030303, y: 3.030303, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -313,7 +313,7 @@ Transform:
   m_GameObject: {fileID: 7542227743315982361}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.12446977, w: -0.9922234}
-  m_LocalPosition: {x: -1.920178, y: 5.5077705, z: 0}
+  m_LocalPosition: {x: -1.920178, y: 5.507771, z: 0}
   m_LocalScale: {x: 3.030303, y: 3.030303, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -394,7 +394,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_Name
-      value: PSB_lisandro_licantropo
+      value: lisandro_licantropo
       objectReference: {fileID: 0}
     - target: {fileID: -8170850924602762934, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -534,11 +534,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5147965027969673859, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99968255
+      value: 0.9996826
       objectReference: {fileID: 0}
     - target: {fileID: 5147965027969673859, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.02519483
+      value: -0.025194025
       objectReference: {fileID: 0}
     - target: {fileID: 5147965027969673859, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -554,11 +554,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5747903842321330513, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -33.794
+      value: -33.088
       objectReference: {fileID: 0}
     - target: {fileID: 6956255407109023418, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8122792
+      value: 0.8122787
       objectReference: {fileID: 0}
     - target: {fileID: 6956255407109023418, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -570,7 +570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6956255407109023418, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.5832689
+      value: -0.5832695
       objectReference: {fileID: 0}
     - target: {fileID: 6956255407109023418, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -615,6 +615,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 461192395508137071}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5153193579948905414}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}
 --- !u!4 &352001468587989460 stripped
 Transform:
@@ -674,6 +677,28 @@ MonoBehaviour:
     showGizmo: 1
   - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
+--- !u!95 &5153193579948905414
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222872065320229681}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd6f4fdee6ca4f24d83a035e91adbe99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &4009715203621470957 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7135003128722032543, guid: b121bf83bacde6748b1f3a8d0b0dd34e, type: 3}

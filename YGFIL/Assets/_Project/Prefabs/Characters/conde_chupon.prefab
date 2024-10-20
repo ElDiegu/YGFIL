@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 3236688383060073159}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.9979318, w: 0.06428277}
-  m_LocalPosition: {x: -4.1355042, y: 8.972743, z: 0}
+  m_LocalPosition: {x: -4.135504, y: 8.972743, z: 0}
   m_LocalScale: {x: 3.030303, y: 3.030303, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -218,7 +218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8170850924602762934, guid: 972f40528cfbb324db1726c7391168d8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.10062093
+      value: 0.100620754
       objectReference: {fileID: 0}
     - target: {fileID: -8170850924602762934, guid: 972f40528cfbb324db1726c7391168d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -302,11 +302,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5747903842321330513, guid: 972f40528cfbb324db1726c7391168d8, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.83184683
+      value: 0.8318469
       objectReference: {fileID: 0}
     - target: {fileID: 5747903842321330513, guid: 972f40528cfbb324db1726c7391168d8, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.5550054
+      value: -0.5550052
       objectReference: {fileID: 0}
     - target: {fileID: 5747903842321330513, guid: 972f40528cfbb324db1726c7391168d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -345,6 +345,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 972f40528cfbb324db1726c7391168d8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 935636254122062449}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 972f40528cfbb324db1726c7391168d8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8494414983801290746}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 972f40528cfbb324db1726c7391168d8, type: 3}
 --- !u!4 &721069135330948571 stripped
 Transform:
@@ -388,6 +391,28 @@ MonoBehaviour:
     showGizmo: 1
   - color: {r: 0, g: 1, b: 0, a: 1}
     showGizmo: 1
+--- !u!95 &8494414983801290746
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930312896704507320}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ca142fe1165b7ad46a43952158577967, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &2567733888223919830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4716259641252482349, guid: 972f40528cfbb324db1726c7391168d8, type: 3}
