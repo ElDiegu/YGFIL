@@ -56,10 +56,12 @@ namespace YGFIL.Minigames
             foreach (var hit in hitResults) 
                 if (hit.gameObject.tag == SuccessTag)
                 {
-                    var node1 = mazeManager.GetNodeFromChildIndex(hit.gameObject.transform.GetSiblingIndex());
-                    var node2 = mazeManager.GetNodeFromChildIndex(previousCell.transform.GetSiblingIndex());
+                    if (previousCell == null) previousCell = hit.gameObject;
                     
-                    if (!mazeManager.IsAdjacent(node1, node2)) continue;
+                    var currentNode = mazeManager.GetNodeFromChildIndex(hit.gameObject.transform.GetSiblingIndex());
+                    var previousNode = mazeManager.GetNodeFromChildIndex(previousCell.transform.GetSiblingIndex());
+                    
+                    if (!mazeManager.IsAdjacent(currentNode, previousNode)) continue;
                     
                     var hitPosition = (hit.gameObject.transform as RectTransform).anchoredPosition;
                     
@@ -90,6 +92,7 @@ namespace YGFIL.Minigames
         private void RevertConnections() 
         {
             line.RemovePointsFromLine(2, line.points.Count - 2);
+            previousCell = null;
         }
     }
 }
