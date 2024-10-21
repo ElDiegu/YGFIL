@@ -154,89 +154,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wall_Spritesheet_0
+      name: Wall_Spritesheet_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 500
-        height: 500
+        x: 157
+        y: 190
+        width: 210
+        height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 853e55244aee6254f8012edc7ea62752
-      internalID: 1561644064
+      spriteID: 5bcc9fc08c6e278498cd48f7aa708215
+      internalID: 1155886742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Spritesheet_1
+      name: Wall_Spritesheet_8
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 500
-        height: 500
+        x: 654
+        y: 135
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 512e5ef568d960647baa18f2f734c984
-      internalID: 2051288083
+      spriteID: 3e47f425ec280c747b6f8bb6ff99d8f8
+      internalID: -1955331099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Spritesheet_2
+      name: Wall_Spritesheet_11
       rect:
         serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 500
-        height: 500
+        x: 1153
+        y: 135
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 361847bdd1ad48040990e2b5b6479fab
-      internalID: -965539535
+      spriteID: 2943c3463719afe44a915cbadde78e7f
+      internalID: -1170358096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall_Spritesheet_3
+      name: Wall_Spritesheet_12
       rect:
         serializedVersion: 2
-        x: 1500
-        y: 0
-        width: 500
-        height: 500
+        x: 1653
+        y: 135
+        width: 220
+        height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e1af9b1108759a4c950f6fe0c202923
-      internalID: -1612708729
+      spriteID: 6a7fb04a721aab34d81bbf250ac709d2
+      internalID: -860860168
       vertices: []
       indices: 
       edges: []
@@ -257,8 +257,20 @@ TextureImporter:
     nameFileIdTable:
       Wall_Spritesheet_0: 1561644064
       Wall_Spritesheet_1: 2051288083
+      Wall_Spritesheet_10: 1838120290
+      Wall_Spritesheet_11: -1170358096
+      Wall_Spritesheet_12: -860860168
+      Wall_Spritesheet_13: -1861258620
+      Wall_Spritesheet_14: -320685060
+      Wall_Spritesheet_15: 1820751085
       Wall_Spritesheet_2: -965539535
       Wall_Spritesheet_3: -1612708729
+      Wall_Spritesheet_4: -1252554585
+      Wall_Spritesheet_5: -68999523
+      Wall_Spritesheet_6: -719945176
+      Wall_Spritesheet_7: 1155886742
+      Wall_Spritesheet_8: -1955331099
+      Wall_Spritesheet_9: -1398085277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

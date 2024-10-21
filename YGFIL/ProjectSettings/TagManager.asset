@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - OptionSelector
+  - AllowedCell
+  - ForbiddenCell
+  - IntroductionMenu
+  - IntroductionContainer
   layers:
   - Default
   - TransparentFX
@@ -47,6 +51,9 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 2707312723
+    locked: 0
+  - name: UI
+    uniqueID: 2885576309
     locked: 0
   m_RenderingLayers:
   - Default

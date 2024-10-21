@@ -1,31 +1,49 @@
 using System;
 using System.Collections;
 using Systems.EventSystem;
+using UnityEditor;
+using UnityEditor.TerrainTools;
 using UnityEngine;
 using UnityEngine.UI;
 using YGFIL.Events;
 using YGFIL.Monsters;
 using YGFIL.ScriptableObjects;
+using YGFIL.Utils;
 
 namespace YGFIL
 {
     public class LoveBar : MonoBehaviour
     {
         [SerializeField] private GameObject monster;
-        [SerializeField] private Slider backSlider, frontSlider;
+        
+        [Header("Love Bar Properties")]
+        [SerializeField] private Slider loveSlider;
         [SerializeField] private RectTransform loveThresholdTransform;
         [SerializeField] private float loveUpdateSpeed, minLoveUpdateMultiplier;
-        private Coroutine currentCoroutine = null;
+        
+        [Header("Heart Properties")]
+        [SerializeField] private Transform heartTransform;
+        [SerializeField] private float heartScalingFactor, heartBeatingSpeed, heartBeatingSpeedIncrement;
+        private bool fastBeating;
+        
+        [Header("Animations")]
+        [SerializeField] private Animator animator;
+        
+        private Coroutine loveBarCoroutine = null;
+        private Coroutine heartCoroutine = null;
 
-        #region Events
+#region Events
         private EventBinding<LoveValueUpdatedEvent> loveValueUpdatedBinding;
-        #endregion
+        private EventBinding<OnStartingMinigameEvent> onStartingMinigameBinding;
+#endregion
 
-        #region Unity Methods        
+#region Unity Methods        
         private void OnEnable()
         {
             loveValueUpdatedBinding = new EventBinding<LoveValueUpdatedEvent>(UpdateLoveValue);
+            onStartingMinigameBinding = new EventBinding<OnStartingMinigameEvent>( _ => ChangeHeartState(false));
             EventBus<LoveValueUpdatedEvent>.Register(loveValueUpdatedBinding);
+            EventBus<OnStartingMinigameEvent>.Register(onStartingMinigameBinding);
         }
 
         private void OnDisable()
@@ -36,8 +54,10 @@ namespace YGFIL
         private void Awake()
         {
             SetLoveThreshold();
+            
+            BeatingHeart(false);
         }
-        #endregion
+#endregion
 
         private void SetLoveThreshold()
         {
@@ -48,57 +68,72 @@ namespace YGFIL
 
             Debug.Log(loveThreshold / 100 + " " + position);
 
-            loveThresholdTransform.anchoredPosition = new Vector3(0f, 480, 0f);
+            loveThresholdTransform.anchoredPosition = new Vector3(0f, position, 0f);
         }
 
         private void UpdateLoveValue(LoveValueUpdatedEvent loveValueUpdatedEvent)
         {
-            if (currentCoroutine != null)
+            if (loveBarCoroutine != null)
             {
-                StopCoroutine(currentCoroutine);
+                StopCoroutine(loveBarCoroutine);
                 Debug.Log("Stopping Coroutine");
             }
             
-            if (frontSlider.value < loveValueUpdatedEvent.loveValue) currentCoroutine = StartCoroutine(IncreaseLoveValueCoroutine(loveValueUpdatedEvent.loveValue));
-            else currentCoroutine = StartCoroutine(DecreaseLoveValueCoroutine(loveValueUpdatedEvent.loveValue));
-        }
-
-        private IEnumerator IncreaseLoveValueCoroutine(float targetValue)
-        {
-            while (frontSlider.value != targetValue)
+            loveBarCoroutine = StartCoroutine(UpdateLoveValueCoroutine(loveValueUpdatedEvent.loveValue));
+            
+            var monsterSO = (MonsterSO)monster.GetComponent<Monster>().ScriptableObject;
+            
+            if (fastBeating != loveValueUpdatedEvent.loveValue >= monsterSO.LoveThreshold)
             {
-                var multiplier = Mathf.Max(0.1f, Mathf.Abs(frontSlider.value - targetValue) * 0.1f);
-
-                frontSlider.value = Mathf.MoveTowards(frontSlider.value, targetValue, loveUpdateSpeed * multiplier * Time.deltaTime);
-
-                Debug.Log(multiplier);
-
-                yield return null;
+                fastBeating = loveValueUpdatedEvent.loveValue >= monsterSO.LoveThreshold;
+                BeatingHeart(fastBeating);
             }
-            
-            backSlider.value = targetValue;
-            
-            yield return null;
         }
         
-        private IEnumerator DecreaseLoveValueCoroutine(float targetValue) 
+        private IEnumerator UpdateLoveValueCoroutine(float targetValue) 
         {
-            frontSlider.value = targetValue;
-            
-            yield return new WaitForSeconds(0.5f);
-            
-            while (backSlider.value != targetValue)
+            while (loveSlider.value != targetValue) 
             {
-                var multiplier = Mathf.Max(0.1f, Mathf.Abs(backSlider.value - targetValue) * 0.1f);
+                var multiplier = Mathf.Max(0.1f, Mathf.Abs(loveSlider.value - targetValue) * 0.1f);
 
-                backSlider.value = Mathf.MoveTowards(backSlider.value, targetValue, loveUpdateSpeed * multiplier * Time.deltaTime);
-
-                Debug.Log(multiplier);
+                loveSlider.value = Mathf.MoveTowards(loveSlider.value, targetValue, loveUpdateSpeed * multiplier * Time.deltaTime);
 
                 yield return null;
             }
+        }
+
+        private void BeatingHeart(bool fastBeating) 
+        {
+            if (heartCoroutine != null) StopCoroutine(heartCoroutine);
             
-            yield return null;
+            var maxScale = 1 + heartScalingFactor * (fastBeating ? 1.5f : 1f);
+            var minScale = 1 - heartScalingFactor * (fastBeating ? 1.5f : 1f);
+            var speed = fastBeating ? heartBeatingSpeed + heartBeatingSpeedIncrement : heartBeatingSpeed;
+            
+            heartCoroutine = StartCoroutine(ShakeUtils.BeatingImageCoroutine(heartTransform, maxScale, minScale, speed));
+        }
+        
+        public void ChangeHeartState(bool show) 
+        {
+            animator.Play(show ? "ShowLoveBarAnimation" : "HideLoveBarAnimation");
         }
     }
+    
+#if UNITY_EDITOR
+    [CustomEditor(typeof(LoveBar))]
+    public class LoveBarEditor : Editor 
+    {
+        public static bool loveBarState = true;
+        public override void OnInspectorGUI() 
+        {
+            base.OnInspectorGUI();
+            
+            if (GUILayout.Button("Show Bar")) 
+            {
+                loveBarState = !loveBarState;
+                ((LoveBar)target).ChangeHeartState(loveBarState);
+            }
+        }
+    }
+#endif
 }
