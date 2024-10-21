@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using YGFIL.Minigames.Managers;
 using YGFIL.ScriptableObjects;
 
 namespace YGFIL

@@ -6,7 +6,7 @@ using UnityEngine;
 using YGFIL.Events;
 using YGFIL.ScriptableObjects;
 
-namespace YGFIL
+namespace YGFIL.Minigames.Managers
 {
     public class IceBreakingManager : StaticInstance<IceBreakingManager>, ISOContainer
     {
