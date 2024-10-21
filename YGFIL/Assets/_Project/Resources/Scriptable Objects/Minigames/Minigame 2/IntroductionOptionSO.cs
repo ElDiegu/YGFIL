@@ -10,6 +10,6 @@ namespace YGFIL.ScriptableObjects
         public Image Image { get; set; }
 
         [field: SerializeField]
-        public float LoveValue { get; set; }
+        public int LoveValue { get; set; }
     }
 }
