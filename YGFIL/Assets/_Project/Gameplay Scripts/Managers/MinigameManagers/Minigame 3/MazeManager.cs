@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Systems.EventSystem;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -21,7 +22,11 @@ namespace YGFIL.Managers.Minigames
         List<List<int>> maze = new List<List<int>>();
         [SerializeField] private Transform mazeTransform;
         
-        [SerializeField] private List<(int, int)> visited = new List<(int, int)>();
+        private List<(int, int)> visited = new List<(int, int)>();
+        
+        [Header("Images")]
+        [SerializeField] public Sprite neuron;
+        [SerializeField] public Sprite connection;
         
         public void GenerateMaze() 
         {
@@ -64,26 +69,30 @@ namespace YGFIL.Managers.Minigames
             {
                 for (int j = 0; j < width; j++) 
                 {
-                    var cell = GetChildFromNode((i, j));
-                    var color = Color.white;
-                    var tag = "ForbiddenCell";    
+                    GameObject cell = GetChildFromNode((i, j));
+                    
+                    Color color = Color.white;
+                    string tag = "ForbiddenCell";
+                    Sprite sprite = null;
                     
                     switch(maze[i][j]) 
                     {
                         case 0:
                             tag = "AllowedCell";
-                            color = Color.blue;
+                            color = new Color(0f, 0f, 0f, 0f);
+                            sprite = neuron;
                             break;
                         case 1:
-                            color = Color.red;
+                            sprite = connection;
                             break;
                         case 2:
-                            color = Color.gray;
+                            sprite = neuron;
                             break;
                     }
                     
                     cell.tag = tag;
                     cell.GetComponent<Image>().color = color;
+                    cell.GetComponent<Image>().sprite = sprite;
                 }
             }
             
@@ -110,13 +119,13 @@ namespace YGFIL.Managers.Minigames
             var isSol = false;
             var steps = 0;
             
-            List<int> directions = new List<int>(){0, 1, 2};
+            List<int> directions = new List<int>(){0, 1, 2, 3};
             
             while (steps < maxSteps && directions.Count > 0) 
             {
                 steps++;
                 
-                var direction = currentNode.Item2 == width - 1 ? MazeDirections.Down : (MazeDirections)directions[Random.Range(0, directions.Count)];
+                var direction = (MazeDirections)directions[Random.Range(0, directions.Count)];
                 
                 //if (!directions.Contains((int)direction)) continue;
                 
@@ -132,6 +141,9 @@ namespace YGFIL.Managers.Minigames
                         break;
                     case MazeDirections.Right:
                         nextNode = (currentNode.Item1, currentNode.Item2 + 1);
+                        break;
+                    case MazeDirections.Left:
+                        nextNode = (currentNode.Item1, currentNode.Item2 - 1);
                         break;
                 }
                 
@@ -163,7 +175,7 @@ namespace YGFIL.Managers.Minigames
         
         public bool IsAdjacent((int, int) node1, (int, int) node2) 
         {
-            return Mathf.Abs(node1.Item1 - node2.Item1) <= 1 || Mathf.Abs(node2.Item2 - node2.Item2) <= 1;
+            return Mathf.Abs(node1.Item1 - node2.Item1) <= 1 && Mathf.Abs(node2.Item2 - node2.Item2) <= 1;
         }
     }
 
@@ -189,6 +201,7 @@ namespace YGFIL.Managers.Minigames
     {
         Up,
         Down,
-        Right
+        Right,
+        Left
     }
 }
