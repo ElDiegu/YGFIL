@@ -4,10 +4,12 @@ using UnityEditor.UI;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using YGFIL.ScriptableObjects;
+using YGFIL.Minigames.Managers;
+using UnityEditor;
 
 namespace YGFIL.Minigames.PhaseTwo
 {
-    public class OptionCard : MonoBehaviour, IDraggable, ISOContainer
+    public class IntroductionOptionCard : MonoBehaviour, IDraggable, ISOContainer
     {
         [SerializeField] private IntroductionOptionSO optionSO;
         public ScriptableObject ScriptableObject { get => optionSO; set {} }
@@ -16,6 +18,11 @@ namespace YGFIL.Minigames.PhaseTwo
         [SerializeField] private Transform originalParent;
         
         Physics physics;
+        
+        private void Awake()
+        {
+            GetComponent<Image>().alphaHitTestMinimumThreshold = 1f;
+        }
         
         public void OnBeginDrag(PointerEventData eventData)
         {
@@ -45,22 +52,32 @@ namespace YGFIL.Minigames.PhaseTwo
             var graphicRaycaster = transform.root.GetComponent<GraphicRaycaster>();
             graphicRaycaster.Raycast(eventData, hitResults);
             
-            RaycastResult validHit = new RaycastResult();
-            
-            foreach (var hitResult in hitResults) if (hitResult.gameObject.tag == "OptionSelector") validHit = hitResult;
-            
-            if (!validHit.isValid) 
+            if (hitResults.Count <= 0) 
             {
                 transform.SetParent(originalParent);
                 transform.position = originalPosition;
                 return;
             }
             
-            transform.SetParent(validHit.gameObject.transform);
+            foreach (var hitResult in hitResults) 
+                if (hitResult.gameObject.tag == "IntroductionContainer") DroppedOnSelector(hitResult);
+                else if (hitResult.gameObject.tag == "IntroductionMenu") DroppedOnMenu(hitResult);
+                else Debug.Log(hitResult.gameObject.name);
+        }
+        
+        private void DroppedOnSelector(RaycastResult hit) 
+        {
+            transform.SetParent(hit.gameObject.transform);
             (transform as RectTransform).anchoredPosition = new Vector2(0f, 0f);
             
-            var optionSelector = validHit.gameObject.GetComponent<OptionSelector>();
-            optionSelector.SetSelectedOption(optionSO);
+            IntroductionManager.Instance.ChangeOptionStatus(optionSO, true);
+        }
+        
+        private void DroppedOnMenu(RaycastResult hit) 
+        {
+            transform.SetParent(hit.gameObject.transform);
+            
+            IntroductionManager.Instance.ChangeOptionStatus(optionSO, false);
         }
     }
 }
