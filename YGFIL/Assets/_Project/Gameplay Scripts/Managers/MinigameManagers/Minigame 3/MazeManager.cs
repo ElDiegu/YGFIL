@@ -74,6 +74,7 @@ namespace YGFIL.Managers.Minigames
                     Color color = Color.white;
                     string tag = "ForbiddenCell";
                     Sprite sprite = null;
+                    Quaternion rotation = new Quaternion();
                     
                     switch(maze[i][j]) 
                     {
@@ -84,6 +85,7 @@ namespace YGFIL.Managers.Minigames
                             break;
                         case 1:
                             sprite = connection;
+                            if (i % 2 != 0) rotation = Quaternion.Euler(0f, 0f, 90f);
                             break;
                         case 2:
                             sprite = neuron;
@@ -91,6 +93,7 @@ namespace YGFIL.Managers.Minigames
                     }
                     
                     cell.tag = tag;
+                    cell.transform.rotation = rotation;
                     cell.GetComponent<Image>().color = color;
                     cell.GetComponent<Image>().sprite = sprite;
                 }

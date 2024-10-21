@@ -14,7 +14,7 @@ namespace YGFIL.Minigames
         [SerializeField] private GraphicRaycaster raycaster;
         [SerializeField] string FailTag, SuccessTag;
         [SerializeField] private MazeManager mazeManager;
-        private GameObject previousCell;
+        [SerializeField] private GameObject previousCell;
         
         EventBinding<GeneratedMazeEvent> generatedMazeEventBinding;
         
@@ -34,7 +34,7 @@ namespace YGFIL.Minigames
             var startPosition = generatedMazeEvent.startCell;
             
             var point2 = startPosition.anchoredPosition;
-            var point1 = point2 + new Vector2(0f, 140f);
+            var point1 = point2 + new Vector2(0f, 70f);
             
             line.AddPointToLine(point1);
             line.AddPointToLine(point2);
