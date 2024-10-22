@@ -34,16 +34,16 @@ namespace YGFIL
 
 #region Events
         private EventBinding<LoveValueUpdatedEvent> loveValueUpdatedBinding;
-        private EventBinding<OnStartingMinigameEvent> onStartingMinigameBinding;
+        //private EventBinding<OnStartingMinigameEvent> onStartingMinigameBinding;
 #endregion
 
 #region Unity Methods        
         private void OnEnable()
         {
             loveValueUpdatedBinding = new EventBinding<LoveValueUpdatedEvent>(UpdateLoveValue);
-            onStartingMinigameBinding = new EventBinding<OnStartingMinigameEvent>( _ => ChangeHeartState(false));
+            //onStartingMinigameBinding = new EventBinding<OnStartingMinigameEvent>( _ => ChangeHeartState(false));
             EventBus<LoveValueUpdatedEvent>.Register(loveValueUpdatedBinding);
-            EventBus<OnStartingMinigameEvent>.Register(onStartingMinigameBinding);
+            //EventBus<OnStartingMinigameEvent>.Register(onStartingMinigameBinding);
         }
 
         private void OnDisable()
