@@ -6553,9 +6553,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
---- !u!4 &1913083001 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1439892311565532969, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
+--- !u!224 &1913083001 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5223937667093743290, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
   m_PrefabInstance: {fileID: 1913083000}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1996024698
@@ -7147,6 +7147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6917038a57d4c4bae0ffa841da5c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brainConnectionsOptionSet: {fileID: 0}
   options:
   - {fileID: 0}
   mazeZone: {fileID: 1840497723}

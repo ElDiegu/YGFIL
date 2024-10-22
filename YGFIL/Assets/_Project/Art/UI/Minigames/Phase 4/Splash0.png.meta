@@ -112,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Splash3_0
+      name: Splash0_0
       rect:
         serializedVersion: 2
         x: 1348
@@ -134,7 +134,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Splash3_1
+      name: Splash0_1
       rect:
         serializedVersion: 2
         x: 2088
@@ -156,7 +156,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Splash3_2
+      name: Splash0_2
       rect:
         serializedVersion: 2
         x: 1762
@@ -191,8 +191,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Splash3_1: 2814834105534103304
-      Splash3_2: 4810908530208369429
+      Splash0_0: -4241681084022678718
+      Splash0_1: 2814834105534103304
+      Splash0_2: 4810908530208369429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
