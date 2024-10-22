@@ -41,5 +41,13 @@ namespace YGFIL
                 options[i].SetActive(true);
             }
         }
+        
+        private void SubmitOption(int index) 
+        {
+            EventBus<UpdateLoveValueEvent>.Raise(new UpdateLoveValueEvent() 
+            {
+                loveValue = brainConnectionsOptionSet.Options[index].LoveValue,
+            });
+        }
     }
 }
