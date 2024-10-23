@@ -21,7 +21,7 @@ namespace YGFIL.Minigames.PhaseTwo
         
         private void Awake()
         {
-            GetComponent<Image>().alphaHitTestMinimumThreshold = 1f;
+            GetComponent<Image>().alphaHitTestMinimumThreshold = 0.00000000001f;
         }
         
         public void OnBeginDrag(PointerEventData eventData)
@@ -29,7 +29,7 @@ namespace YGFIL.Minigames.PhaseTwo
             originalPosition = transform.position;
             originalParent = transform.parent;
             
-            transform.SetParent(transform.root);
+            transform.SetParent(transform.parent.transform.parent);
         }
 
         public void OnDrag(PointerEventData eventData)
