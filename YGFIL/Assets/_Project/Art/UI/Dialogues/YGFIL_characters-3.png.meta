@@ -246,7 +246,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wolf_Dislike2
+      name: Wolf2_Dislike
       rect:
         serializedVersion: 2
         x: 4950
@@ -284,8 +284,8 @@ TextureImporter:
       Medusa_Dislike: 8804849248193032274
       Spider_Dislike: -6916971171291748011
       Vampire_Dislike: 3676795377197581752
+      Wolf2_Dislike: 8671501396440361793
       Wolf_Dislike1: 7018263029559025343
-      Wolf_Dislike2: 8671501396440361793
       YGFIL_characters-3_10: 4383212630957160739
       YGFIL_characters-3_11: 1290609464669936389
       YGFIL_characters-3_12: 1288574677079682704

@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: d78421582e9fbe840871ffd9bab38afb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2400332158735627028
+    second: YGFIL_characters-1_0
+  - first:
+      213: 7225737642014652652
+    second: YGFIL_characters-1_1
+  - first:
+      213: -7493269779797891737
+    second: YGFIL_characters-1_2
+  - first:
+      213: -839125005355648239
+    second: YGFIL_characters-1_3
+  - first:
+      213: 1795699152969711214
+    second: YGFIL_characters-1_4
+  - first:
+      213: 3423613185950035547
+    second: YGFIL_characters-1_5
+  - first:
+      213: -876027249444127485
+    second: YGFIL_characters-1_6
+  - first:
+      213: -6301747483993648858
+    second: YGFIL_characters-1_7
+  - first:
+      213: -1801429507641456492
+    second: YGFIL_characters-1_8
+  - first:
+      213: 9047512545863410505
+    second: YGFIL_characters-1_9
+  - first:
+      213: -6693986758970135487
+    second: YGFIL_characters-1_10
+  - first:
+      213: -210193993142456882
+    second: YGFIL_characters-1_11
+  - first:
+      213: -5020790028243699866
+    second: YGFIL_characters-1_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Zombie_Neutral
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 970
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceccd9f7e9e40bed0800000000000000
+      internalID: -2400332158735627028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Medusa_Neutral
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 950
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8b3701a1af64460800000000000000
+      internalID: 7225737642014652652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vampire_Neutral
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1200
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7652af816de820890800000000000000
+      internalID: -7493269779797891737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_Neutral
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 1150
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bf0a5e044da54f0800000000000000
+      internalID: -839125005355648239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Neutral
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1080
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e25e4bd0e138f20800000000000000
+      internalID: 3423613185950035547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf2_Neutral
+      rect:
+        serializedVersion: 2
+        x: 4950
+        y: 1140
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30df157abd9b7d3f0800000000000000
+      internalID: -876027249444127485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Succubus_Neutral
+      rect:
+        serializedVersion: 2
+        x: 5800
+        y: 1020
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498cf1d38690007e0800000000000000
+      internalID: -1801429507641456492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0ee4b3de6947346439fd23d08b6317f7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Medusa_Neutral: 7225737642014652652
+      Spider_Neutral: -839125005355648239
+      Succubus_Neutral: -1801429507641456492
+      Vampire_Neutral: -7493269779797891737
+      Wolf2_Neutral: -876027249444127485
+      Wolf_Neutral: 3423613185950035547
+      YGFIL_characters-1_10: -6693986758970135487
+      YGFIL_characters-1_11: -210193993142456882
+      YGFIL_characters-1_12: -5020790028243699866
+      YGFIL_characters-1_7: -6301747483993648858
+      YGFIL_characters-1_9: 9047512545863410505
+      Zombie_Neutral: -2400332158735627028
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

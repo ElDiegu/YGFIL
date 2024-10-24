@@ -246,7 +246,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wolf_Neutral2
+      name: Wolf2_Neutral
       rect:
         serializedVersion: 2
         x: 4950
@@ -307,8 +307,8 @@ TextureImporter:
       Spider_Neutral: -839125005355648239
       Succubus_Neutral: -1801429507641456492
       Vampire_Neutral: -7493269779797891737
+      Wolf2_Neutral: -876027249444127485
       Wolf_Neutral1: 3423613185950035547
-      Wolf_Neutral2: -876027249444127485
       YGFIL_characters-1_10: -6693986758970135487
       YGFIL_characters-1_11: -210193993142456882
       YGFIL_characters-1_12: -5020790028243699866

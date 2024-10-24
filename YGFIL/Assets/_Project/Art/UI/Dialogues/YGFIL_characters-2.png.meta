@@ -246,7 +246,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wolf_Happy2
+      name: Wolf2_Happy
       rect:
         serializedVersion: 2
         x: 4950
@@ -330,8 +330,8 @@ TextureImporter:
       Spider_Happy: -3072826203181500612
       Succubus_Happy: -2807792331036297243
       Vampire_Happy: 6205310804737194269
+      Wolf2_Happy: 5820589368456497128
       Wolf_Happy1: 2180308809436722550
-      Wolf_Happy2: 5820589368456497128
       YGFIL_characters-2_11: 2153015895013472416
       YGFIL_characters-2_12: 2743605496719302531
       YGFIL_characters-2_4: 5693869861636017213
