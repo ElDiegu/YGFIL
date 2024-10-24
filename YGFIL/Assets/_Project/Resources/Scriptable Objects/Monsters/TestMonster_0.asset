@@ -17,3 +17,4 @@ MonoBehaviour:
   <LoveThreshold>k__BackingField: 60
   <Sprite>k__BackingField: {fileID: 0}
   <Prefab>k__BackingField: {fileID: 0}
+  <monsterType>k__BackingField: 2

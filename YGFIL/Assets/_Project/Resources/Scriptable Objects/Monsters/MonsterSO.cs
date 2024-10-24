@@ -1,4 +1,5 @@
 using UnityEngine;
+using YGFIL.Monsters;
 
 namespace YGFIL.ScriptableObjects
 {
@@ -19,5 +20,8 @@ namespace YGFIL.ScriptableObjects
 
         [field: SerializeField]
         public GameObject Prefab { get; set; }
+        
+        [field: SerializeField]
+        public MonsterType monsterType { get; private set; }
     }
 }

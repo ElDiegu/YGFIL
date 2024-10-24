@@ -13,6 +13,7 @@ namespace YGFIL.Monsters
         public ScriptableObject ScriptableObject { get => monsterSO; set {} }
         
         public float loveValue = 50f;
+        public MonsterType monsterType;
         
         EventBinding<UpdateLoveValueEvent> updateLoveValueEventBinding;
         
@@ -28,6 +29,11 @@ namespace YGFIL.Monsters
             EventBus<UpdateLoveValueEvent>.Deregister(updateLoveValueEventBinding);
         }
 #endregion
+
+        private void Awake()
+        {
+            monsterType = monsterSO.monsterType;
+        }
 
         public void UpdateLoveValue(UpdateLoveValueEvent updateLoveValueEvent) 
         {
@@ -48,6 +54,20 @@ namespace YGFIL.Monsters
                 loveValue = loveValue,
             });
         }
+    }
+    
+    public enum MonsterType
+    {
+        MainCharacter,
+        Caster,
+        Zombie,
+        Spider,
+        Medusa,
+        Vampire,
+        Succubus,
+        Mummy,
+        Wolf,
+        Wolf2
     }
     
 #if UNITY_EDITOR
