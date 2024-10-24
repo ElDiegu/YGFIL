@@ -40,6 +40,8 @@ namespace YGFIL.Databases
     {
         Neutral,
         Happy,
-        Dislike
+        Dislike,
+        Surprised,
+        Excited
     }
 }

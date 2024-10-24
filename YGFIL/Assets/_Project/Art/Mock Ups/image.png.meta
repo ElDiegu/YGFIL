@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 0d2c73363d0786f47a2236d16759935e
+guid: 98ef920528c6f7a4f9c3863e686c3801
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6520463873577775300
-    second: Mr Bones_0
-  - first:
-      213: 8865975054837422698
-    second: Mr Bones_1
-  - first:
-      213: -7460744767340898048
-    second: Mr Bones_2
-  - first:
-      213: -1196277588050715166
-    second: Mr Bones_3
-  - first:
-      213: -4577019294192800067
-    second: Mr Bones_4
+      213: 1208040086343421634
+    second: image_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mr Bones_0
+      name: image_0
       rect:
         serializedVersion: 2
-        x: 131
-        y: 578
-        width: 500
-        height: 376
+        x: 0
+        y: 0
+        width: 689
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,96 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c3f01a467a8a285a0800000000000000
-      internalID: -6520463873577775300
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mr Bones_1
-      rect:
-        serializedVersion: 2
-        x: 714
-        y: 576
-        width: 500
-        height: 376
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6a1f03a6554a0b70800000000000000
-      internalID: 8865975054837422698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mr Bones_2
-      rect:
-        serializedVersion: 2
-        x: 1254
-        y: 576
-        width: 500
-        height: 376
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0099acea92c167890800000000000000
-      internalID: -7460744767340898048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mr Bones_3
-      rect:
-        serializedVersion: 2
-        x: 708
-        y: 93
-        width: 500
-        height: 376
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2edd97f2fd7f56fe0800000000000000
-      internalID: -1196277588050715166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mr Bones_4
-      rect:
-        serializedVersion: 2
-        x: 1206
-        y: 94
-        width: 578
-        height: 478
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dbe6787b3392b70c0800000000000000
-      internalID: -4577019294192800067
+      spriteID: 2ce8eecde02d3c010800000000000000
+      internalID: 1208040086343421634
       vertices: []
       indices: 
       edges: []

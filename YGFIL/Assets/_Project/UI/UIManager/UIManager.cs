@@ -8,7 +8,7 @@ namespace YGFIL.Managers
     public class UIManager : StaticInstance<UIManager>
     {
         [field: SerializeField]
-        public Animator UIAnimator { get; set; }
+        public Animator UIAnimator { get; private set; }
         
         EventBinding<PlayAnimationEvent> playAnimationBinding;
         
