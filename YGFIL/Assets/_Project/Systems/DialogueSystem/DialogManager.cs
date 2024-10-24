@@ -21,7 +21,8 @@ namespace YGFIL.Systems
         [SerializeField] private Typewriter typewriter;
         
         private List<DialogData> dialogList;
-        private bool writing, endDialog, dialogState;
+        private bool writing, endDialog;
+        public bool dialogState;
         private int nextID = -1;
         
 #region Events
@@ -54,6 +55,8 @@ namespace YGFIL.Systems
             base.Awake();
             
             LoadDialogData(monster.monsterType);
+            
+            characterImages[2].sprite = MonsterExpressionDatabase.GetSprite(monster.monsterType, MonsterExpressionType.Neutral);
             
             SetDialogUI(true);
         }
@@ -89,6 +92,8 @@ namespace YGFIL.Systems
         {
             if (dialogIndex > dialogList.Count - 1 || writing) return;
             
+            Debug.Log($"Playing Dialog with ID {dialogIndex}");
+            
             SetDialogUI(true);
             
             DialogData dialog = dialogList[dialogIndex];
@@ -111,7 +116,7 @@ namespace YGFIL.Systems
         
         public void SetDialogUI(bool state) 
         {
-            foreach (GameObject UIObject in dialogUI) UIObject.SetActive(state);
+            //foreach (GameObject UIObject in dialogUI) UIObject.SetActive(state);
             dialogState = state;
         }
     }
@@ -147,4 +152,14 @@ namespace YGFIL.Systems
         }
     }
 #endif
+}
+
+namespace YGFIL.Enums 
+{
+    public enum DialogTag 
+    {
+        End,
+        IceBreaking_Start,
+        IceBreaking_End
+    }
 }

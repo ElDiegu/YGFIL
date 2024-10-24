@@ -22,5 +22,10 @@ namespace YGFIL
             NextID = nextID;
             Tag = tag;
         }
+
+        public override string ToString()
+        {
+            return $"{ID} | {Monster} | {Expression} | {Text} | {NextID} | {Tag}";
+        }
     }
 }

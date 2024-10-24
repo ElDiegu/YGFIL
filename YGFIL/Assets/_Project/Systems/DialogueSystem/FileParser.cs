@@ -12,10 +12,10 @@ namespace YGFIL.Systems
             
             using (StreamReader streamReader = new StreamReader(filePath)) 
             {
-                streamReader.ReadLine(); //We need to read the first line to skip the headers
                 while(!streamReader.EndOfStream) 
                 {
                     string line = streamReader.ReadLine();
+                    
                     string[] parsedLine = line.Split(separatingCharacter);
                     
                     parsedData.Add(parsedLine);
