@@ -66,8 +66,8 @@ namespace YGFIL
             }
 
             this.gameObject.SetActive(false);
-            FindAnyObjectByType<DialogueManager>().EnableDialogueSystem();
-            FindAnyObjectByType<DialogueManager>().NextDialogue();
+            //FindAnyObjectByType<DialogueManager>().EnableDialogueSystem();
+            //FindAnyObjectByType<DialogueManager>().NextDialogue();
             //end Fase 4
         }
     }
