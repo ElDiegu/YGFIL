@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4323e4a800f3d874a9494c9004baadb9
+guid: 72b8606cc1d902f45a88ded3d2b39c81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 525832290792585047
-    second: NarratorUI_0
+      213: -9070619493798768102
+    second: ThresholdMarker_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NarratorUI_0
+      name: ThresholdMarker_0
       rect:
         serializedVersion: 2
-        x: 103
-        y: 80
-        width: 1274
-        height: 313
+        x: 2493
+        y: 847
+        width: 413
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7573f18bea12c4700800000000000000
-      internalID: 525832290792585047
+      spriteID: a12146be0afae1280800000000000000
+      internalID: -9070619493798768102
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      NarratorUI_0: 525832290792585047
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
