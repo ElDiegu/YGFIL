@@ -112,7 +112,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:YGFIL/Assets/_Project/Art/UI/Misc/MrBones.png.meta
       name: MrBones_0
       rect:
         serializedVersion: 2
@@ -121,16 +120,6 @@ TextureImporter:
         width: 602
         height: 544
       alignment: 0
-========
-      name: Caster_1Neutral
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 578
-        width: 500
-        height: 376
-      alignment: 6
->>>>>>>> main:YGFIL/Assets/_Project/Resources/Art/Monsters/Caster.png.meta
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -138,14 +127,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f26c66324d3fe34e8054e4eaf11c224
-      internalID: -53699818
+      spriteID: 292165588d1242a4c9604a3ffec2a9f8
+      internalID: 12675953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:YGFIL/Assets/_Project/Art/UI/Misc/MrBones.png.meta
       name: MrBones_1
       rect:
         serializedVersion: 2
@@ -154,16 +142,6 @@ TextureImporter:
         width: 602
         height: 544
       alignment: 0
-========
-      name: Caster_3Dislike
-      rect:
-        serializedVersion: 2
-        x: 714
-        y: 576
-        width: 500
-        height: 376
-      alignment: 6
->>>>>>>> main:YGFIL/Assets/_Project/Resources/Art/Monsters/Caster.png.meta
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -171,14 +149,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 428038b08cb5e36468007325ee595d93
-      internalID: 1477634060
+      spriteID: cab6bb8ad7bdccd4eabdc58425ff0c70
+      internalID: 612333909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:YGFIL/Assets/_Project/Art/UI/Misc/MrBones.png.meta
       name: MrBones_2
       rect:
         serializedVersion: 2
@@ -187,16 +164,6 @@ TextureImporter:
         width: 602
         height: 544
       alignment: 0
-========
-      name: Caster_4Surprised
-      rect:
-        serializedVersion: 2
-        x: 1254
-        y: 576
-        width: 500
-        height: 376
-      alignment: 6
->>>>>>>> main:YGFIL/Assets/_Project/Resources/Art/Monsters/Caster.png.meta
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -204,14 +171,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90edbb5112dc7bf4fbeb33b7ac3ea6cf
-      internalID: 41880949
+      spriteID: ac2cda4c283d7214c8c7bc35335ce9bd
+      internalID: 1463436271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:YGFIL/Assets/_Project/Art/UI/Misc/MrBones.png.meta
       name: MrBones_3
       rect:
         serializedVersion: 2
@@ -220,16 +186,6 @@ TextureImporter:
         width: 602
         height: 544
       alignment: 0
-========
-      name: Caster_2Happy
-      rect:
-        serializedVersion: 2
-        x: 708
-        y: 93
-        width: 500
-        height: 376
-      alignment: 6
->>>>>>>> main:YGFIL/Assets/_Project/Resources/Art/Monsters/Caster.png.meta
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
@@ -237,14 +193,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26614e215b3fc7348b001c748ad3c8d7
-      internalID: 623836887
+      spriteID: 078a1d834c0b42347aad1eb411452b02
+      internalID: -955061770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:YGFIL/Assets/_Project/Art/UI/Misc/MrBones.png.meta
       name: MrBones_4
       rect:
         serializedVersion: 2
@@ -254,25 +209,14 @@ TextureImporter:
         height: 544
       alignment: 0
       pivot: {x: 0, y: 0}
-========
-      name: Caster_5Excited
-      rect:
-        serializedVersion: 2
-        x: 1208
-        y: 94
-        width: 576
-        height: 478
-      alignment: 9
-      pivot: {x: 0.07986111, y: 0}
->>>>>>>> main:YGFIL/Assets/_Project/Resources/Art/Monsters/Caster.png.meta
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be36d9a4f6f2c65458b8736c0209f452
-      internalID: -1044817567
+      spriteID: a32418b9d437b7442a167fc45090b539
+      internalID: 103636184
       vertices: []
       indices: 
       edges: []
@@ -281,11 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<<< HEAD:YGFIL/Assets/_Project/Art/UI/Misc/MrBones.png.meta
-    spriteID: 97bcc90f54441a54d98e6010c5dbc4f5
-========
-    spriteID: e264ba362a354ba4da0fc2dea039e9a3
->>>>>>>> main:YGFIL/Assets/_Project/Resources/Art/Monsters/Caster.png.meta
+    spriteID: 0443f335cd556f84c9fb8b3dda3fd2ff
     internalID: 0
     vertices: []
     indices: 
@@ -295,19 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:YGFIL/Assets/_Project/Art/UI/Misc/MrBones.png.meta
-      MrBones_0: -53699818
-      MrBones_1: 1477634060
-      MrBones_2: 41880949
-      MrBones_3: 623836887
-      MrBones_4: -1044817567
-========
-      Caster_1Neutral: -6520463873577775300
-      Caster_2Happy: -1196277588050715166
-      Caster_3Dislike: 8865975054837422698
-      Caster_4Surprised: -7460744767340898048
-      Caster_5Excited: -4577019294192800067
->>>>>>>> main:YGFIL/Assets/_Project/Resources/Art/Monsters/Caster.png.meta
+      MrBones_0: 12675953
+      MrBones_1: 612333909
+      MrBones_2: 1463436271
+      MrBones_3: -955061770
+      MrBones_4: 103636184
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
