@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 0d1edf644ac1de34685ebfe8f4b62d5a
+guid: 4323e4a800f3d874a9494c9004baadb9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 215135712098838283
-    second: Locket_0
-  - first:
-      213: -2337361762163660020
-    second: Locket_1
+      213: 525832290792585047
+    second: NarratorUI_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Locket_0
+      name: NarratorUI_0
       rect:
         serializedVersion: 2
-        x: 727
-        y: 2371
-        width: 306
-        height: 296
+        x: 103
+        y: 80
+        width: 1274
+        height: 313
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b07e6225ac05cf200800000000000000
-      internalID: 215135712098838283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Locket_1
-      rect:
-        serializedVersion: 2
-        x: 1046
-        y: 2373
-        width: 306
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c0b67a67cd5009fd0800000000000000
-      internalID: -2337361762163660020
+      spriteID: 7573f18bea12c4700800000000000000
+      internalID: 525832290792585047
       vertices: []
       indices: 
       edges: []
@@ -159,9 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Locket_0: 215135712098838283
-      Locket_1: -2337361762163660020
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
