@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314034932b14cbb4eba7aeb0b75736b0, type: 3}
+  m_Name: Zombie_1
+  m_EditorClassIdentifier: 
+  <QuestionText>k__BackingField: "\xBFEn una perfecta cita nocturna har\xEDais?"
+  <OptionsTexts>k__BackingField:
+  - Una noche de matarse a jugar al LoL juntos hasta que salga el sol.
+  - Una noche de paseos por la ciudad, cementerio incluido.
+  - Ver las estrellas a la luz de la luna de la mano.
+  - "Viendo un concierto de Taylor d\xE1ndolo todo."
+  <LoveValues>k__BackingField: 0500000003000000fefffffffeffffff
