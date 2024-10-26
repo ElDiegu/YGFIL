@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using YGFIL.Utils;
 
 namespace YGFIL.Managers
 {
@@ -20,13 +22,21 @@ namespace YGFIL.Managers
         
         private IEnumerator StartPlayingCoroutine() 
         {
+            AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("DateScene");
+            
+            loadingOperation.allowSceneActivation = false;
+            
             titleAnimator.SetTrigger("TitleLeave");
             
             while (titleAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
-            fadeOutAnimator.Play("FadeOut");
+            fadeOutAnimator.Play("FadeOutImage");
             
             while (fadeOutAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
+            
+            while (loadingOperation.progress < 0.9f) yield return null; 
+            
+            loadingOperation.allowSceneActivation = true;
         }
     }
 }

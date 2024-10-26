@@ -31,8 +31,6 @@ namespace YGFIL.Systems
                 
                 List<string> tags = new List<string>();
                 for (int j = 5; j < row.Length; j++) if(row[j] != "") tags.Add(row[j]);
-                
-                Debug.Log(row[6]);
 
                 DialogData dialogue = new DialogData(id, monster, expression, text, nextID, tags);
 

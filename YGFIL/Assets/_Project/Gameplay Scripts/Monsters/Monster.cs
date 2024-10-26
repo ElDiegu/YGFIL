@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using YGFIL.ScriptableObjects;
 using YGFIL.Events;
+using YGFIL.Managers;
 
 namespace YGFIL.Monsters 
 {
@@ -30,6 +31,7 @@ namespace YGFIL.Monsters
 
         private void Awake()
         {
+            monsterSO = GameManager.Instance.Monster;
             monsterType = monsterSO.MonsterType;
         }
 

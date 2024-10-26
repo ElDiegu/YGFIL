@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3029049638872218128
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5182388260779513661}
+  - component: {fileID: 4283876000570754525}
+  - component: {fileID: 1582053132344912157}
+  - component: {fileID: 4638091361818438105}
+  - component: {fileID: 21030882131178730}
+  - component: {fileID: 5819497265884332859}
+  m_Layer: 0
+  m_Name: Minigames
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5182388260779513661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029049638872218128}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4283876000570754525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029049638872218128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a3977b944684a41b44d22942e73878, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <DatePhase>k__BackingField: 0
+  minigameObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  blockingImage: {fileID: 0}
+  <Monster>k__BackingField: {fileID: 0}
+--- !u!114 &1582053132344912157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029049638872218128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc9a52223ffdb146b696460d7120ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionsSet: {fileID: 11400000, guid: 9f7803a3b10d4d040a3f62a68a6a42d5, type: 2}
+  state: 0
+  selectedOption: {fileID: 0}
+  submitButton: {fileID: 0}
+--- !u!114 &4638091361818438105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029049638872218128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aeab6361b2d3f041bcf221daca0b11b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionSet: {fileID: 0}
+  selectedOptions: []
+  submitButton: {fileID: 0}
+  optionCards: []
+  state: 0
+--- !u!114 &21030882131178730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029049638872218128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede962d669b57384d8015ad804e4f7c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  height: 9
+  width: 13
+  startVector: {x: 0, y: 1}
+  endVector: {x: 8, y: 11}
+  maxSteps: 100
+  mazeTransform: {fileID: 0}
+  neuron: {fileID: -3384411708189302445, guid: 9e0cb32d463ef2947b636512883e5d5e, type: 3}
+  connection: {fileID: 1155886742, guid: 0565129d933f6894186418c6b2b8d0b6, type: 3}
+--- !u!114 &5819497265884332859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029049638872218128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6917038a57d4c4bae0ffa841da5c02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainConnectionsOptionSet: {fileID: 11400000, guid: 8db83d37687a3df43a12f10546ad6ac5, type: 2}
+  options:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  mazeZone: {fileID: 0}
+  optionsZone: {fileID: 0}
+  state: 0

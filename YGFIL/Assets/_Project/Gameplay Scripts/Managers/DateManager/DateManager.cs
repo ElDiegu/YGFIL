@@ -19,10 +19,8 @@ namespace YGFIL.Managers
         [SerializeField] private GameObject blockingImage;
         [field: SerializeField] public Monster Monster { get; private set; }
         
-        protected override void Awake()
+        protected void Start() 
         {
-            base.Awake();
-            
             ChangePhase(DatePhase.Introduction);
         }    
 

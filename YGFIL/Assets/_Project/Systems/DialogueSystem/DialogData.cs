@@ -49,6 +49,7 @@ namespace YGFIL.Enums
         Brain_One,
         Brain_Two,
         Brain_Three,
-        Brain_Four
+        Brain_Four,
+        Affinity_Start,
     }
 }
