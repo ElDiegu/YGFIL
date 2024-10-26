@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e938d7971d6b754d805ee470a839258, type: 3}
+  m_Name: Zombie_Option_Set
+  m_EditorClassIdentifier: 
+  <Options>k__BackingField:
+  - {fileID: 11400000, guid: d0b4e85f05e0b90449df4c8b7e8cb9da, type: 2}
+  - {fileID: 11400000, guid: a6e4f00f8f68d234294da4949c48493d, type: 2}
+  - {fileID: 11400000, guid: 4f8ec36768212ae4fa0574c4d7987bd8, type: 2}
+  <CardText>k__BackingField: "En una primera cita te llevar\xEDa a"
+  <CardImage>k__BackingField: {fileID: 8975786855556936950, guid: f2ca520324bfde2439b4c891bf3e82f6, type: 3}
