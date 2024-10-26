@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78794c80b6d29c248a9f728d3dddf232, type: 3}
-  m_Name: Zombie_Option_1
+  m_Name: Zombie_1
   m_EditorClassIdentifier: 
   <Images>k__BackingField:
   - {fileID: -6780571676119717613, guid: b1e6a63ab371b5941a9db337c1a2e0c8, type: 3}
