@@ -8,7 +8,7 @@ id	monster	expression	text	next_id	tag	tag
 6	Caster	Neutral	Una vez los selecciones arrastralos a los huecos superiores para completar la frase de Me gusta _______ También ________ Y además _________.	20		
 7	Caster	Neutral	!!!Piensa rápido humano!!! Vas a tener que completar una serie de laberintos para conseguir ideas que te hagan salir de esta.	8	Brain_Start	
 8	Caster	Neutral	Pero tranquilo, cuantos más laberintos completes más opciones tendrás para escoger.	24		
-9	Caster	Neutral	!!!Upsss!!!, nunca dije que nuestros monstruos no fueran algo patosos.	10		
+9	Caster	Neutral	!!!Upsss!!!, nunca dije que nuestros monstruos no fueran algo patosos.	10	Phase4_Start	
 10	Caster	Neutral	Toma esta servilletina rey, intenta limpiarte y responder la frase del monstruo seleccionando la opción que creas más conveniente.		End	
 11	Caster	Neutral	Por último pero no menos importante toca el test de afinidad, de hecho es lo más importante, así que presta atención.	12		
 12	Caster	Neutral	Responde a estas tres preguntas que ya han sido previamente respondidas por nuestro encantador monstruo, así sabremos cuánta química hay entre ustedes.	13		
@@ -46,3 +46,4 @@ id	monster	expression	text	next_id	tag	tag
 44	MainCharacter	Neutral	Las dos son horribles, imagínate todas las calles llenas de cabezahuecas...	46	Brain_Four	
 45	Zombie	Happy	¡¡¡Aghhhhhh!!! Tienes toda la razón...		End	
 46	Zombie	Dislike	Bah, tienes cerebro de ignorante...		End	
+47	Zombie	Neutral	¿Y a dónde me llevarías en una primera cita..?		End	
