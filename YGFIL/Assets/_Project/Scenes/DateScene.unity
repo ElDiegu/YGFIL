@@ -4119,7 +4119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5233005597985246794, guid: 2d19bf9f507e37b4a9b42288269e072b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8976,7 +8976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7419770782839166963, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7589635233169550912, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
       propertyPath: m_Color.a
@@ -9246,6 +9246,7 @@ MonoBehaviour:
   - {fileID: 797363548}
   mazeZone: {fileID: 1840497723}
   optionsZone: {fileID: 1996024700}
+  state: 0
 --- !u!114 &3092511709143013418 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4985949246556197491, guid: a7a2ea778da5ab44cb365c9e922787cc, type: 3}
