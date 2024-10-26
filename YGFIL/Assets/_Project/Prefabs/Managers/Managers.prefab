@@ -1,127 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1406358297670441245
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 802868179586686657}
-  - component: {fileID: 3825027393880675496}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &802868179586686657
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406358297670441245}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.711278, y: -0.55635625, z: 202.99812}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5086131673997378923}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3825027393880675496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406358297670441245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0c121fa9584c884f88a209f793b6d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: showMusic
-    clip: {fileID: 8300000, guid: 631123f2b376ff446a4fc2fb8081de13, type: 3}
-    music: 1
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
-  - name: dateMusic
-    clip: {fileID: 8300000, guid: c96c3f0dc589b6047af9b05e5698dc92, type: 3}
-    music: 1
-    volume: 1
-    pitch: 0.1
-    loop: 1
-    source: {fileID: 0}
-  - name: button
-    clip: {fileID: 8300000, guid: 9796ca139072e6d4cab083e5d5066f1b, type: 3}
-    music: 0
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
-  - name: loveBarUp
-    clip: {fileID: 8300000, guid: 936ba413350ce48408f2db2456595659, type: 3}
-    music: 0
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
-  - name: loveBarDown
-    clip: {fileID: 8300000, guid: 3cc7e864f67cc644d9a86d1bff0035d6, type: 3}
-    music: 0
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
-  - name: dateWin
-    clip: {fileID: 8300000, guid: df46f5ff04fd67347ae6434d7c315269, type: 3}
-    music: 0
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
-  - name: dateLost
-    clip: {fileID: 8300000, guid: b7229d17a41b35a478f54c14209a05b7, type: 3}
-    music: 0
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
-  - name: papper
-    clip: {fileID: 8300000, guid: e6bc169392e58904bb87e06c80e6feea, type: 3}
-    music: 0
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
-  - name: napkin
-    clip: {fileID: 8300000, guid: 5633dae76704c57429ff30f2b95adaad, type: 3}
-    music: 0
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
-  - name: iceHit
-    clip: {fileID: 8300000, guid: b7f2732167ad18f4b9b44f09e71bd54b, type: 3}
-    music: 0
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
-  - name: iceBreak
-    clip: {fileID: 8300000, guid: 9e54b0e2f9641624d9cdf20bc7ae7bb7, type: 3}
-    music: 0
-    volume: 1
-    pitch: 0.1
-    loop: 0
-    source: {fileID: 0}
 --- !u!1 &7063022614738274568
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,6 +49,8 @@ MonoBehaviour:
   dialogUI: []
   monster: {fileID: 0}
   typewriter: {fileID: 7459672640771352888}
+  writing: 0
+  endDialog: 0
   dialogState: 0
 --- !u!114 &7459672640771352888
 MonoBehaviour:
@@ -219,7 +99,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 802868179586686657}
   - {fileID: 1670475059233778771}
   - {fileID: 2007446045403586035}
   m_Father: {fileID: 0}
@@ -276,6 +155,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1670475059233778771}
+  - component: {fileID: 4985949246556197491}
+  - component: {fileID: 1195983981876826807}
+  - component: {fileID: 5805005661260500868}
+  - component: {fileID: 1745420959692885}
   m_Layer: 0
   m_Name: Minigames
   m_TagString: Untagged
@@ -298,3 +181,76 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5086131673997378923}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4985949246556197491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848563934365303166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc9a52223ffdb146b696460d7120ba7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionsSet: {fileID: 0}
+  state: 0
+  selectedOption: {fileID: 0}
+  submitButton: {fileID: 0}
+--- !u!114 &1195983981876826807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848563934365303166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aeab6361b2d3f041bcf221daca0b11b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionSet: {fileID: 0}
+  selectedOptions: []
+  submitButton: {fileID: 0}
+  optionCards: []
+  state: 0
+--- !u!114 &5805005661260500868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848563934365303166}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ede962d669b57384d8015ad804e4f7c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  height: 9
+  width: 13
+  startVector: {x: 0, y: 1}
+  endVector: {x: 8, y: 11}
+  maxSteps: 100
+  mazeTransform: {fileID: 0}
+  neuron: {fileID: -3384411708189302445, guid: 9e0cb32d463ef2947b636512883e5d5e, type: 3}
+  connection: {fileID: 1155886742, guid: 0565129d933f6894186418c6b2b8d0b6, type: 3}
+--- !u!114 &1745420959692885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8848563934365303166}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6917038a57d4c4bae0ffa841da5c02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainConnectionsOptionSet: {fileID: 0}
+  options:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  mazeZone: {fileID: 0}
+  optionsZone: {fileID: 0}

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using Systems.EventSystem;
 using TMPro;
 using UnityEngine;
+using YGFIL.Enums;
 using YGFIL.Events;
 using YGFIL.ScriptableObjects;
 
@@ -15,6 +16,27 @@ namespace YGFIL
         private int solvedMazes;
         [SerializeField] private List<GameObject> options;
         [SerializeField] private GameObject mazeZone, optionsZone;
+        
+        [SerializeField] private MinigameState state;
+        
+        public void ChangeState() 
+        {
+            switch (state) 
+            {
+                case MinigameState.Introduction:
+
+                    break;
+                case MinigameState.Game:
+
+                    break;
+                case MinigameState.Ending:
+                
+                    break;
+                case MinigameState.Finished:
+                
+                    break;
+            }
+        }
         
         EventBinding<SolvedMazeEvent> solvedMazeEventBinding;
 

@@ -6,22 +6,42 @@ using UnityEngine.UI;
 using YGFIL.ScriptableObjects;
 using YGFIL.Minigames.Managers;
 using UnityEditor;
+using TMPro;
+using YGFIL.Databases;
+using YGFIL.Utils;
 
 namespace YGFIL.Minigames.PhaseTwo
 {
-    public class IntroductionOptionCard : MonoBehaviour, IDraggable, ISOContainer
+    public class IntroductionsOptionCard : MonoBehaviour, IDraggable, ISOContainer
     {
-        [SerializeField] private IntroductionOptionSO optionSO;
+        [SerializeField] private IntroductionsOptionSO optionSO;
         public ScriptableObject ScriptableObject { get => optionSO; set {} }
         
-        [SerializeField] private Vector3 originalPosition;
-        [SerializeField] private Transform originalParent;
+        [SerializeField] private Image image;
+        [SerializeField] private Vector2 slidePosition;
+        [SerializeField] private float slideSpeed, slideMultiplier;
+        private Coroutine slideCoroutine;
         
-        Physics physics;
+        private Vector3 originalPosition;
+        private Transform originalParent;
         
         private void Awake()
         {
             GetComponent<Image>().alphaHitTestMinimumThreshold = 0.00000000001f;
+        }
+        
+        private void Start() 
+        {
+            var index = transform.GetSiblingIndex() - 1;
+            optionSO = ((IntroductionsOptionSetSO)IntroductionsManager.Instance.ScriptableObject).Options[index];
+            
+            image.sprite = ImagesDatabase.IntroductionsSprites[optionSO.ImageIndex];
+            
+            var textIndex = Mathf.FloorToInt(optionSO.ImageIndex / 3);
+            
+            transform.GetChild(textIndex).gameObject.SetActive(true);
+            transform.GetChild(textIndex).GetComponent<TextMeshProUGUI>().color = optionSO.TextColor;
+            transform.GetChild(textIndex).GetComponent<TextMeshProUGUI>().text = optionSO.Text;
         }
         
         public void OnBeginDrag(PointerEventData eventData)
@@ -31,7 +51,6 @@ namespace YGFIL.Minigames.PhaseTwo
             
             transform.SetParent(transform.parent.transform.parent);
         }
-
         public void OnDrag(PointerEventData eventData)
         {
             var mainCanvas = transform.root.GetComponent<Canvas>();
@@ -44,7 +63,6 @@ namespace YGFIL.Minigames.PhaseTwo
             
             transform.position = mainCanvas.transform.TransformPoint(position);
         }
-
         public void OnEndDrag(PointerEventData eventData)
         {
             List<RaycastResult> hitResults = new List<RaycastResult>();
@@ -70,14 +88,35 @@ namespace YGFIL.Minigames.PhaseTwo
             transform.SetParent(hit.gameObject.transform);
             (transform as RectTransform).anchoredPosition = new Vector2(0f, 0f);
             
-            IntroductionManager.Instance.ChangeOptionStatus(optionSO, true);
-        }
-        
+            IntroductionsManager.Instance.ChangeOptionStatus(optionSO, true);
+        }    
         private void DroppedOnMenu(RaycastResult hit) 
         {
             transform.SetParent(hit.gameObject.transform);
             
-            IntroductionManager.Instance.ChangeOptionStatus(optionSO, false);
+            IntroductionsManager.Instance.ChangeOptionStatus(optionSO, false);
+        }
+    
+        public void Slide() 
+        {
+            Debug.Log($"Sliding card {name}");
+            
+            slideCoroutine = StartCoroutine(SlideUtils.SlideCoroutineWithAnchoredPosition(gameObject, slidePosition, slideSpeed, slideMultiplier));
+        }
+        public bool IsSliding() => Mathf.Abs(slidePosition.y - (transform as RectTransform).anchoredPosition.y) > 10;
+    
+    }
+
+#if UNITY_EDITOR
+    [CustomEditor(typeof(IntroductionsOptionCard))]
+    public class IntroductionsOptionCardEditor : Editor 
+    {
+        public override void OnInspectorGUI() 
+        {
+            base.OnInspectorGUI();
+            
+            if(GUILayout.Button("Slide")) ((IntroductionsOptionCard)target).Slide();
         }
     }
+#endif
 }

@@ -112,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MrBones_0
+      name: Caster_1Neutral
       rect:
         serializedVersion: 2
         x: 0
@@ -120,7 +120,7 @@ TextureImporter:
         width: 602
         height: 544
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,7 +134,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MrBones_1
+      name: Caster_3Dislike
       rect:
         serializedVersion: 2
         x: 602
@@ -142,7 +142,7 @@ TextureImporter:
         width: 602
         height: 544
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,7 +156,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MrBones_2
+      name: Caster_5Excited
       rect:
         serializedVersion: 2
         x: 1204
@@ -164,7 +164,7 @@ TextureImporter:
         width: 602
         height: 544
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MrBones_3
+      name: Caster_2Happy
       rect:
         serializedVersion: 2
         x: 602
@@ -186,7 +186,7 @@ TextureImporter:
         width: 602
         height: 544
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -200,7 +200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MrBones_4
+      name: Caster_4Surprised
       rect:
         serializedVersion: 2
         x: 1204
@@ -208,7 +208,7 @@ TextureImporter:
         width: 602
         height: 544
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -235,11 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MrBones_0: 12675953
-      MrBones_1: 612333909
-      MrBones_2: 1463436271
-      MrBones_3: -955061770
-      MrBones_4: 103636184
+      Caster_1Neutral: 12675953
+      Caster_2Happy: -955061770
+      Caster_3Dislike: 612333909
+      Caster_4Surprised: 103636184
+      Caster_5Excited: 1463436271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

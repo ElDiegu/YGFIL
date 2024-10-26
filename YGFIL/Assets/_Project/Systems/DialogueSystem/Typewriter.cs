@@ -7,7 +7,7 @@ using UnityEngine;
 using YGFIL;
 using YGFIL.Managers;
 
-namespace Systems
+namespace YGFIL.Systems
 {
     public class Typewriter : MonoBehaviour
     {
@@ -50,7 +50,7 @@ namespace Systems
             
             EventBus<OnTypweWriterFinishEvent>.Raise(new OnTypweWriterFinishEvent() 
             {
-                isEnd = dialog.Tag == "End",
+                isEnd = dialog.Tag.Contains("End"),
                 nextID = dialog.NextID
             });
         }

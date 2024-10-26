@@ -17,7 +17,6 @@ namespace YGFIL.Monsters
         
         EventBinding<UpdateLoveValueEvent> updateLoveValueEventBinding;
         
-#region Unity Methods
         private void OnEnable()
         {
             updateLoveValueEventBinding = new EventBinding<UpdateLoveValueEvent>(UpdateLoveValue);
@@ -28,11 +27,10 @@ namespace YGFIL.Monsters
         {
             EventBus<UpdateLoveValueEvent>.Deregister(updateLoveValueEventBinding);
         }
-#endregion
 
         private void Awake()
         {
-            monsterType = monsterSO.monsterType;
+            monsterType = monsterSO.MonsterType;
         }
 
         public void UpdateLoveValue(UpdateLoveValueEvent updateLoveValueEvent) 

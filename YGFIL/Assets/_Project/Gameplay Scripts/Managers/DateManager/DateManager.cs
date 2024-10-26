@@ -5,6 +5,7 @@ using UnityEngine;
 using YGFIL.Enums;
 using YGFIL.Events;
 using YGFIL.Minigames.Managers;
+using YGFIL.Monsters;
 using YGFIL.Systems;
 
 namespace YGFIL.Managers
@@ -16,6 +17,7 @@ namespace YGFIL.Managers
         
         [SerializeField] private List<GameObject> minigameObjects;
         [SerializeField] private GameObject blockingImage;
+        [field: SerializeField] public Monster Monster { get; private set; }
         
         protected override void Awake()
         {
@@ -34,8 +36,10 @@ namespace YGFIL.Managers
                     StartCoroutine(IntroducctionCoroutine());
                     break;
                 case DatePhase.MinigameOne:
-                    //ActivateMinigame(0);
                     IceBreakingManager.Instance.ChangeState(MinigameState.Introduction);
+                    break;
+                case DatePhase.MinigameTwo:
+                    IntroductionsManager.Instance.ChangeState(MinigameState.Introduction);
                     break;
             }
         }
@@ -56,12 +60,13 @@ namespace YGFIL.Managers
         
         public void ActivateMinigame(int index) 
         {
-            EventBus<OnStartingMinigameEvent>.Raise(new OnStartingMinigameEvent(){});
+            foreach (GameObject minigame in minigameObjects) minigame.SetActive(false);
+            minigameObjects[index].SetActive(true);
         }
         
         public void SetInteraction(bool state) 
         {
-            blockingImage.SetActive(state);
+            blockingImage.SetActive(!state);
         }
     }
     

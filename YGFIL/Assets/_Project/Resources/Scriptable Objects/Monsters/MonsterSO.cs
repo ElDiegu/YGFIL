@@ -11,6 +11,9 @@ namespace YGFIL.ScriptableObjects
         
         [field: SerializeField]
         public string Name { get; private set; }
+        
+        [field: SerializeField]
+        public float StartingLove { get; private set; }
 
         [field: SerializeField]
         public float LoveThreshold { get; private set; }
@@ -22,6 +25,12 @@ namespace YGFIL.ScriptableObjects
         public GameObject Prefab { get; set; }
         
         [field: SerializeField]
-        public MonsterType monsterType { get; private set; }
+        public MonsterType MonsterType { get; private set; }
+        
+        [field: SerializeField]
+        public IceOptionSetSO IceBreakingOptionSet { get; private set; }
+
+        [field: SerializeField]
+        public IntroductionsOptionSetSO IntroductionsOptionSet { get; set; }
     }
 }
