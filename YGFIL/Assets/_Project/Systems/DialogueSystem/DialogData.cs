@@ -43,6 +43,12 @@ namespace YGFIL.Enums
         IceBreaking_Bad,
         Introductions_Start,
         Introductions_Good,
-        Introductions_Bad
+        Introductions_Bad,
+        Brain_Start,
+        Brain_End,
+        Brain_One,
+        Brain_Two,
+        Brain_Three,
+        Brain_Four
     }
 }
