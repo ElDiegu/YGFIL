@@ -27,10 +27,14 @@ namespace YGFIL.Systems
                 
                 int nextID = -1;
                 if(int.TryParse(row[4], out int number)) nextID = number;
-                 
-                string tag = row[5];
+                
+                
+                List<string> tags = new List<string>();
+                for (int j = 5; j < row.Length; j++) if(row[j] != "") tags.Add(row[j]);
+                
+                Debug.Log(row[6]);
 
-                DialogData dialogue = new DialogData(id, monster, expression, text, nextID, tag);
+                DialogData dialogue = new DialogData(id, monster, expression, text, nextID, tags);
 
                 data.Add(dialogue);
             }

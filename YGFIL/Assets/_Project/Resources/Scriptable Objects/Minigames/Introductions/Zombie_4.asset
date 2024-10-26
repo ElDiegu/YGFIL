@@ -9,8 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78794c80b6d29c248a9f728d3dddf232, type: 3}
-  m_Name: IceTestSO
+  m_Script: {fileID: 11500000, guid: 597bc8538cb6b834a872e1dc1a913bb0, type: 3}
+  m_Name: Zombie_4
   m_EditorClassIdentifier: 
-  <Images>k__BackingField: []
+  <ImageIndex>k__BackingField: 0
+  <Text>k__BackingField: "Las pel\xEDculas de zombies"
+  <TextColor>k__BackingField: {r: 0.2784314, g: 0.1882353, b: 0.4117647, a: 1}
   <LoveValue>k__BackingField: 0

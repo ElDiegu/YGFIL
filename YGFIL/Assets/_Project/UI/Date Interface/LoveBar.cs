@@ -69,6 +69,8 @@ namespace YGFIL
             Debug.Log(loveThreshold / 100 + " " + position);
 
             loveThresholdTransform.anchoredPosition = new Vector3(0f, position, 0f);
+            
+            loveSlider.value = monsterSO.StartingLove;
         }
 
         private void UpdateLoveValue(LoveValueUpdatedEvent loveValueUpdatedEvent)
@@ -117,6 +119,8 @@ namespace YGFIL
         {
             animator.Play(show ? "ShowLoveBarAnimation" : "HideLoveBarAnimation");
         }
+        
+        public bool IsMoving() => loveBarCoroutine != null;
     }
     
 #if UNITY_EDITOR

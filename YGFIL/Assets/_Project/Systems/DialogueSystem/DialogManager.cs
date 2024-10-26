@@ -21,8 +21,8 @@ namespace YGFIL.Systems
         [SerializeField] private Typewriter typewriter;
         
         private List<DialogData> dialogList;
-        private bool writing, endDialog;
-        public bool dialogState;
+        [SerializeField] private bool writing, endDialog;
+        [SerializeField] public bool dialogState;
         private int nextID = -1;
         
 #region Events
@@ -63,6 +63,8 @@ namespace YGFIL.Systems
         
         private void Update()
         {
+            if (!dialogState) return;
+            
             var input = InputManager.Instance.GetInput();
             
             if (input.LeftClick && writing) 
@@ -83,7 +85,7 @@ namespace YGFIL.Systems
         
         public void PlayDialog(string tag) 
         {
-            var dialog = dialogList.Where( dialog => dialog.Tag == tag).FirstOrDefault();
+            var dialog = dialogList.Where( dialog => dialog.Tag.Contains (tag)).FirstOrDefault();
             
             PlayDialog(dialogList.IndexOf(dialog));
         }
@@ -91,6 +93,9 @@ namespace YGFIL.Systems
         public void PlayDialog(int dialogIndex) 
         {
             if (dialogIndex > dialogList.Count - 1 || writing) return;
+            
+            endDialog = false;
+            dialogState = true;
             
             Debug.Log($"Playing Dialog with ID {dialogIndex}");
             
@@ -154,12 +159,3 @@ namespace YGFIL.Systems
 #endif
 }
 
-namespace YGFIL.Enums 
-{
-    public enum DialogTag 
-    {
-        End,
-        IceBreaking_Start,
-        IceBreaking_End
-    }
-}
