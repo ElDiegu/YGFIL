@@ -1,31 +1,42 @@
-id	monster	expression	text	next_id	tag
-0	Caster	Neutral	¡Bienvenidos a una nueva edición de You're Gonna Fall: In Love!	1	IceBreaking_Start
-1	Caster	Neutral	Como cada año, los humanos envían a su elegido para enfrentarse a nuestros encantadores monstruos y, con suerte, encontrar el amor. ¿Caerá el concursante en las garras del amor? 	2	
-2	Caster	Neutral	Atiende humano, voy a explicarte cómo funcionan las diferentes fases de una cita. Así que presta mucha atención, al fin y al cabo tu desenlace amoroso depende de ello.	3	
-3	Caster	Neutral	Aquí mi carnoso amigo deberás romper los hielos para conseguir las posibles respuestas que te ayudarán a romper el hielo con tu monstruosa cita.	4	
-4	Caster	Neutral	Así que date prisa y ponte a picar, ya que deberás seleccionar la que mejor te venga.		End
-5	Caster	Neutral	!Hey!, llega el momento de presentarse, toma la carta y selecciona los gustos que más te ayuden a superar esta cita.	6	Tutorial
-6	Caster	Neutral	Una vez los selecciones arrastralos a los huecos superiores para completar la frase de Me gusta _______ También ________ Y además _________.		Tutorial
-7	Caster	Neutral	!!!Piensa rápido humano!!! Vas a tener que completar una serie de laberintos para conseguir ideas que te hagan salir de esta.	8	Tutorial
-8	Caster	Neutral	Pero tranquilo, cuantos más laberintos completes más opciones tendrás para escoger.		Tutorial
-9	Caster	Neutral	!!!Upsss!!!, nunca dije que nuestros monstruos no fueran algo patosos.	10	Tutorial
-10	Caster	Neutral	Toma esta servilletina rey, intenta limpiarte y responder la frase del monstruo seleccionando la opción que creas más conveniente.		Tutorial
-11	Caster	Neutral	Por último pero no menos importante toca el test de afinidad, de hecho es lo más importante, así que presta atención.	12	Tutorial
-12	Caster	Neutral	Responde a estas tres preguntas que ya han sido previamente respondidas por nuestro encantador monstruo, así sabremos cuánta química hay entre ustedes.	13	Tutorial
-13	Caster	Neutral	Y ten en cuenta que estas preguntas te acercarán o alejarán el doble de tu amor verdadero, !!Piensa bien la respuesta!!.		Tutorial
-14	MainCharacter	Neutral	La verdad es que esto es un poco sorpresa para mí, ayer mismo ni me imaginaba que los zombies existiesen.		
-15	Zombie	Neutral	Buah, habrá sido un shock para tí. Pero la verdad es que lo mejor para vosotros humanos es que no conozcáis sobre nosotros jaja…		
-16	MainCharacter	Neutral	Te quería preguntar, ¿es la primera vez que estás en una cita de este programa?		
-17	Zombie	Happy	Sí, así es. Nunca antes había venido, pero la vida de un muerto es aburrida, así que he decidido probar. La tuya también es la primera ¿no? Ya tenemos algo en común jajaja.		
-18	MainCharacter	Neutral	Oye, ¿no seré yo tu cena de esta noche, no? De dónde vengo los zombies teneis mala fama…		
-19	Zombie	Dislike	Otro igual… ¿Tú crees que eres el primero que me dice algo así? Ni te imaginas la cantidad de prejuicios y fake news que hay sobre nosotros…		
-20	Zombie	Neutral	Bueno, bueno, no perdamos la cabeza. Me llamo Pedro, Pedro Podrido y mis gustos son cryptos, cerebros y frikadas... en ese orden. ¿Qué hay de ti?		
-21	Zombie	Happy	Me gusta como piensas, contigo jugaría unos Arams		
-22	Zombie	Dislike	Eres peor que un error en el blockchain... ni con un reinicio arreglamos esto.		
-23	Zombie	Neutral	¿Qué prefieres: un apocalipsis zombie o un colapso del mercado cripto? Yo ya viví ambos y no sé cuál es peor…		
-24	Zombie	Neutral	Te quería preguntar….		
-25	Zombie	Neutral	Bueno, conozco a algunos amigos de ahí, pero prefiero mucho más quedarme en casa.		
-26	Zombie	Dislike	Tienes un gusto horrible. Si no se me hubieran podrido las orejas ya hace mucho me las arrancaría antes de ir a eso.		
-27	Zombie	Happy	Me parece un plan perfecto, tu y yo en la grieta del invocador. No sé, piensalo.		
-28	Zombie	Happy	Veo un gran futuro contigo, definitivamente voy a invertir mi tiempo en tí.		
-29	Zombie	Dislike	No sé cómo lo haces pero contigo me siento más muerto de lo que ya estoy. Adiós.		
+id	monster	expression	text	next_id	tag	tag
+0	Caster	Neutral	¡Bienvenidos a una nueva edición de You're Gonna Fall: In Love!	1	IceBreaking_Start	
+1	Caster	Neutral	Como cada año, los humanos envían a su elegido para enfrentarse a nuestros encantadores monstruos y, con suerte, encontrar el amor. ¿Caerá el concursante en las garras del amor? 	2		
+2	Caster	Neutral	Atiende humano, voy a explicarte cómo funcionan las diferentes fases de una cita. Así que presta mucha atención, al fin y al cabo tu desenlace amoroso depende de ello.	3		
+3	Caster	Neutral	Aquí mi carnoso amigo deberás romper los hielos para conseguir las posibles respuestas que te ayudarán a romper el hielo con tu monstruosa cita.	4		
+4	Caster	Neutral	Así que date prisa y ponte a picar, ya que deberás seleccionar la que mejor te venga.		End	
+5	Caster	Neutral	!Hey!, llega el momento de presentarse, toma la carta y selecciona los gustos que más te ayuden a superar esta cita.	6	Introductions_Start	
+6	Caster	Neutral	Una vez los selecciones arrastralos a los huecos superiores para completar la frase de Me gusta _______ También ________ Y además _________.	20		
+7	Caster	Neutral	!!!Piensa rápido humano!!! Vas a tener que completar una serie de laberintos para conseguir ideas que te hagan salir de esta.	8		
+8	Caster	Neutral	Pero tranquilo, cuantos más laberintos completes más opciones tendrás para escoger.		End	
+9	Caster	Neutral	!!!Upsss!!!, nunca dije que nuestros monstruos no fueran algo patosos.	10		
+10	Caster	Neutral	Toma esta servilletina rey, intenta limpiarte y responder la frase del monstruo seleccionando la opción que creas más conveniente.		End	
+11	Caster	Neutral	Por último pero no menos importante toca el test de afinidad, de hecho es lo más importante, así que presta atención.	12		
+12	Caster	Neutral	Responde a estas tres preguntas que ya han sido previamente respondidas por nuestro encantador monstruo, así sabremos cuánta química hay entre ustedes.	13		
+13	Caster	Neutral	Y ten en cuenta que estas preguntas te acercarán o alejarán el doble de tu amor verdadero, !!Piensa bien la respuesta!!.			
+14	MainCharacter	Neutral	La verdad es que esto es un poco sorpresa para mí, ayer mismo ni me imaginaba que los zombies existiesen.	15	IceBreaking_Neutral	
+15	Zombie	Neutral	Buah, habrá sido un shock para tí. Pero la verdad es que lo mejor para vosotros humanos es que no conozcáis sobre nosotros jaja…		End	
+16	MainCharacter	Neutral	Te quería preguntar, ¿es la primera vez que estás en una cita de este programa?	17	IceBreaking_Good	
+17	Zombie	Happy	Sí, así es. Nunca antes había venido, pero la vida de un muerto es aburrida, así que he decidido probar. La tuya también es la primera ¿no? Ya tenemos algo en común jajaja.		End	
+18	MainCharacter	Neutral	Oye, ¿no seré yo tu cena de esta noche, no? De dónde vengo los zombies teneis mala fama…	19	IceBreaking_Bad	
+19	Zombie	Dislike	Otro igual… ¿Tú crees que eres el primero que me dice algo así? Ni te imaginas la cantidad de prejuicios y fake news que hay sobre nosotros…		End	
+20	Zombie	Neutral	Bueno, bueno, no perdamos la cabeza. Me llamo Pedro, Pedro Podrido y mis gustos son cryptos, cerebros y frikadas... en ese orden. ¿Qué hay de ti?		End	
+21	Zombie	Happy	Me gusta como piensas, contigo jugaría unos Arams		Introductions_Good	End
+22	Zombie	Dislike	Eres peor que un error en el blockchain... ni con un reinicio arreglamos esto.		Introductions_Bad	End
+23	Zombie	Neutral	¿Qué prefieres: un apocalipsis zombie o un colapso del mercado cripto? Yo ya viví ambos y no sé cuál es peor…			
+24	Zombie	Neutral	Te quería preguntar….			
+25	Zombie	Neutral	Bueno, conozco a algunos amigos de ahí, pero prefiero mucho más quedarme en casa.			
+26	Zombie	Dislike	Tienes un gusto horrible. Si no se me hubieran podrido las orejas ya hace mucho me las arrancaría antes de ir a eso.			
+27	Zombie	Happy	Me parece un plan perfecto, tu y yo en la grieta del invocador. No sé, piensalo.			
+28	Zombie	Happy	Veo un gran futuro contigo, definitivamente voy a invertir mi tiempo en tí.			
+29	Zombie	Dislike	No sé cómo lo haces pero contigo me siento más muerto de lo que ya estoy. Adiós.			
+30	Caster	Neutral	Esa respuesta me congeló hasta los huesos.		Frases Genericas	
+31	Caster	Neutral	Esa respuesta fue tan fría que sentí como si me enterraran en una tumba... otra vez jeje.		Frases Genericas	
+32	Caster	Neutral	Me alegra ver que la química entre nuestros participantes está viva... más de lo que puedo decir de algunos por aquí.		Frases Genericas	
+33	Caster	Neutral	Esa cita fue tan intensa que me dejó sin aliento... bueno, técnicamente nunca lo tuve, ¡pero ya me entienden!		Frases Genericas	
+34	Caster	Neutral	Acaso habra logrado llegar a ese monstruoso corazón con sus palabras.		Frases Genericas	
+35	Caster	Neutral	Ay, ay, ay... parece que alguien ha despertado sentimientos ¡y no de los buenos!		Frases Genericas	
+36	Caster	Neutral	Ay, ay… esas palabras me atravesaron más fuerte que una estaca.		Frases Genericas	
+37	Caster	Neutral	Eso tuvo tanto drama que hasta las almas en pena están sintiendo envidia.		Frases Genericas	
+38	Caster	Neutral	¡Eso sí que fue directo al corazón… bueno, a los restos que quedan de él!		Frases Genericas	
+39	Caster	Neutral	¡Uff, eso me dejó sin palabras, y eso que yo siempre tengo algo que decir!		Frases Genericas	
+40	Caster	Neutral	¡Esas palabras tienen más filo que una navaja en plena noche! y no estamos en Barcelona		Frases Genericas	
