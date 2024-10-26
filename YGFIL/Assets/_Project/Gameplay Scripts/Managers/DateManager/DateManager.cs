@@ -41,6 +41,9 @@ namespace YGFIL.Managers
                 case DatePhase.MinigameTwo:
                     IntroductionsManager.Instance.ChangeState(MinigameState.Introduction);
                     break;
+                case DatePhase.MinigameThree:
+                    BrainConnectionsManager.Instance.ChangeState(MinigameState.Introduction);
+                    break;
             }
         }
         
@@ -55,7 +58,7 @@ namespace YGFIL.Managers
             
             while (UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
-            ChangePhase(DatePhase.MinigameOne);
+            ChangePhase(DatePhase.MinigameThree);
         }
         
         public void ActivateMinigame(int index) 

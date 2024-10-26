@@ -11,7 +11,7 @@ using YGFIL.Utils;
 
 namespace YGFIL.Managers.Minigames
 {
-    public class MazeManager : MonoBehaviour
+    public class MazeManager : StaticInstance<MazeManager>
     {
         [SerializeField] private int height, width;
         [SerializeField] private Vector2Int startVector;
