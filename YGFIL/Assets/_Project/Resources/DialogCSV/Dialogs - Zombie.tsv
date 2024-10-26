@@ -6,8 +6,8 @@ id	monster	expression	text	next_id	tag	tag
 4	Caster	Neutral	Así que date prisa y ponte a picar, ya que deberás seleccionar la que mejor te venga.		End	
 5	Caster	Neutral	!Hey!, llega el momento de presentarse, toma la carta y selecciona los gustos que más te ayuden a superar esta cita.	6	Introductions_Start	
 6	Caster	Neutral	Una vez los selecciones arrastralos a los huecos superiores para completar la frase de Me gusta _______ También ________ Y además _________.	20		
-7	Caster	Neutral	!!!Piensa rápido humano!!! Vas a tener que completar una serie de laberintos para conseguir ideas que te hagan salir de esta.	8		
-8	Caster	Neutral	Pero tranquilo, cuantos más laberintos completes más opciones tendrás para escoger.		End	
+7	Caster	Neutral	!!!Piensa rápido humano!!! Vas a tener que completar una serie de laberintos para conseguir ideas que te hagan salir de esta.	8	Brain_Start	
+8	Caster	Neutral	Pero tranquilo, cuantos más laberintos completes más opciones tendrás para escoger.	24		
 9	Caster	Neutral	!!!Upsss!!!, nunca dije que nuestros monstruos no fueran algo patosos.	10		
 10	Caster	Neutral	Toma esta servilletina rey, intenta limpiarte y responder la frase del monstruo seleccionando la opción que creas más conveniente.		End	
 11	Caster	Neutral	Por último pero no menos importante toca el test de afinidad, de hecho es lo más importante, así que presta atención.	12		
@@ -22,8 +22,8 @@ id	monster	expression	text	next_id	tag	tag
 20	Zombie	Neutral	Bueno, bueno, no perdamos la cabeza. Me llamo Pedro, Pedro Podrido y mis gustos son cryptos, cerebros y frikadas... en ese orden. ¿Qué hay de ti?		End	
 21	Zombie	Happy	Me gusta como piensas, contigo jugaría unos Arams		Introductions_Good	End
 22	Zombie	Dislike	Eres peor que un error en el blockchain... ni con un reinicio arreglamos esto.		Introductions_Bad	End
-23	Zombie	Neutral	¿Qué prefieres: un apocalipsis zombie o un colapso del mercado cripto? Yo ya viví ambos y no sé cuál es peor…			
-24	Zombie	Neutral	Te quería preguntar….			
+23	Zombie	Neutral	¿Qué prefieres: un apocalipsis zombie o un colapso del mercado cripto? Yo ya viví ambos y no sé cuál es peor…		End	
+24	Zombie	Neutral	Te quería preguntar….	23		
 25	Zombie	Neutral	Bueno, conozco a algunos amigos de ahí, pero prefiero mucho más quedarme en casa.			
 26	Zombie	Dislike	Tienes un gusto horrible. Si no se me hubieran podrido las orejas ya hace mucho me las arrancaría antes de ir a eso.			
 27	Zombie	Happy	Me parece un plan perfecto, tu y yo en la grieta del invocador. No sé, piensalo.			
@@ -40,3 +40,9 @@ id	monster	expression	text	next_id	tag	tag
 38	Caster	Neutral	¡Eso sí que fue directo al corazón… bueno, a los restos que quedan de él!		Frases Genericas	
 39	Caster	Neutral	¡Uff, eso me dejó sin palabras, y eso que yo siempre tengo algo que decir!		Frases Genericas	
 40	Caster	Neutral	¡Esas palabras tienen más filo que una navaja en plena noche! y no estamos en Barcelona		Frases Genericas	
+41	MainCharacter	Neutral	El colapso de las criptomonedas sería una auténtica pesadilla en Wall Street...	45	Brain_One	
+42	MainCharacter	Neutral	El apocalipsis zombie sería muy fácil, ninguno sabe correr. Sin ánimo de ofender...	46	Brain_Two	
+43	MainCharacter	Neutral	No sabría escoger... Las dos opciones parecen terroríficas.	45	Brain_Three	
+44	MainCharacter	Neutral	Las dos son horribles, imagínate todas las calles llenas de cabezahuecas...	46	Brain_Four	
+45	Zombie	Happy	¡¡¡Aghhhhhh!!! Tienes toda la razón...		End	
+46	Zombie	Dislike	Bah, tienes cerebro de ignorante...		End	

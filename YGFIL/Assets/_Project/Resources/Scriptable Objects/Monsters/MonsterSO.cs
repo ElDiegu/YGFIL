@@ -32,5 +32,8 @@ namespace YGFIL.ScriptableObjects
 
         [field: SerializeField]
         public IntroductionsOptionSetSO IntroductionsOptionSet { get; set; }
+        
+        [field: SerializeField]
+        public BrainConnectionsOptionSetSO BrainConnectionsOptionSet { get; private set;}
     }
 }

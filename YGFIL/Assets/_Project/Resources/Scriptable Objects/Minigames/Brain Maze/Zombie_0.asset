@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8764b0ec4080d44b42317aba2d2330, type: 3}
   m_Name: Zombie_0
   m_EditorClassIdentifier: 
-  <Text>k__BackingField: 
-  <LoveValue>k__BackingField: 0
+  <Text>k__BackingField: "El colapso de las criptos ser\xEDa una pesadilla"
+  <LoveValue>k__BackingField: 5
