@@ -9174,6 +9174,18 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 10997473
       objectReference: {fileID: 0}
+    - target: {fileID: 673853020925004139, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 885626971144690761, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 968529837343797834, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1000
+      objectReference: {fileID: 0}
     - target: {fileID: 2359460588341974426, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
       propertyPath: m_fontColor.a
       value: 1
@@ -9185,6 +9197,14 @@ PrefabInstance:
     - target: {fileID: 2889270270705935616, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 10997729
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072531112695711375, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -920
+      objectReference: {fileID: 0}
+    - target: {fileID: 3494076622956646683, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -800
       objectReference: {fileID: 0}
     - target: {fileID: 5223937667093743290, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9226,13 +9246,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5452250133475214034, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
+      propertyPath: optionsSet
+      value: 
+      objectReference: {fileID: 11400000, guid: 68d0fdfed8323764bbcf673496006e99, type: 2}
+    - target: {fileID: 5560759674316611477, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -920
+      objectReference: {fileID: 0}
     - target: {fileID: 7419770782839166963, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
       propertyPath: m_Name
       value: Phase4Game
       objectReference: {fileID: 0}
     - target: {fileID: 7419770782839166963, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7589635233169550912, guid: 4d378060e04874645a11d8303a74fca2, type: 3}
       propertyPath: m_Color.a

@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using YGFIL.Minigames.Managers;
+using YGFIL.ScriptableObjects;
+using YGFIL.Enums;
 
 namespace YGFIL
 {
@@ -11,33 +14,15 @@ namespace YGFIL
         [SerializeField] private TMP_Text[] optionButtonTexts;
         [SerializeField] private Button submitButton;
 
-        int[] options = {0, 1, -1};
+        [SerializeField] private Phase4OptionSetSO optionsSet;
         int currentOption = -1;
 
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        private void Start()
         {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
-
-        private void OnEnable()
-        {
-            SetQuestion();
-        }
-
-
-        private void SetQuestion()
-        {
-            textGame4.text = "Coso que contar: _______";
-            for (int i = 0; i < options.Length; i++)
+            textGame4.text = optionsSet.CardText;
+            for (int i = 0; i < 3; i++)
             {
-                optionButtonTexts[i].text = "opsion " + i;
+                optionButtonTexts[i].text = optionsSet.Options[i].Text;
             }
         }
 
@@ -47,28 +32,10 @@ namespace YGFIL
             fillText.text = optionButtonTexts[optionClicked].text;
             submitButton.enabled = true;
         }
-
         public void OnSubmitButtonPressed() 
         {
-            switch (options[currentOption]) 
-            {
-                case 1:
-
-                    break;
-
-                case -1:
-
-                    break;
-
-                case 0:
-
-                    break;
-            }
-
-            this.gameObject.SetActive(false);
-            //FindAnyObjectByType<DialogueManager>().EnableDialogueSystem();
-            //FindAnyObjectByType<DialogueManager>().NextDialogue();
-            //end Fase 4
+            submitButton.enabled = false;
+            Phase4GameManager.Instance.SubmitOption(currentOption);
         }
     }
 }

@@ -9,7 +9,7 @@ using YGFIL.Systems;
 
 namespace YGFIL.Minigames.Managers
 {
-    public class Phase4GameManager : StaticInstance<IceBreakingManager>, ISOContainer
+    public class Phase4GameManager : StaticInstance<Phase4GameManager>, ISOContainer
     {
         [SerializeField] private Phase4OptionSetSO optionsSet;
         public ScriptableObject ScriptableObject { get => optionsSet; set {} }
@@ -17,17 +17,12 @@ namespace YGFIL.Minigames.Managers
         [SerializeField] private MinigameState state;
 
         [SerializeField] private Phase4OptionSO selectedOption;
-        [SerializeField] private GameObject submitButton;
         
-        public void ChangeSelectedOption(Phase4OptionSO option) 
-        {
-            submitButton.SetActive(true);
-            selectedOption = option;
-        }
 
-        public void SubmitOption() 
+        public void SubmitOption(int indexOption) 
         {
             ChangeState(MinigameState.Ending);
+            selectedOption = optionsSet.Options[indexOption];
         }
         
         public void ChangeState(MinigameState newState) 
@@ -55,7 +50,7 @@ namespace YGFIL.Minigames.Managers
         
         private IEnumerator IntroductionCoroutine() 
         {
-            DialogManager.Instance.PlayDialog(DialogTag.IceBreaking_Start.ToString());//Cambiar
+            DialogManager.Instance.PlayDialog(DialogTag.Phase4_Start.ToString());
             
             while (DialogManager.Instance.dialogState) yield return null;
             
@@ -73,8 +68,6 @@ namespace YGFIL.Minigames.Managers
         
         private IEnumerator EndingCoroutine() 
         {
-            submitButton.SetActive(false);
-            
             EventBus<PlayAnimationEvent>.Raise(new PlayAnimationEvent()
             {
                 animationString = "HidePhase4"
@@ -84,18 +77,18 @@ namespace YGFIL.Minigames.Managers
             
             while(UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
-            DialogTag result = DialogTag.IceBreaking_Neutral;
+            DialogTag result = DialogTag.Phase4_Neutral;
             
             switch (selectedOption.LoveValue) 
             {
                 case 5:
-                    result = DialogTag.IceBreaking_Good;
+                    result = DialogTag.Phase4_Good;
                     break;
                 case 3:
-                    result = DialogTag.IceBreaking_Neutral;
+                    result = DialogTag.Phase4_Neutral;
                     break;
                 case -2:
-                    result = DialogTag.IceBreaking_Bad;
+                    result = DialogTag.Phase4_Bad;
                     break;
             }
             
@@ -115,7 +108,7 @@ namespace YGFIL.Minigames.Managers
             
             yield return null;
             
-            DateManager.Instance.ChangePhase(DatePhase.MinigameTwo);
+            DateManager.Instance.ChangePhase(DatePhase.MinigameFive);
         }
     }
 }
