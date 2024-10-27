@@ -9,7 +9,7 @@ using YGFIL.Monsters;
 
 namespace YGFIL
 {
-    public class MonsterSelectorManager : StaticInstance<MonsterSelectorManager>
+    public class MonsterSelectorManager : PersistentSingleton<MonsterSelectorManager>
     {
         [SerializeField] private List<SelectionDisplayed> monstersSelections;
 
