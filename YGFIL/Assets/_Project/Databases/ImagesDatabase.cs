@@ -13,6 +13,7 @@ namespace YGFIL.Databases
         {
             {0, new Sprite[4]}, {1, new Sprite[4]}, {2, new Sprite[4]}, {3, new Sprite[4]},
         };
+        public static List<Sprite> DialogSprites { get; private set; } = new List<Sprite>();
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
         private static void PopulateDatabase() 
@@ -27,6 +28,8 @@ namespace YGFIL.Databases
                 
                 IceSprites[int.Parse(info[1])][int.Parse(info[2])] = iceImage;
             }
+            
+            DialogSprites = Resources.LoadAll<Sprite>("Art/UI/").Where(sprite => sprite.name.Contains("DialogUI")).ToList();
         }
     }
 }

@@ -7,9 +7,6 @@ namespace YGFIL.ScriptableObjects
     public class IceOptionSO : ScriptableObject 
     {
         [field: SerializeField]
-        public List<Sprite> Images { get; private set; }
-        
-        [field: SerializeField]
         public int NoteType { get; private set; }
         
         [field: SerializeField]

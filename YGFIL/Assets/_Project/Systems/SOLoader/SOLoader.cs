@@ -16,17 +16,60 @@ namespace YGFIL.Systems
             "IceOption"
         };
         
+        public static Dictionary<string, bool> DirtyDictionary = new Dictionary<string, bool>() 
+        {
+            {"IceBreakingSO", false},
+            {"IntroductionsOptionSO", false},
+            {"BrainMazeOptionSO", false},
+            {"Phase4Option", false},
+            {"AffinityTestOption", false}
+        };
+
+#if UNITY_EDITOR        
         [InitializeOnLoadMethod]
         public static void LoadAllSO() 
         {
-            LoadIceOption(loadingPath, savingPath);
+            if (DirtyDictionary["IceBreakingSO"]) LoadIceOption(loadingPath, savingPath);
+            if (DirtyDictionary["IntroductionsOptionSO"]) LoadIntroductionsSO(loadingPath, savingPath);
+            if (DirtyDictionary["BreainMazeOptionSO"]) LoadBrainMazeSO(loadingPath, savingPath);
+            if (DirtyDictionary["Phase4Option"]) LoadPhase4SO(loadingPath, savingPath);
+            if (DirtyDictionary["AffinityTestOption"]) LoadAffinityTestSO(loadingPath, savingPath);
         }
-        
+#endif
+
         public static void LoadIceOption(string loadingPath, string savingPath) 
         {
             var parsedData = FileParser.ParseFile(loadingPath + "IceOptionSO.tsv", "\t");
             
             for (int i = 1; i < parsedData.Count; i++) AssetDatabase.CreateAsset(new IceOptionSO(parsedData[i]), savingPath + "IceBreaking/" + parsedData[i][0] + ".asset");
+        }
+        
+        public static void LoadIntroductionsSO(string loadingPath, string savingPath) 
+        {
+            var parsedData = FileParser.ParseFile(loadingPath + "IntroductionsOptionSO.tsv", "\t");
+            
+            for (int i = 1; i < parsedData.Count; i++) AssetDatabase.CreateAsset(new IceOptionSO(parsedData[i]), savingPath + "Introductions/" + parsedData[i][0] + ".asset");
+        }
+        
+        public static void LoadBrainMazeSO(string loadingPath, string savingPath) 
+        {
+            var parsedData = FileParser.ParseFile(loadingPath + "BrainMazeOptionsSO.tsv", "\t");
+            
+            for (int i = 1; i < parsedData.Count; i++) AssetDatabase.CreateAsset(new IceOptionSO(parsedData[i]), savingPath + "Brain Maze/" + parsedData[i][0] + ".asset");
+        }
+        
+        public static void LoadPhase4SO(string loadingPath, string savingPath) 
+        {
+            var parsedData = FileParser.ParseFile(loadingPath + "Phase4OptionSO.tsv", "\t");
+            
+            for (int i = 1; i < parsedData.Count; i++) AssetDatabase.CreateAsset(new IceOptionSO(parsedData[i]), savingPath + "Phase4/" + parsedData[i][0] + ".asset");
+        }
+        
+        public static void LoadAffinityTestSO(string loadingPath, string savingPath) 
+        {
+            var parsedData = FileParser.ParseFile(loadingPath + "AffinityTestQuestionSO.tsv", "\t");
+            
+            for (int i = 1; i < parsedData.Count; i++) AssetDatabase.CreateAsset(new IceOptionSO(parsedData[i]), savingPath + "AffinityTest/" + parsedData[i][0] + ".asset");
         }
     }
 }

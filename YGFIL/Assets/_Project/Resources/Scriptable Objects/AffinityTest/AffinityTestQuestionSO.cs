@@ -14,5 +14,16 @@ namespace YGFIL.ScriptableObjects
 
         [field: SerializeField]
         public List<int> LoveValues { get; private set; }
+        
+        public AffinityTestQuestionSO(string[] parameters) 
+        {
+            QuestionText = parameters[1];
+            
+            for (int i = 0; i < 4; i++) 
+            {
+                OptionsTexts.Add(parameters[2 + i]);
+                LoveValues.Add(int.Parse(parameters[3 + i]));
+            }
+        }
     }
 }

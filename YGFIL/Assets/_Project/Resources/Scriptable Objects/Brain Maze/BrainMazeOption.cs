@@ -10,5 +10,11 @@ namespace YGFIL
 
         [field: SerializeField]
         public int LoveValue { get; private set; }
+        
+        public BrainConnectionsOptionSO(string[] parameters) 
+        {
+            Text = parameters[1];
+            LoveValue = int.Parse(parameters[2]);
+        }
     }
 }
