@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 597bc8538cb6b834a872e1dc1a913bb0, type: 3}
   m_Name: Zombie_5
   m_EditorClassIdentifier: 
-  <ImageIndex>k__BackingField: 0
+  <ImageIndex>k__BackingField: 10
   <Text>k__BackingField: Marvel
   <TextColor>k__BackingField: {r: 0.2784314, g: 0.1882353, b: 0.4117647, a: 1}
   <LoveValue>k__BackingField: 0

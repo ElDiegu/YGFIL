@@ -27,6 +27,14 @@ namespace YGFIL.Minigames.Managers
 
         public void SubmitOption() 
         {
+            DateManager.Instance.EndTimerEarly();
+            ChangeState(MinigameState.Ending);
+        }
+        
+        public void TimeOut() 
+        {
+            if (selectedOption == null) selectedOption = optionsSet.Options[Random.Range(0, optionsSet.Options.Count)];
+            
             ChangeState(MinigameState.Ending);
         }
         
@@ -66,6 +74,8 @@ namespace YGFIL.Minigames.Managers
             });
             
             while(UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
+            
+            DateManager.Instance.StartMinigameTimer(30f);
             
             ChangeState(MinigameState.Game);
             

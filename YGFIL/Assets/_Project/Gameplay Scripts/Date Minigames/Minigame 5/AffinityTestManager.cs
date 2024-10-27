@@ -25,6 +25,40 @@ namespace YGFIL
         private int currentIndex = 0;
         private int currentLove = 0;
 
+        public IEnumerator Start() 
+        {
+            while (DateManager.Instance.Monster.ScriptableObject == null) yield return null;
+            
+            optionsSet = (DateManager.Instance.Monster.ScriptableObject as MonsterSO).AffinityTestQuestionSetSO;
+        }
+
+        private void SetQuestion()
+        {
+            questionText.text = optionsSet.Questions[currentIndex].QuestionText;
+
+            for (int i = 0; i < 4; i++)
+            {
+                optionButtonTexts[i].text = optionsSet.Questions[currentIndex].OptionsTexts[i];
+            }
+        }
+
+        public void OnOptionButtonPressed(int optionClicked) 
+        {
+            DateManager.Instance.EndTimerEarly();
+            
+            selectedIndex.Add(optionClicked);
+            currentLove += optionsSet.Questions[currentIndex].LoveValues[optionClicked];
+            currentIndex++;
+            
+            if (currentIndex >= 3) ChangeState(MinigameState.Ending);
+            else StartCoroutine(ShowNewQuestion());
+        }
+        
+        public void TimeOut() 
+        {
+            OnOptionButtonPressed(Random.Range(0, 3));
+        }
+
         [SerializeField] private MinigameState state;
         
         public void ChangeState(MinigameState newState) 
@@ -65,6 +99,8 @@ namespace YGFIL
             
             while(UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
+            DateManager.Instance.StartMinigameTimer(30f);
+            
             ChangeState(MinigameState.Game);
         }
         
@@ -99,25 +135,25 @@ namespace YGFIL
             
             DateManager.Instance.ChangePhase(DatePhase.Ending);
         }
-
-        private void SetQuestion()
+        
+        private IEnumerator ShowNewQuestion() 
         {
-            questionText.text = optionsSet.Questions[currentIndex].QuestionText;
-
-            for (int i = 0; i < 4; i++)
-            {
-                optionButtonTexts[i].text = optionsSet.Questions[currentIndex].OptionsTexts[i];
-            }
-        }
-
-        public void OnOptionButtonPressed(int optionClicked) 
-        {
-            selectedIndex.Add(optionClicked);
-            currentLove += optionsSet.Questions[currentIndex].LoveValues[optionClicked];
-            currentIndex++;
+            DateManager.Instance.SetInteraction(false);
             
-            if (currentIndex >= 3) ChangeState(MinigameState.Ending);
-            else SetQuestion();
+            SetQuestion();
+            
+            EventBus<PlayAnimationEvent>.Raise(new PlayAnimationEvent()
+            {
+                animationString = "ShowNewAffinityTestQuestion"
+            });
+            
+            yield return new WaitForSeconds(0.001f);
+            
+            while(UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
+            
+            DateManager.Instance.StartMinigameTimer(30f);
+            
+            DateManager.Instance.SetInteraction(true);
         }
     }
 }

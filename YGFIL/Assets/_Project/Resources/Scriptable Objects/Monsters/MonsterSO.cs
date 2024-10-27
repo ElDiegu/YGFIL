@@ -35,5 +35,11 @@ namespace YGFIL.ScriptableObjects
         
         [field: SerializeField]
         public BrainConnectionsOptionSetSO BrainConnectionsOptionSet { get; private set;}
+        
+        [field: SerializeField]
+        public Phase4OptionSetSO Phase4optionSet { get; set; }
+
+        [field: SerializeField]
+        public AffinityTestQuestionSetSO AffinityTestQuestionSetSO { get; set; }
     }
 }
