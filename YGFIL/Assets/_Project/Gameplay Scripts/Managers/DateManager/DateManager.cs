@@ -105,21 +105,21 @@ namespace YGFIL.Managers
 
             if(Monster.loveValue >= (Monster.ScriptableObject as MonsterSO).LoveThreshold)
             {
+                AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("EndDate");
                 EndMenuManager.Instance.setEnd(Monster.monsterType);
                 AudioManager.Instance.Stop("dateMusic");
                 AudioManager.Instance.Play("dateLost");
-                AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("EndDate");
             }
             else
             {
                 AudioManager.Instance.Play("dateWin");
-                MonsterSelectorManager.Instance.DateCompleted(Monster);
+                GameManager.Instance.completedMonsters.Add(Monster.monsterType);
                 AudioManager.Instance.Stop("dateMusic");
                 if (Monster.monsterType == MonsterType.Succubus)
                 {
+                    AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("EndDate");
                     EndMenuManager.Instance.gameCompleted = true;
                     EndMenuManager.Instance.setEnd(Monster.monsterType);
-                    AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("EndDate");
                 }
                 else
                 {  
