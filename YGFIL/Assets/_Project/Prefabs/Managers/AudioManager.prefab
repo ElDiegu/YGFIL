@@ -49,76 +49,83 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 631123f2b376ff446a4fc2fb8081de13, type: 3}
     music: 1
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: dateMusic
     clip: {fileID: 8300000, guid: c96c3f0dc589b6047af9b05e5698dc92, type: 3}
     music: 1
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: button
     clip: {fileID: 8300000, guid: 9796ca139072e6d4cab083e5d5066f1b, type: 3}
     music: 0
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: loveBarUp
     clip: {fileID: 8300000, guid: 936ba413350ce48408f2db2456595659, type: 3}
     music: 0
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: loveBarDown
     clip: {fileID: 8300000, guid: 3cc7e864f67cc644d9a86d1bff0035d6, type: 3}
     music: 0
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: dateWin
     clip: {fileID: 8300000, guid: df46f5ff04fd67347ae6434d7c315269, type: 3}
     music: 0
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: dateLost
     clip: {fileID: 8300000, guid: b7229d17a41b35a478f54c14209a05b7, type: 3}
     music: 0
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: papper
     clip: {fileID: 8300000, guid: e6bc169392e58904bb87e06c80e6feea, type: 3}
     music: 0
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: napkin
     clip: {fileID: 8300000, guid: 5633dae76704c57429ff30f2b95adaad, type: 3}
     music: 0
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: iceHit
     clip: {fileID: 8300000, guid: b7f2732167ad18f4b9b44f09e71bd54b, type: 3}
     music: 0
     volume: 1
-    pitch: 0.1
+    pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: iceBreak
     clip: {fileID: 8300000, guid: 9e54b0e2f9641624d9cdf20bc7ae7bb7, type: 3}
     music: 0
     volume: 1
-    pitch: 0.1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: brainMazeCompleted
+    clip: {fileID: 8300000, guid: b9af5deaa6f439043a17825a44244bc6, type: 3}
+    music: 0
+    volume: 1
+    pitch: 1
     loop: 0
     source: {fileID: 0}

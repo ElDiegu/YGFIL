@@ -30,6 +30,7 @@ namespace YGFIL
 
         public void StartDate(string monsterType)
         {
+            AudioManager.instance.Play("button");
             //change scene
         }
     }

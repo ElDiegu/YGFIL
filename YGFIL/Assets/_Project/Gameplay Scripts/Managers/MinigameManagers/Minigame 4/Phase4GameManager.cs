@@ -42,9 +42,9 @@ namespace YGFIL.Minigames.Managers
             }
         }
         
-        public void SubmitOption(int indexOption) 
+        public void SubmitOption() 
         {
-            selectedOption = optionSet.Options[indexOption];
+            selectedOption = optionSet.Options[currentOption];
             DateManager.Instance.EndTimerEarly();
             ChangeState(MinigameState.Ending);
         }
@@ -58,7 +58,8 @@ namespace YGFIL.Minigames.Managers
         
         public void TimeOut() 
         {
-            SubmitOption(Random.Range(0, 3));
+            currentOption = Random.Range(0, 3);
+            SubmitOption();
         }
         
         [SerializeField] private MinigameState state;
@@ -95,8 +96,10 @@ namespace YGFIL.Minigames.Managers
             {
                 animationString = "ShowPhase4"
             });
-            
-            while(UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
+
+            AudioManager.Instance.Play("napkin");
+
+            while (UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
             DateManager.Instance.StartMinigameTimer(30f);
             

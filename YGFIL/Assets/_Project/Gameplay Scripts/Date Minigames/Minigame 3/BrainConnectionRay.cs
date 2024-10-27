@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using YGFIL.Events;
+using YGFIL.Managers;
 using YGFIL.Managers.Minigames;
 
 namespace YGFIL.Minigames
@@ -71,6 +72,7 @@ namespace YGFIL.Minigames
                     if (mazeManager.GetNodeFromChildIndex(hit.gameObject.transform.GetSiblingIndex()) != mazeManager.end) continue;
                     
                     RevertConnections();
+                    AudioManager.Instance.Play("brainMazeCompleted");
                     eventData.pointerDrag = null;
                     mazeManager.GenerateMaze();
                     EventBus<SolvedMazeEvent>.Raise(new SolvedMazeEvent());

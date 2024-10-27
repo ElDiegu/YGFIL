@@ -9,6 +9,7 @@ using TMPro;
 using YGFIL.Databases;
 using YGFIL.Utils;
 using System.Collections;
+using YGFIL.Managers;
 
 namespace YGFIL.Minigames
 {
@@ -53,7 +54,8 @@ namespace YGFIL.Minigames
         {
             originalPosition = (transform as RectTransform).anchoredPosition;
             originalParent = transform.parent;
-            
+            AudioManager.Instance.Play("papper");
+
             transform.SetParent(transform.parent.transform.parent);
         }
         public void OnDrag(PointerEventData eventData)
@@ -71,7 +73,8 @@ namespace YGFIL.Minigames
         public void OnEndDrag(PointerEventData eventData)
         {
             List<RaycastResult> hitResults = new List<RaycastResult>();
-            
+
+            AudioManager.Instance.Play("napkin");
             var graphicRaycaster = transform.root.GetComponent<GraphicRaycaster>();
             graphicRaycaster.Raycast(eventData, hitResults);
             

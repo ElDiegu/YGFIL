@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 using YGFIL.Events;
+using YGFIL.Managers;
 using YGFIL.Monsters;
 using YGFIL.ScriptableObjects;
 using YGFIL.Utils;
@@ -77,6 +78,15 @@ namespace YGFIL
                 Debug.Log("Stopping Coroutine");
             }
             
+            if(loveValueUpdatedEvent.loveValue > loveSlider.value)
+            {
+                AudioManager.instance.Play("loveBarUp");
+            }
+            else
+            {
+                AudioManager.instance.Play("loveBarDown");
+            }
+
             loveBarCoroutine = StartCoroutine(UpdateLoveValueCoroutine(loveValueUpdatedEvent.loveValue));
             
             var monsterSO = (MonsterSO)monster.GetComponent<Monster>().ScriptableObject;
