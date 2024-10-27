@@ -30,3 +30,5 @@ id	monster	expression	text	next_id	tag	tag
 28	Caster	Neutral	¡Vaya, vaya! Parece que el monstruo quiere asegurarse de que el jugador nunca olvide esta cita. ¡Esa mancha quedará como recuerdo!	14	Phase4_Start	
 29	Caster	Neutral	¡El final está cerca! Ahora que ya se conocen mejor, es hora de ver qué tan compatibles son con el test de afinidad. ¡Las respuestas decidirán el destino de esta cita!		Affinity_Start	End
 30	Caster	Neutral	Hemos llegado al final de esta interesante cita. Pero el momento clave es ahora, cuando nuestros concursantes deciden si abrir su corazón al amor o vuelven su corazón de piedra		Ending	End
+31	Medusa	Happy	Hemosss coincidido en unas cuantass, ¡que bien!		Affinity_Good	End
+32	Medusa	Dislike	Vaya panorama... 		Affinity_Bad	End

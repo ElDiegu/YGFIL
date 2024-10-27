@@ -1,0 +1,33 @@
+id	monster	expression	text	next_id	tag	tag
+0	MainCharacter	Neutral	Uff disculpa pero no he podido fijarme en otra cosa que no sean tus pedazo de brazos. ¿Qué rutinas haces?	1	IceBreaking_Good	
+1	Werewolf	Happy	Jojo te gusta, la magia de los batidos de proteínas ma boyyy. Esto es puro músculo.		End	
+2	MainCharacter	Neutral	Jajajaja en tu camiseta pone 69. Noice. Me gusta	3	IceBreaking_Neutral	
+3	Werewolf	Neutral	Ya jaja, es mi ropa de deporte, para ir bien motivado a el gym.		End	
+4	MainCharacter	Neutral	Hola encantado, ¿tú no serás estudiante de ADE o INEF verdad?, creo que conozco a unos que igual van contigo al gym.	4	IceBreaking_Bad	
+5	Werewolf	Dislike	¿Me estás llamando cortito?, Eso no ha sido muy taki taki rumba de tu parte.		End	
+6	Werewolf	Neutral	Yo soy Lisandro Licántropo, todo músculo y fuerza. Si no es sobre proteínas o levantar peso, no me interesa. Así que, ¿me vas a admirar como a la luna llena o qué?		End	
+7	Werewolf	Happy	Oh, sí, colega... ¡Me gusta tu rollo! Tenemos que entrenar juntos un día de estos.		Introductions_Good	End
+8	Werewolf	Dislike	Uf, eso no me impresiona, bro. ¿En serio? Si no trabajas duro, no puedes ser parte de la manada.		Introductions_Bad	End
+9	Werewolf	Neutral	Y… tú, ¿qué haces para ponerte en forma?		End	
+10	Werewolf	Happy	Pues haces bien, hay que ponerse fuerte para tener un cuerpazo como este Auuuuu!!!!.		End	
+11	Werewolf	Dislike	Pues esa no es la actitud bro, voy a tener que entrenarte yo Auuuuuuu!!!!!		End	
+12	Werewolf	Neutral	Dime algo tan hermoso como la luna, Auuuuuuuuuuuu.		End	
+13	Werewolf	Happy	¡Ummmm! Me gusta, finalmente alguien que sabe apreciar lo que valgo. Mis músculos son de otro mundo, ¿verdad?		Brain_One	End
+14	Werewolf	Dislike	Mi... ¿personalidad? Eso suena tan... aburrido. ¿Acaso no viste mi físico?		Brain_Two	End
+15	Werewolf	Happy	¡Esa es la actitud! Hasta la luna lo sabe, nene, estos músculos no se ven todos los días. *Aúlla*		Brain_Three	End
+16	Werewolf	Happy	Tú y Yo en el gym entrenando estos cuerpos. Piensalo.		Ending_Like	End
+17	Werewolf	Dislike	Tod@s sois iguales, me voy a entrenar. Adiós.		Ending_Dislike	End
+18	Caster	Neutral	A continuación, nuestro entrenado y peludo concursante, viene con ganas de encontrar el amor o rendirse ante la luna. Presentamos a..... Lisandro Licantropo.		Introduction	End
+19	Caster	Neutral	Un arranque un poco... frío, pero nunca se sabe, ¿podría esa primera impresión romper el hielo o dejarnos con escalofríos?			
+20	MainCharacter	Neutral	¿En forma?, no se que es eso yo ya estoy bueno de serie.	13	Brain_One	
+21	MainCharacter	Neutral	Una sesión personalizada de mi entrenador personal.	12	Brain_Two	
+22	MainCharacter	Neutral	Solo hago pierna la verdad.	13	Brain_Three	
+23	MainCharacter	Neutral	Pura dieta a base de proteínas e hidratos de carbono.	13	Brain_Four	
+24	Caster	Neutral	¿Logrará resquebrajar el frío corazón de nuestro monstruoso concursante con sus primeras palabras?		IceBreaking_Start	End
+25	Caster	Neutral	¡Vaya comienzo! Pero antes de seguir, es hora de que tanto el monstruo como el concursante nos revelen sus pasiones y aficiones. ¡Es el momento de brillar y sorprendernos a todos!	6	Introductions_Start	
+26	Caster	Neutral	¡Vaya! Parece que nuestro monstruo tiene algo en mente. Humano, ¡atento! Porque te va a lanzar una pregunta inesperada. ¿Estás listo para lo que viene?	9	Brain_Start	
+27	Caster	Neutral	¡Por mis vértebras! Parece ser que el monstruo ha decidido derramar una mancha sobre nuestro amigo humano.	12	Phase4_Start	
+28	Caster	Neutral	¡Llegamos a la última fase! Donde se pondrá a prueba la compatibilidad entre el monstruo y el jugador. ¿Será amor verdadero? ¡Descubramoslo con el test de afinidad!		Affinity_Start	End
+29	Caster	Excited	Parece que hemos terminado, toca saber la respuesta del monstruo. ¿Querá continuar?		Ending	End
+30	Werewolf	Dislike	Broo, no encajamos na de na.		Affinity_Bad	End
+31	Werewolf	Happy	Uff tu si que sabes broo, que grande.		Affinity_Good	End

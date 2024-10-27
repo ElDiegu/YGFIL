@@ -30,5 +30,5 @@ id	monster	expression	text	next_id	tag	tag
 28	Caster	Happy	¡El final está cerca! Ahora que ya se conocen mejor, es hora de ver qué tan compatibles son con el test de afinidad. ¡Las respuestas decidirán el destino de esta cita!		Affinity_Start	End
 29	Spider	Happy	No hay duda de que un hilo rojo une nuestros corazones.		Affinity_Good	End
 30	Spider	Dislike	Menudas respuestas... Esto es deprimente.		Affinity_Bad	End
-31	Caster	Surprised	¡Hemos llegado al final de la cita! Espero que hayáis disfrutado el espectáculo.		Ending	
+31	Caster	Surprised	¡Hemos llegado al final de la cita! Espero que hayáis disfrutado el espectáculo.	32	Ending	
 32	Caster	Excited	¿¡Qué opinión tendrá nuestro monstruo sobre el invitado!? ¿Habrá caído en las redes del amor?		End	

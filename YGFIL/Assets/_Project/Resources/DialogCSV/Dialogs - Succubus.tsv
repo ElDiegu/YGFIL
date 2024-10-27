@@ -1,5 +1,5 @@
 id	monster	expression	text	next_id	tag	tag
-0	MainCharacter	Neutral	Hmm, déjame decirte que no puedo evitar mirarte. Tu pecho es… muy llamativo.	1	IceBreaking_Good	
+0	MainCharacter	Neutral	Hmm, déjame decir que no puedo evitar mirarte. Tu pecho es… muy llamativo.	1	IceBreaking_Good	
 1	Succubus	Happy	¡Oh, cariño! Me gusta que seas directo. La confianza es muy sexy, ¿quieres que te muestre más?		End	
 2	MainCharacter	Neutral	Uy, ¿Eso que llevas es un cosplay?, te queda muy bien.	3	IceBreaking_Good	
 3	Succubus	Happy	Aiiii jajajajja, me alegro mucho de que te guste, creo que es de los que mejor me ha quedado, si quieres te lo enseño a fondo UwU.		End	
@@ -28,5 +28,6 @@ id	monster	expression	text	next_id	tag	tag
 26	MainCharacter	Neutral	De lo que tu prefieras		Brain_Four	End
 27	Caster	Surprised	¡Pero qué! El monstruo no ha podido resistirse a derramar una mancha sobre el humano, dejando un recuerdo difícil de olvidar.	13	Phase4_Start	
 28	Caster	Neutral	¡Llegamos a la última fase! Donde se pondrá a prueba la compatibilidad entre el monstruo y el jugador. ¿Será amor verdadero? ¡Descubramoslo con el test de afinidad!		Affinity_Start	End
-29	Succubus	Happy	Frase buena		Affinity_Good	End
-30	Succubus	Neutral	Frase mala		Affinity_Bad	End
+29	Succubus	Happy	Estamos destinados a estar juntos cielo, escapemonos los dos UwU.		Affinity_Good	End
+30	Succubus	Neutral	Seguro que no piensas de verdad así amor, dale otra vueltina a las respuestas.		Affinity_Bad	End
+31	Caster	Neutral	Eso es todo amigos, toca saber que responderá nuestra dulce súcubo ¿Qué decisión tomará?		Ending	End
