@@ -32,6 +32,8 @@ namespace YGFIL
         public void StartDate(int monsterType)
         {
             AudioManager.Instance.Play("button");
+            AudioManager.Instance.Stop("showMusic");
+            AudioManager.Instance.Play("dateMusic");
             GameManager.Instance.setMonster(monsterType);
             SceneManager.LoadSceneAsync("DateScene");
         }

@@ -10,6 +10,11 @@ namespace YGFIL.Managers
         [SerializeField] private Animator titleAnimator;
         [SerializeField] private Animator fadeOutAnimator;
         
+        void Start ()
+        {
+            AudioManager.Instance.Play("showMusic");
+        }
+
         private void Update()
         {
             var input = InputManager.Instance.GetInput();

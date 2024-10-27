@@ -10,7 +10,6 @@ public class AudioManager : PersistentSingleton<AudioManager>
     {
     public Sound[] sounds;
 
-    public static AudioManager instance;
     void Awake()
     {
         base.Awake();
