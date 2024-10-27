@@ -124,7 +124,7 @@ namespace YGFIL.Managers
                 else
                 {  
                     AudioManager.Instance.Play("showMusic");
-                    AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MonsterSelector");
+                    AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MonsterSelection");
                 }
             }
             
