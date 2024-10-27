@@ -99,8 +99,8 @@ namespace YGFIL.Minigames.Managers
             
             if (selectedOption.LoveValue == 16) result = DialogTag.IceBreaking_Neutral;
             else if (selectedOption.LoveValue > 0) result = DialogTag.IceBreaking_Good;
-            else if(selectedOption.LoveValue < 0) result = DialogTag.IceBreaking_Neutral;
-            else result = DialogTag.IceBreaking_Bad;
+            else if(selectedOption.LoveValue < 0) result = DialogTag.IceBreaking_Bad;
+            else result = DialogTag.IceBreaking_Neutral;
             
             DialogManager.Instance.PlayDialog(result.ToString());
             
