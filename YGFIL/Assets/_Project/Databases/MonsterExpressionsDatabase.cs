@@ -10,8 +10,8 @@ namespace YGFIL.Databases
     public class MonsterExpressionDatabase
     {
         public static Dictionary<MonsterType, List<Sprite>> MonsterExpressions = new Dictionary<MonsterType, List<Sprite>>();
-        
-        [InitializeOnLoadMethod]
+
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSplashScreen)]
         private static void PopulateExpressionsDictionary() 
         {
             Debug.Log("Populating Expressions Dictionary");
@@ -28,8 +28,6 @@ namespace YGFIL.Databases
                 
                 MonsterExpressions[monster].Add(sprite);
             }
-            //MonsterExpressions.Add(monsterType, Resources.LoadAll<Sprite>("Art/Monsters/" + monsterType.ToString()).ToList());
-            
         }
         
         public static Sprite GetSprite(int monsterType, int expressionType) => MonsterExpressions[(MonsterType)monsterType][expressionType];

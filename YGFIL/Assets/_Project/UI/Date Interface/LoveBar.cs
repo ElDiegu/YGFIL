@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using Systems.EventSystem;
 using UnityEditor;
-using UnityEditor.TerrainTools;
 using UnityEngine;
 using UnityEngine.UI;
 using YGFIL.Events;
@@ -65,8 +63,6 @@ namespace YGFIL
             var loveThreshold = monsterSO.LoveThreshold;
 
             var position = loveThresholdTransform.parent.GetComponent<RectTransform>().rect.height * (loveThreshold / 100);
-
-            Debug.Log(loveThreshold / 100 + " " + position);
 
             loveThresholdTransform.anchoredPosition = new Vector3(0f, position, 0f);
             

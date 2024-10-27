@@ -1,6 +1,5 @@
 using Systems.EventSystem;
 using UnityEditor;
-using UnityEditor.Animations;
 using UnityEngine;
 
 namespace YGFIL.Managers

@@ -9,8 +9,11 @@ namespace YGFIL.Systems
 {
     public class DialogImporter
     {
+#if UNITY_EDITOR
         private static string path = "Assets/_Project/Resources/DialogCSV/";
-        
+#else
+        private static string path = "Dialogs/";
+#endif
         public static List<DialogData> ImportDialog(string fileName) 
         {
             var parsedData = FileParser.ParseFile(path + fileName + ".tsv", "\t");

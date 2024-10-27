@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Systems.EventSystem;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,7 @@ using YGFIL.Minigames.Managers;
 using YGFIL.Monsters;
 using YGFIL.ScriptableObjects;
 using YGFIL.Systems;
+using YGFIL.Utils;
 
 namespace YGFIL.Managers
 {
@@ -19,11 +21,13 @@ namespace YGFIL.Managers
         
         [SerializeField] private List<GameObject> minigameObjects;
         [SerializeField] private GameObject blockingImage;
+        [SerializeField] private TextMeshProUGUI timer;
+        private Coroutine timerCoroutine = null;
         [field: SerializeField] public Monster Monster { get; private set; }
         
         protected void Start() 
         {
-            ChangePhase(DatePhase.Introduction);
+            ChangePhase(DatePhase.MinigameFive);
         }    
 
         public void ChangePhase(DatePhase newPhase) 
@@ -63,9 +67,7 @@ namespace YGFIL.Managers
         }
         
         public IEnumerator IntroducctionCoroutine() 
-        {
-            Debug.Log("Starting Coroutine");
-            
+        {   
             EventBus<PlayAnimationEvent>.Raise(new PlayAnimationEvent()
             {
                 animationString = "FadeIn"
@@ -111,6 +113,53 @@ namespace YGFIL.Managers
         public void SetInteraction(bool state) 
         {
             blockingImage.SetActive(!state);
+        }
+        
+        public void StartMinigameTimer(float seconds) => timerCoroutine = StartCoroutine(TimerUtils.StartTimer(timer, seconds));
+    
+        public void TimeOut() 
+        {
+            timerCoroutine = null;
+            
+            switch (DatePhase) 
+            {
+                case DatePhase.MinigameOne:
+                    IceBreakingManager.Instance.TimeOut();
+                    break;
+                case DatePhase.MinigameTwo:
+                    IntroductionsManager.Instance.TimeOut();
+                    break;
+                case DatePhase.MinigameThree:
+                    BrainConnectionsManager.Instance.TimeOut();
+                    break;
+                case DatePhase.MinigameFour:
+                    Phase4Manager.Instance.TimeOut();
+                    break;
+                case DatePhase.MinigameFive:
+                    AffinityTestManager.Instance.TimeOut();
+                    break;
+            }
+        }
+        
+        public void EndTimerEarly() 
+        {
+            if (timerCoroutine != null) StopCoroutine(timerCoroutine);
+            timerCoroutine = null;
+            timer.text = "";
+        }
+        
+        EventBinding<OnTimerFinishedEvent> onTimerFinishedBinding;
+        
+        private void OnEnable()
+        {
+            onTimerFinishedBinding = new EventBinding<OnTimerFinishedEvent>(TimeOut);
+            
+            EventBus<OnTimerFinishedEvent>.Register(onTimerFinishedBinding);
+        }
+        
+        private void OnDisable()
+        {
+            EventBus<OnTimerFinishedEvent>.Deregister(onTimerFinishedBinding);
         }
     }
     

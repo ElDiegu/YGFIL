@@ -15,15 +15,43 @@ namespace YGFIL
 {
     public class BrainConnectionsManager : StaticInstance<BrainConnectionsManager>, ISOContainer
     {
-        [SerializeField] private BrainConnectionsOptionSetSO brainConnectionsOptionSet;
-        public ScriptableObject ScriptableObject { get => brainConnectionsOptionSet; set { } }
+        [SerializeField] private BrainConnectionsOptionSetSO optionSet;
+        public ScriptableObject ScriptableObject { get => optionSet; set { } }
         
         private int solvedMazes;
         [SerializeField] private List<GameObject> options;
         [SerializeField] private GameObject mazeZone, optionsZone;
         [SerializeField] private int selectedIndex;
+        private bool optionsPhase = false;
         
-        private void Start() => brainConnectionsOptionSet = (DateManager.Instance.Monster.ScriptableObject as MonsterSO).BrainConnectionsOptionSet;
+        private IEnumerator Start() 
+        {
+            while (DateManager.Instance.Monster.ScriptableObject == null) yield return null;
+            
+            optionSet = (DateManager.Instance.Monster.ScriptableObject as MonsterSO).BrainConnectionsOptionSet;
+        }
+        
+        private void ActivateOptions() 
+        {
+            for (int i = 0; i < solvedMazes; i++) 
+            {
+                options[i].SetActive(true);
+                options[i].GetComponentInChildren<TextMeshProUGUI>().text = optionSet.Options[i].Text;
+            }
+        }
+        
+        public void SubmitOption(int index) 
+        {
+            selectedIndex = index;
+            DateManager.Instance.EndTimerEarly();
+            ChangeState(MinigameState.Ending);
+        }
+        
+        public void TimeOut() 
+        {
+            if (!optionsPhase) StartCoroutine(ShowOptionsCoroutine());
+            else SubmitOption(UnityEngine.Random.Range(0, solvedMazes));
+        }
         
         [SerializeField] private MinigameState state;
         public void ChangeState(MinigameState newState) 
@@ -62,6 +90,8 @@ namespace YGFIL
             });
             
             while (UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
+            
+            DateManager.Instance.StartMinigameTimer(10f);
             
             ChangeState(MinigameState.Game);
         }
@@ -106,7 +136,7 @@ namespace YGFIL
         {
             EventBus<UpdateLoveValueEvent>.Raise(new UpdateLoveValueEvent() 
             {
-                loveValue = brainConnectionsOptionSet.Options[selectedIndex].LoveValue,
+                loveValue = optionSet.Options[selectedIndex].LoveValue,
             });
             
             yield return null;
@@ -116,6 +146,10 @@ namespace YGFIL
         
         private IEnumerator ShowOptionsCoroutine() 
         {
+            DateManager.Instance.EndTimerEarly();
+            
+            ActivateOptions();
+            
             DateManager.Instance.SetInteraction(false);
             
             EventBus<PlayAnimationEvent>.Raise(new PlayAnimationEvent() 
@@ -124,6 +158,8 @@ namespace YGFIL
             });
             
             while (UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
+            
+            DateManager.Instance.StartMinigameTimer(30f);
             
             DateManager.Instance.SetInteraction(true);
         }
@@ -143,30 +179,6 @@ namespace YGFIL
         private void OnDisable() 
         {
             EventBus<SolvedMazeEvent>.Deregister(solvedMazeEventBinding);
-        }
-        
-        protected override void Awake()
-        {
-            base.Awake();
-            
-            brainConnectionsOptionSet = ((MonsterSO)DateManager.Instance.Monster.ScriptableObject).BrainConnectionsOptionSet;
-            
-            for (int i = 0; i < options.Count ; i++) options[i].GetComponentInChildren<TextMeshProUGUI>().text = brainConnectionsOptionSet.Options[i].Text;
-        }
-
-        private void ActivateOptions() 
-        {
-            for (int i = 0; i < solvedMazes; i++) 
-            {
-                options[i].SetActive(true);
-            }
-        }
-        
-        public void SubmitOption(int index) 
-        {
-            selectedIndex = index;
-            
-            ChangeState(MinigameState.Ending);
         }
     }
 }

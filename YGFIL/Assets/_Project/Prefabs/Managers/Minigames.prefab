@@ -55,6 +55,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   blockingImage: {fileID: 0}
+  timer: {fileID: 0}
   <Monster>k__BackingField: {fileID: 0}
 --- !u!114 &1582053132344912157
 MonoBehaviour:
@@ -68,10 +69,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fc9a52223ffdb146b696460d7120ba7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  optionsSet: {fileID: 11400000, guid: 9f7803a3b10d4d040a3f62a68a6a42d5, type: 2}
-  state: 0
+  optionsSet: {fileID: 0}
   selectedOption: {fileID: 0}
   submitButton: {fileID: 0}
+  state: 0
 --- !u!114 &4638091361818438105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a6917038a57d4c4bae0ffa841da5c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brainConnectionsOptionSet: {fileID: 11400000, guid: 8db83d37687a3df43a12f10546ad6ac5, type: 2}
+  brainConnectionsOptionSet: {fileID: 0}
   options:
   - {fileID: 0}
   - {fileID: 0}
@@ -129,6 +130,7 @@ MonoBehaviour:
   - {fileID: 0}
   mazeZone: {fileID: 0}
   optionsZone: {fileID: 0}
+  selectedIndex: 0
   state: 0
 --- !u!114 &8284427530752716521
 MonoBehaviour:
@@ -163,10 +165,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db745f0b54f0f8f42a13a9a0b50f3f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionsSet: {fileID: 0}
   questionText: {fileID: 0}
   optionButtonTexts:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  selectedIndex: 
   state: 0
