@@ -618,7 +618,7 @@ PrefabInstance:
     - target: {fileID: 1382481635365167499, guid: 6c33af2bc2a18b6458ecde5a087c7932, type: 3}
       propertyPath: <Monster>k__BackingField
       value: 
-      objectReference: {fileID: 11400000, guid: 1c888fb7c059a0b4bb2b6b158e035e66, type: 2}
+      objectReference: {fileID: 11400000, guid: c0f0555f0b5465d4cac9f24a7eaaf355, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -48,6 +48,7 @@ namespace YGFIL.Managers
                     break;
                 case DatePhase.MinigameThree:
                     BrainConnectionsManager.Instance.ChangeState(MinigameState.Introduction);
+                    Monster.ChangeWerewolf();
                     minigameObjects[1].SetActive(false);
                     break;
                 case DatePhase.MinigameFour:

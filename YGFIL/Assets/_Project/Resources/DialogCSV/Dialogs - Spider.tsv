@@ -9,7 +9,7 @@ id	monster	expression	text	next_id	tag	tag
 7	Spider	Neutral	También jugar con aquellos seres que considero mi comida, así que ándate con ojo. ¿Qué hay de tí?		End	
 8	Spider	Happy	Me gusta cómo piensas, ¿qué te parece tejer algo más interesante juntos?		Introductions_Good	End
 9	Spider	Dislike	Tu presentación me ha llamado tanto la atención como un insignificante bicho en mi red.		Introductions_Bad	End
-10	Spider	Neutral	Quería saber…. ¿Cuál es tu opinión sobre los límites? Porque a veces pienso que romperlos es mucho más interesante.			
+10	Spider	Neutral	Quería saber…. ¿Cuál es tu opinión sobre los límites? Porque a veces pienso que romperlos es mucho más interesante.		End	
 11	Spider	Happy	Me gusta cómo piensas, rompamos los límites juntos.		End	
 12	Spider	Dislike	Tienes una mentalidad menos libre que mis presas.		End	
 13	Spider	Neutral	Cuéntame, ¿te ha pasado algo interesante últimamente?		End	
@@ -21,7 +21,7 @@ id	monster	expression	text	next_id	tag	tag
 19	Caster	Neutral	A continuación, vamos con un concursante muy amenazante. Que entre.... Telma Telarañas, acompañada de... ¿sus mascotas?.		Introduction	End
 20	Caster	Surprised	Nuestro concursante parece estar en terreno resbaladizo, ¿será capaz de encontrar el equilibrio y deslizarse hacia el corazón de su cita o se quedará congelado en el intento?		IceBreaking_Start	End
 21	Caster	Excited	¡Qué entrada más inesperada! Pero antes de seguir con la acción, vamos a conocernos mejor.	6	Introductions_Start	
-22	Caster	Happy	¡Vaya! Parece que nuestro monstruo tiene algo en mente. Humano, ¡atento! Porque te va a lanzar una pregunta inesperada. ¿Estás listo para lo que viene?		Brain_Start	End
+22	Caster	Happy	¡Vaya! Parece que nuestro monstruo tiene algo en mente. Humano, ¡atento! Porque te va a lanzar una pregunta inesperada. ¿Estás listo para lo que viene?	10	Brain_Start	
 23	MainCharacter	Neutral	No se, no se me dan muy bien las matemáticas...	12	Brain_One	
 24	MainCharacter	Neutral	Límites son los que no quiero que haya entre nosotros	12	Brain_Two	
 25	MainCharacter	Neutral	Siempre está bien saltarse un poco las reglas, todo es mucho más divertido así.	11	Brain_Three	
