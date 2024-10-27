@@ -11,7 +11,7 @@ namespace YGFIL.Databases
         public static List<Sprite> IntroductionsSprites { get; private set; } = new List<Sprite>();
         public static Dictionary<int, Sprite[]> IceSprites { get; private set; } = new Dictionary<int, Sprite[]>()
         {
-            {0, new Sprite[4]}, {1, new Sprite[4]}, {2, new Sprite[4]}, {3, new Sprite[4]},
+            {0, new Sprite[5]}, {1, new Sprite[5]}, {2, new Sprite[5]}, {3, new Sprite[5]},
         };
         public static List<Sprite> DialogSprites { get; private set; } = new List<Sprite>();
 

@@ -14,7 +14,7 @@ namespace YGFIL.Minigames.Managers
         [SerializeField] private IceOptionSetSO optionsSet;
         public ScriptableObject ScriptableObject { get => optionsSet; set {} }
 
-        [SerializeField] private IceOptionSO selectedOption;
+        [SerializeField] public IceOptionSO selectedOption;
         [SerializeField] private GameObject submitButton;
         
         private void Start() => optionsSet = (DateManager.Instance.Monster.ScriptableObject as MonsterSO).IceBreakingOptionSet;
@@ -75,7 +75,7 @@ namespace YGFIL.Minigames.Managers
             
             while(UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
-            DateManager.Instance.StartMinigameTimer(10f);
+            DateManager.Instance.StartMinigameTimer(15f);
             
             ChangeState(MinigameState.Game);
             
@@ -97,18 +97,10 @@ namespace YGFIL.Minigames.Managers
             
             DialogTag result = DialogTag.IceBreaking_Neutral;
             
-            switch (selectedOption.LoveValue) 
-            {
-                case 15:
-                    result = DialogTag.IceBreaking_Good;
-                    break;
-                case 0:
-                    result = DialogTag.IceBreaking_Neutral;
-                    break;
-                case -10:
-                    result = DialogTag.IceBreaking_Bad;
-                    break;
-            }
+            if (selectedOption.LoveValue == 16) result = DialogTag.IceBreaking_Neutral;
+            else if (selectedOption.LoveValue > 0) result = DialogTag.IceBreaking_Good;
+            else if(selectedOption.LoveValue < 0) result = DialogTag.IceBreaking_Neutral;
+            else result = DialogTag.IceBreaking_Bad;
             
             DialogManager.Instance.PlayDialog(result.ToString());
             

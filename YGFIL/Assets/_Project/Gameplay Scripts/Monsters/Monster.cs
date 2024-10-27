@@ -47,7 +47,7 @@ namespace YGFIL.Monsters
 
         public void UpdateLoveValue(UpdateLoveValueEvent updateLoveValueEvent) 
         {
-            loveValue += updateLoveValueEvent.loveValue;
+            loveValue = Mathf.Clamp(loveValue += updateLoveValueEvent.loveValue, 0, 100);
             
             EventBus<LoveValueUpdatedEvent>.Raise(new LoveValueUpdatedEvent() 
             {

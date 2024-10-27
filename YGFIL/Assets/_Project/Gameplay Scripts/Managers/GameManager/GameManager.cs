@@ -12,6 +12,7 @@ namespace YGFIL.Managers
         public MonsterSO Monster { get; private set; }
         [field: SerializeField]
         private List<MonsterSO> monsterList;
+        [field: SerializeField]
         public List<MonsterType> completedMonsters;
 
         public void setMonster(int monsterId)

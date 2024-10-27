@@ -30,12 +30,18 @@ namespace YGFIL.Minigames
             
             button.image.sprite = ImagesDatabase.IceSprites[iceOptionSO.NoteType][0];
         }
+        
+        private void Update()
+        {
+            if (pressCount >= 3 && IceBreakingManager.Instance.selectedOption != iceOptionSO) button.image.sprite = ImagesDatabase.IceSprites[iceOptionSO.NoteType][pressCount];
+        }
 
         public void PressOption() 
         {
-            if (pressCount >= ImagesDatabase.IceSprites[iceOptionSO.NoteType].Length - 1) 
+            if (pressCount >= 3) 
             {
                 SelectOption();
+                button.image.sprite = ImagesDatabase.IceSprites[iceOptionSO.NoteType][4];
                 return;
             }
             
@@ -49,13 +55,18 @@ namespace YGFIL.Minigames
             
             button.image.sprite = ImagesDatabase.IceSprites[iceOptionSO.NoteType][pressCount];
             
-            if (pressCount >= ImagesDatabase.IceSprites[iceOptionSO.NoteType].Length - 1) 
+            if (pressCount >= 3) 
             {
                 AudioManager.Instance.Play("iceBreak");
                 var textObject = transform.GetChild(iceOptionSO.NoteType).gameObject; 
                 textObject.SetActive(true);
                 textObject.GetComponent<TextMeshProUGUI>().text = iceOptionSO.Text;
             }
+        }
+        
+        public void LastImage() 
+        {
+            
         }
         
         private void SelectOption() => IceBreakingManager.Instance.ChangeSelectedOption(iceOptionSO);

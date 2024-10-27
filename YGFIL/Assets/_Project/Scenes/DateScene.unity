@@ -2955,7 +2955,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 548, y: 250}
+  m_AnchoredPosition: {x: 763, y: 250}
   m_SizeDelta: {x: 133.1, y: 137.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317134444
@@ -3674,7 +3674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 651, y: 250}
+  m_AnchoredPosition: {x: 866, y: 250}
   m_SizeDelta: {x: 233, y: 281}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641735399
@@ -4220,7 +4220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2859753366800032343, guid: 620be084ab8583749a5d3ad25e85967f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -345.5
       objectReference: {fileID: 0}
     - target: {fileID: 4521329513383062411, guid: 620be084ab8583749a5d3ad25e85967f, type: 3}
       propertyPath: m_Sprite
@@ -4841,6 +4841,10 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3487753920944855366, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -258
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487753920944855366, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
@@ -4993,6 +4997,10 @@ PrefabInstance:
       value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4577980887955123385, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -258
+      objectReference: {fileID: 0}
+    - target: {fileID: 4577980887955123385, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
@@ -5027,6 +5035,10 @@ PrefabInstance:
     - target: {fileID: 5496510246421347800, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496510246421347800, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -57.999992
       objectReference: {fileID: 0}
     - target: {fileID: 5496510246421347800, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -5179,6 +5191,10 @@ PrefabInstance:
     - target: {fileID: 8849329455198326972, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8849329455198326972, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -58
       objectReference: {fileID: 0}
     - target: {fileID: 8849329455198326972, guid: cf7d4337338c1d74cafd95fb80006a58, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -5702,19 +5718,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6813057031044282679, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6813057031044282679, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6813057031044282679, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 600
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6813057031044282679, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6813057031044282679, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_LocalPosition.x
