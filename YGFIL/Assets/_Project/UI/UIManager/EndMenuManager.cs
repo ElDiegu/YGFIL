@@ -37,6 +37,7 @@ namespace YGFIL.Managers
             loadingOperation.allowSceneActivation = false;
 
             while (loadingOperation.progress < 0.9f) yield return null;
+            AudioManager.Instance.Play("showMusic");
 
             loadingOperation.allowSceneActivation = true;
         }

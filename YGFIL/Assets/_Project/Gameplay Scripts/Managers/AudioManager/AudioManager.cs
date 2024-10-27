@@ -9,7 +9,8 @@ namespace YGFIL.Managers
 public class AudioManager : PersistentSingleton<AudioManager>
     {
     public Sound[] sounds;
-    protected override void Awake()
+
+    void Awake()
     {
         base.Awake();
 
