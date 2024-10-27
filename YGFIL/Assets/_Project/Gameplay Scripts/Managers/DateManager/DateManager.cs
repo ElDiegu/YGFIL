@@ -110,6 +110,7 @@ namespace YGFIL.Managers
             else
             {
                 AudioManager.instance.Play("dateWin");
+                MonsterSelectorManager.Instance.DateCompleted(Monster);
                 AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MonsterSelector");
             }
             
