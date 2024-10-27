@@ -12,11 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78794c80b6d29c248a9f728d3dddf232, type: 3}
   m_Name: Zombie_1
   m_EditorClassIdentifier: 
-  <Images>k__BackingField:
-  - {fileID: -6780571676119717613, guid: b1e6a63ab371b5941a9db337c1a2e0c8, type: 3}
-  - {fileID: -1513695986545304574, guid: b4e1b57a2f2d71048a1cb767b3b74f78, type: 3}
-  - {fileID: 7069643339387110176, guid: 50b9e6f62b40b6c44bef85b783dd0508, type: 3}
-  - {fileID: -2536195747489487316, guid: 81108c278714d7d489b93981fca1ed8c, type: 3}
-  <NoteType>k__BackingField: 1
+  <Images>k__BackingField: []
+  <NoteType>k__BackingField: 3
   <Text>k__BackingField: Pregunta si es su primera cita en el programa
   <LoveValue>k__BackingField: 5

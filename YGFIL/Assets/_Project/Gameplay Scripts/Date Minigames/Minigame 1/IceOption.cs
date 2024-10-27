@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using YGFIL.Databases;
 using YGFIL.Minigames.Managers;
 using YGFIL.ScriptableObjects;
 
@@ -26,7 +27,7 @@ namespace YGFIL.Minigames
             
             iceOptionSO = (IceBreakingManager.Instance.ScriptableObject as IceOptionSetSO).Options[buttonIndex];
             
-            button.image.sprite = iceOptionSO.Images[0];
+            button.image.sprite = ImagesDatabase.IceSprites[iceOptionSO.NoteType][0];
         }
 
         public void PressOption() 
@@ -44,7 +45,7 @@ namespace YGFIL.Minigames
             } 
             else chance += 10f;
             
-            button.image.sprite = iceOptionSO.Images[pressCount];
+            button.image.sprite = ImagesDatabase.IceSprites[iceOptionSO.NoteType][pressCount];
             
             if (pressCount >= iceOptionSO.Images.Count - 1) 
             {
