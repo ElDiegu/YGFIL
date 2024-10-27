@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 namespace YGFIL.Managers
 {
-public class AudioManager : MonoBehaviour
-{
+public class AudioManager : StaticInstance<AudioManager>
+    {
     public Sound[] sounds;
 
     public static AudioManager instance;

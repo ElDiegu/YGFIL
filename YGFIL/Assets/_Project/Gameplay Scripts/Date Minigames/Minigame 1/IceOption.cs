@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using YGFIL.Databases;
+using YGFIL.Managers;
 using YGFIL.Minigames.Managers;
 using YGFIL.ScriptableObjects;
 
@@ -40,6 +41,7 @@ namespace YGFIL.Minigames
             
             if (Random.Range(0, 100) < chance) 
             {
+                AudioManager.Instance.Play("iceHit");
                 pressCount++;
                 chance = 20;  
             } 
@@ -49,6 +51,7 @@ namespace YGFIL.Minigames
             
             if (pressCount >= iceOptionSO.Images.Count - 1) 
             {
+                AudioManager.Instance.Play("iceBreak");
                 var textObject = transform.GetChild(iceOptionSO.NoteType).gameObject; 
                 textObject.SetActive(true);
                 textObject.GetComponent<TextMeshProUGUI>().text = iceOptionSO.Text;
