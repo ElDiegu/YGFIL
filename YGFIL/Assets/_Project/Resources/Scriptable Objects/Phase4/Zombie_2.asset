@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Image>k__BackingField: {fileID: 4810908530208369429, guid: da4a2ac9fab1ad94796b988a219d8dc1, type: 3}
   <Text>k__BackingField: Casita a ver LoL
-  <TextColor>k__BackingField: {r: 0.8039216, g: 0.85882354, b: 0.95686275, a: 0}
-  <LoveValue>k__BackingField: 5
+  <TextColor>k__BackingField: {r: 0.8039216, g: 0.85882354, b: 0.95686275, a: 1}
+  <LoveValue>k__BackingField: 15

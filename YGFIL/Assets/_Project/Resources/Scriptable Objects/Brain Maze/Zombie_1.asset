@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8764b0ec4080d44b42317aba2d2330, type: 3}
   m_Name: Zombie_1
   m_EditorClassIdentifier: 
-  <Text>k__BackingField: "El apocalipsis ser\xEDa muy f\xE1cil"
-  <LoveValue>k__BackingField: -2
+  <Text>k__BackingField: "El apocalipsis ser\xEDa facil"
+  <LoveValue>k__BackingField: -10

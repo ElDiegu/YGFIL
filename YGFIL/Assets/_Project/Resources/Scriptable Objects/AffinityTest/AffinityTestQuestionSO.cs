@@ -10,10 +10,10 @@ namespace YGFIL.ScriptableObjects
         public string QuestionText { get; private set; }
 
         [field: SerializeField]
-        public List<string> OptionsTexts { get; private set; }
+        public List<string> OptionsTexts { get; private set; } = new List<string>();
 
         [field: SerializeField]
-        public List<int> LoveValues { get; private set; }
+        public List<int> LoveValues { get; private set; } = new List<int>();
         
         public AffinityTestQuestionSO(string[] parameters) 
         {
@@ -21,8 +21,8 @@ namespace YGFIL.ScriptableObjects
             
             for (int i = 0; i < 4; i++) 
             {
-                OptionsTexts.Add(parameters[2 + i]);
-                LoveValues.Add(int.Parse(parameters[3 + i]));
+                OptionsTexts.Add(parameters[2 + i * 3]);
+                LoveValues.Add(int.Parse(parameters[3 + i * 3]));
             }
         }
     }

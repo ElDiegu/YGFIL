@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a9ae43cfbb9624395dbd084afa1588, type: 3}
+  m_Name: Medusa_Set
+  m_EditorClassIdentifier: 
+  <Options>k__BackingField:
+  - {fileID: 11400000, guid: 23b6a4a1d54951b43943854ead9a4f3d, type: 2}
+  - {fileID: 11400000, guid: f622dafb8db05c24ea7ac07eb0f56d3f, type: 2}
+  - {fileID: 11400000, guid: db5a8fc6941686b43ad8fc5d9c0ca60e, type: 2}
+  - {fileID: 11400000, guid: 1b4019c004384794394839c51b707529, type: 2}
+  - {fileID: 11400000, guid: fa076fe9f5c976a4ab47dfdca8e595fe, type: 2}
+  - {fileID: 11400000, guid: bb91c82c5d21d544cb7b997c9acd3694, type: 2}
+  - {fileID: 11400000, guid: 0432a40c4914ccd41b1c4728021c8da8, type: 2}
+  - {fileID: 11400000, guid: 2d206e1590363934eae7447ec115f455, type: 2}

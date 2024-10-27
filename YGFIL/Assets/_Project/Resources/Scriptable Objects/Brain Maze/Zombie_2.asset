@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8764b0ec4080d44b42317aba2d2330, type: 3}
   m_Name: Zombie_2
   m_EditorClassIdentifier: 
-  <Text>k__BackingField: "Las dos son terror\xEDficas"
-  <LoveValue>k__BackingField: 5
+  <Text>k__BackingField: Las dos son terrorificas
+  <LoveValue>k__BackingField: 15

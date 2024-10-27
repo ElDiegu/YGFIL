@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314034932b14cbb4eba7aeb0b75736b0, type: 3}
+  m_Name: Succubus_1
+  m_EditorClassIdentifier: 
+  <QuestionText>k__BackingField: "\xBFQu\xE9 prefieres vestir para sentirte m\xE1s
+    c\xF3modo?"
+  <OptionsTexts>k__BackingField:
+  - "La lencer\xEDa atrevida y provocativa."
+  - Nada en absoluto, la piel siempre es mejor
+  - Un cosplay sexy  que a juego con tu pareja
+  - "Unos jeans c\xF3modos y una camiseta sencilla"
+  <LoveValues>k__BackingField: 0f0000000f0000000f000000f6ffffff

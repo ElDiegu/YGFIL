@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78794c80b6d29c248a9f728d3dddf232, type: 3}
   m_Name: Zombie_0
   m_EditorClassIdentifier: 
-  <Images>k__BackingField: []
   <NoteType>k__BackingField: 1
   <Text>k__BackingField: "\"Desconoc\xEDa que los zombies exist\xEDan\""
-  <LoveValue>k__BackingField: 3
+  <LoveValue>k__BackingField: 0

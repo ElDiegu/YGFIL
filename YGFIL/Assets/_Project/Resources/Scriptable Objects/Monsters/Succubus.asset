@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Succubus
   m_EditorClassIdentifier: 
   <ID>k__BackingField: 0
-  <Name>k__BackingField: 
-  <StartingLove>k__BackingField: 0
-  <LoveThreshold>k__BackingField: 0
+  <Name>k__BackingField: "Pen\xE9lope Pechugona"
+  <StartingLove>k__BackingField: 100
+  <LoveThreshold>k__BackingField: 50
   <Sprite>k__BackingField: {fileID: 0}
   <Prefab>k__BackingField: {fileID: 7221936610709889073, guid: 678a29422391e17468deebee365dce78, type: 3}
-  <MonsterType>k__BackingField: 0
+  <MonsterType>k__BackingField: 6
   <IceBreakingOptionSet>k__BackingField: {fileID: 11400000, guid: 6b388acb5d3f1ee4d84701f4a8c3a93f, type: 2}
-  <IntroductionsOptionSet>k__BackingField: {fileID: 0}
-  <BrainConnectionsOptionSet>k__BackingField: {fileID: 0}
-  <Phase4optionSet>k__BackingField: {fileID: 0}
-  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 0}
+  <IntroductionsOptionSet>k__BackingField: {fileID: 11400000, guid: ba4e94721415c3348821dede175a4b7f, type: 2}
+  <BrainConnectionsOptionSet>k__BackingField: {fileID: 11400000, guid: 1c75f6a175f12094ea7952308a77c3ef, type: 2}
+  <Phase4optionSet>k__BackingField: {fileID: 11400000, guid: 63ad29826bd5f994fb880f2870ee0a4c, type: 2}
+  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 11400000, guid: 932f5fd8efec57244a7d7ffe577a6fc1, type: 2}

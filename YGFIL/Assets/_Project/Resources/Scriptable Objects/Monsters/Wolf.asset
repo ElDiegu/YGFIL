@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Wolf
   m_EditorClassIdentifier: 
   <ID>k__BackingField: 0
-  <Name>k__BackingField: 
-  <StartingLove>k__BackingField: 0
-  <LoveThreshold>k__BackingField: 0
+  <Name>k__BackingField: "Lisandro Lic\xE1ntropo"
+  <StartingLove>k__BackingField: 40
+  <LoveThreshold>k__BackingField: 70
   <Sprite>k__BackingField: {fileID: 0}
   <Prefab>k__BackingField: {fileID: 3222872065320229681, guid: d8ddec76cd83afd4fabffa5de8fcb963, type: 3}
-  <MonsterType>k__BackingField: 0
+  <MonsterType>k__BackingField: 8
   <IceBreakingOptionSet>k__BackingField: {fileID: 11400000, guid: 63836a3b7f7dd2c45b8173ffdcf66b1f, type: 2}
-  <IntroductionsOptionSet>k__BackingField: {fileID: 0}
-  <BrainConnectionsOptionSet>k__BackingField: {fileID: 0}
-  <Phase4optionSet>k__BackingField: {fileID: 0}
-  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 0}
+  <IntroductionsOptionSet>k__BackingField: {fileID: 11400000, guid: 63ec1f72e68d26a4787fb3c2e254bf3e, type: 2}
+  <BrainConnectionsOptionSet>k__BackingField: {fileID: 11400000, guid: dcf6af5f923d62d499fd8cd796a70908, type: 2}
+  <Phase4optionSet>k__BackingField: {fileID: 11400000, guid: b61370ffa472e334e831b8b334372c90, type: 2}
+  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 11400000, guid: 6a6f8d2bce38bc14facd350c6646803e, type: 2}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Wolf_Set
   m_EditorClassIdentifier: 
   <Options>k__BackingField:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 10c3044053e18ba4e8e008a07a4fe01b, type: 2}
+  - {fileID: 11400000, guid: c58c540d87240be48a0ac3510aa79957, type: 2}
+  - {fileID: 11400000, guid: 1a0390d0b2bf92541a906e284afa7608, type: 2}

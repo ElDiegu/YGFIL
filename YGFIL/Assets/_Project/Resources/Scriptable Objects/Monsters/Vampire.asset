@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Vampire
   m_EditorClassIdentifier: 
   <ID>k__BackingField: 0
-  <Name>k__BackingField: 
-  <StartingLove>k__BackingField: 0
-  <LoveThreshold>k__BackingField: 0
+  <Name>k__BackingField: "Conde Chup\xF3n"
+  <StartingLove>k__BackingField: 50
+  <LoveThreshold>k__BackingField: 70
   <Sprite>k__BackingField: {fileID: 0}
   <Prefab>k__BackingField: {fileID: 1930312896704507320, guid: 5df25597be5dd2e4cb8ef6bfc50b4456, type: 3}
-  <MonsterType>k__BackingField: 0
+  <MonsterType>k__BackingField: 5
   <IceBreakingOptionSet>k__BackingField: {fileID: 11400000, guid: a7df1243db805b2469e7a70aa28fac0b, type: 2}
-  <IntroductionsOptionSet>k__BackingField: {fileID: 0}
-  <BrainConnectionsOptionSet>k__BackingField: {fileID: 0}
-  <Phase4optionSet>k__BackingField: {fileID: 0}
-  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 0}
+  <IntroductionsOptionSet>k__BackingField: {fileID: 11400000, guid: d9deeb7b43f4e3d42afe036c9da73da0, type: 2}
+  <BrainConnectionsOptionSet>k__BackingField: {fileID: 11400000, guid: ef6ceac81f0ae344c94aff700fd613a5, type: 2}
+  <Phase4optionSet>k__BackingField: {fileID: 11400000, guid: 3d2b048a2c3960544a31018b6b48305f, type: 2}
+  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 11400000, guid: 33a34358d68ceb44baf353c7429d6733, type: 2}

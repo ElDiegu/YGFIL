@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314034932b14cbb4eba7aeb0b75736b0, type: 3}
+  m_Name: Succubus_2
+  m_EditorClassIdentifier: 
+  <QuestionText>k__BackingField: "\xBFQu\xE9 tipo de compa\xF1\xEDa prefieres para
+    una noche inolvidable?"
+  <OptionsTexts>k__BackingField:
+  - Una persona que le guste rolear intenso
+  - "Un grupo de personas dispuestas a divertirse sin l\xEDmites"
+  - Una aventura a solas, descubriendo nuevos placeres
+  - Pijamada real con los amigos
+  <LoveValues>k__BackingField: 0f0000000f0000000f000000f6ffffff

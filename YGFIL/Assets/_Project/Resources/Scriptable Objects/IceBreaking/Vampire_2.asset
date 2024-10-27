@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78794c80b6d29c248a9f728d3dddf232, type: 3}
   m_Name: Vampire_2
   m_EditorClassIdentifier: 
-  <Images>k__BackingField: []
   <NoteType>k__BackingField: 1
   <Text>k__BackingField: "\"A m\xED me gustan mayores\""
-  <LoveValue>k__BackingField: 5
+  <LoveValue>k__BackingField: 15

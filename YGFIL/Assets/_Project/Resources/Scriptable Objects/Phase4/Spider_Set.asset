@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e938d7971d6b754d805ee470a839258, type: 3}
+  m_Name: Spider_Set
+  m_EditorClassIdentifier: 
+  <Options>k__BackingField:
+  - {fileID: 11400000, guid: 4ee25cff8c3370142a7088c778c169bb, type: 2}
+  - {fileID: 11400000, guid: 14141913ed40a4548bfd55caa5078539, type: 2}
+  - {fileID: 11400000, guid: 4999d05d962a18647a5b9219805a3c04, type: 2}
+  <CardText>k__BackingField: Contar cuando
+  <CardImage>k__BackingField: {fileID: -7637494367561189788, guid: f2ca520324bfde2439b4c891bf3e82f6, type: 3}

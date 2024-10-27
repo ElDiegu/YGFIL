@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Medusa
   m_EditorClassIdentifier: 
   <ID>k__BackingField: 0
-  <Name>k__BackingField: 
-  <StartingLove>k__BackingField: 0
-  <LoveThreshold>k__BackingField: 0
+  <Name>k__BackingField: Carolina Culebras
+  <StartingLove>k__BackingField: 30
+  <LoveThreshold>k__BackingField: 85
   <Sprite>k__BackingField: {fileID: 0}
   <Prefab>k__BackingField: {fileID: 8038803042031168687, guid: 48e785cfd29ebb3429c998c771edced2, type: 3}
-  <MonsterType>k__BackingField: 0
+  <MonsterType>k__BackingField: 4
   <IceBreakingOptionSet>k__BackingField: {fileID: 11400000, guid: 1c95d8a613914de40ab27426a26fa24c, type: 2}
-  <IntroductionsOptionSet>k__BackingField: {fileID: 0}
-  <BrainConnectionsOptionSet>k__BackingField: {fileID: 0}
-  <Phase4optionSet>k__BackingField: {fileID: 0}
-  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 0}
+  <IntroductionsOptionSet>k__BackingField: {fileID: 11400000, guid: 3ac7c67541d2d4d49846296fadeadf5b, type: 2}
+  <BrainConnectionsOptionSet>k__BackingField: {fileID: 11400000, guid: fad527f129d22fd41a89bb3c7c66e679, type: 2}
+  <Phase4optionSet>k__BackingField: {fileID: 11400000, guid: 5c1787f88525bbd4d8e3e7304b0c1aae, type: 2}
+  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 11400000, guid: 80b98bb1570e1f545b092525ecf65fd9, type: 2}

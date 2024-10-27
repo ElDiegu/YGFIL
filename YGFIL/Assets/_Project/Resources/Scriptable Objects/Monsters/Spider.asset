@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Spider
   m_EditorClassIdentifier: 
   <ID>k__BackingField: 0
-  <Name>k__BackingField: 
-  <StartingLove>k__BackingField: 0
-  <LoveThreshold>k__BackingField: 0
+  <Name>k__BackingField: "Telma Telara\xF1as"
+  <StartingLove>k__BackingField: 45
+  <LoveThreshold>k__BackingField: 80
   <Sprite>k__BackingField: {fileID: 0}
   <Prefab>k__BackingField: {fileID: 2315660110983727011, guid: 34211820df743854893aaefdf35e548e, type: 3}
-  <MonsterType>k__BackingField: 0
+  <MonsterType>k__BackingField: 3
   <IceBreakingOptionSet>k__BackingField: {fileID: 11400000, guid: c371404220c888e469ddcfdf56f6046e, type: 2}
-  <IntroductionsOptionSet>k__BackingField: {fileID: 0}
-  <BrainConnectionsOptionSet>k__BackingField: {fileID: 0}
-  <Phase4optionSet>k__BackingField: {fileID: 0}
-  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 0}
+  <IntroductionsOptionSet>k__BackingField: {fileID: 11400000, guid: 671903ec6c8ce4742a992debbab553e8, type: 2}
+  <BrainConnectionsOptionSet>k__BackingField: {fileID: 11400000, guid: 4691ebb1066c32d41b50d4ffda78c2d7, type: 2}
+  <Phase4optionSet>k__BackingField: {fileID: 11400000, guid: e4586ec6ecaed104291fbacff8892ad8, type: 2}
+  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 11400000, guid: 3a4ef52ce397b754e95b5d72d59f7c1a, type: 2}

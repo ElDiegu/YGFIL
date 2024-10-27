@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e938d7971d6b754d805ee470a839258, type: 3}
+  m_Name: Succubus_Set
+  m_EditorClassIdentifier: 
+  <Options>k__BackingField:
+  - {fileID: 11400000, guid: 672dce637e12dc44fadc5e010b85c8c1, type: 2}
+  - {fileID: 11400000, guid: e06e1b653b7c12f49995530db014b576, type: 2}
+  - {fileID: 11400000, guid: 8d29bec40cb2e344bb0edc03058bc2f5, type: 2}
+  <CardText>k__BackingField: Contar cuando
+  <CardImage>k__BackingField: {fileID: 4104826609865273824, guid: f2ca520324bfde2439b4c891bf3e82f6, type: 3}

@@ -1,0 +1,34 @@
+id	monster	expression	text	next_id	tag	tag
+0	MainCharacter	Neutral	Me llaman mucho la atención los bichitos que tienes a tu lado, ¿son tus mascotas?	1	IceBreaking_Neutral	
+1	Spider	Neutral	Se podría decir que sí, pero no les gustan nada los seres cómo tú, así que no intentaría acariciarlas si es lo que pretendes.		End	
+2	MainCharacter	Neutral	Con esa estética que me llevas tienes un aire bastante fúnebre. Pero te queda bastante bien.	3	IceBreaking_Good	
+3	Spider	Happy	Esa era la intención la verdad. Gracias por fijarte.		End	
+4	MainCharacter	Neutral	Te vas a reir pero me da curiosidad. ¿Tus pies también son manos o son diferentes al resto de tus extremidades?	5	IceBreaking_Bad	
+5	Spider	Dislike	Pffff... ¿Tú qué crees?, ¿Tus pies son igual que tus manos?		End	
+6	Spider	Neutral	No perdamos el hilo. Me llamo Telma Telaraña. Me gusta mucho estar en las redes y confeccionar mis propios diseños de ropa.	7		
+7	Spider	Neutral	También jugar con aquellos seres que considero mi comida, así que ándate con ojo. ¿Qué hay de tí?		End	
+8	Spider	Happy	Me gusta cómo piensas, ¿qué te parece tejer algo más interesante juntos?		Introductions_Good	End
+9	Spider	Dislike	Tu presentación me ha llamado tanto la atención como un insignificante bicho en mi red.		Introductions_Bad	End
+10	Spider	Neutral	Quería saber…. ¿Cuál es tu opinión sobre los límites? Porque a veces pienso que romperlos es mucho más interesante.			
+11	Spider	Happy	Me gusta cómo piensas, rompamos los límites juntos.		End	
+12	Spider	Dislike	Tienes una mentalidad menos libre que mis presas.		End	
+13	Spider	Neutral	Cuéntame, ¿te ha pasado algo interesante últimamente?		End	
+14	Spider	Dislike	Y… ¿qué pasaría si te dijera que era mi prima segunda?, Tienes cero consideración con los demás la verdad.		Phase4_Bad	End
+15	Spider	Happy	Vaya, vaya…. No sabía que hubiera rebajas, me habría gustado mucho mirar un par de prendas. Ojalá te hubiera acompañado.		Phase4_Good	End
+16	Spider	Neutral	Mucha gente cree en los hilos del destino, pero seguramente la bruja te estafó.		Phase4_Neutral	End
+17	Spider	Happy	Me agradas, quiero que entrelacemos los hilos de nuestras vidas.		Ending_Like	End
+18	Spider	Dislike	No te aguanto, no me voy a molestar ni en atraparte en mi red. Adiós.		Ending_Dislike	End
+19	Caster	Neutral	A continuación, vamos con un concursante muy amenazante. Que entre.... Telma Telarañas, acompañada de... ¿sus mascotas?.		Introduction	End
+20	Caster	Surprised	Nuestro concursante parece estar en terreno resbaladizo, ¿será capaz de encontrar el equilibrio y deslizarse hacia el corazón de su cita o se quedará congelado en el intento?		IceBreaking_Start	End
+21	Caster	Excited	¡Qué entrada más inesperada! Pero antes de seguir con la acción, vamos a conocernos mejor.	6	Introductions_Start	
+22	Caster	Happy	¡Vaya! Parece que nuestro monstruo tiene algo en mente. Humano, ¡atento! Porque te va a lanzar una pregunta inesperada. ¿Estás listo para lo que viene?		Brain_Start	End
+23	MainCharacter	Neutral	No se, no se me dan muy bien las matemáticas...	12	Brain_One	
+24	MainCharacter	Neutral	Límites son los que no quiero que haya entre nosotros	12	Brain_Two	
+25	MainCharacter	Neutral	Siempre está bien saltarse un poco las reglas, todo es mucho más divertido así.	11	Brain_Three	
+26	MainCharacter	Neutral	Hay que poner límites a las cosas, si no todo se iría a la mierda.	12	Brain_Four	
+27	Caster	Neutral	¡Esto sí que no lo vimos venir! El monstruo ha decidido darle un toque más ‘casual’ a la cita, y ahora nuestro jugador lleva una mancha como recuerdo. ¡Qué romántico!	13	Phase4_Start	
+28	Caster	Happy	¡El final está cerca! Ahora que ya se conocen mejor, es hora de ver qué tan compatibles son con el test de afinidad. ¡Las respuestas decidirán el destino de esta cita!		Affinity_Start	End
+29	Spider	Happy	No hay duda de que un hilo rojo une nuestros corazones.		Affinity_Good	End
+30	Spider	Dislike	Menudas respuestas... Esto es deprimente.		Affinity_Bad	End
+31	Caster	Surprised	¡Hemos llegado al final de la cita! Espero que hayáis disfrutado el espectáculo.		Ending	
+32	Caster	Excited	¿¡Qué opinión tendrá nuestro monstruo sobre el invitado!? ¿Habrá caído en las redes del amor?		End	
