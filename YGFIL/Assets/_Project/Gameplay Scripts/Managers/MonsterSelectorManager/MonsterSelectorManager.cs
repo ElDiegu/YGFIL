@@ -9,19 +9,27 @@ using YGFIL.Monsters;
 
 namespace YGFIL
 {
-    public class MonsterSelectorManager : PersistentSingleton<MonsterSelectorManager>
+    public class MonsterSelectorManager : StaticInstance<MonsterSelectorManager>
     {
         [SerializeField] private List<SelectionDisplayed> monstersSelections;
 
         public int datesCompleted = 0;
 
-        public void DateCompleted(Monster monster)
+        void Start()
+        {
+            foreach (MonsterType monster in GameManager.Instance.completedMonsters)
+            {
+                DateCompleted(monster);
+            }
+        }
+
+        public void DateCompleted(MonsterType monster)
         {
             datesCompleted++;
             foreach (SelectionDisplayed selection in monstersSelections)
             {
                 selection.checkUnlockSelection();
-                if (selection.monsterSelectionSO.MonsterType == monster.monsterType.ToString())
+                if (selection.monsterSelectionSO.MonsterType == monster.ToString())
                 {
                     selection.completed.SetActive(true);
                     selection.button.interactable = false;
