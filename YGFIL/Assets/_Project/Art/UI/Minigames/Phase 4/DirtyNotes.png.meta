@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DirtyNotes_0: 8975786855556936950
+      DirtyNotes_1: 4104826609865273824
+      DirtyNotes_2: -7637494367561189788
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
