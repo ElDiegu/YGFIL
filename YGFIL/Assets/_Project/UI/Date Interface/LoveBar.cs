@@ -80,11 +80,11 @@ namespace YGFIL
             
             if(loveValueUpdatedEvent.loveValue > loveSlider.value)
             {
-                AudioManager.instance.Play("loveBarUp");
+                AudioManager.Instance.Play("loveBarUp");
             }
             else
             {
-                AudioManager.instance.Play("loveBarDown");
+                AudioManager.Instance.Play("loveBarDown");
             }
 
             loveBarCoroutine = StartCoroutine(UpdateLoveValueCoroutine(loveValueUpdatedEvent.loveValue));
