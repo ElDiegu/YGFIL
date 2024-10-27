@@ -75,7 +75,7 @@ namespace YGFIL.Minigames.Managers
             
             while(UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
-            DateManager.Instance.StartMinigameTimer(30f);
+            DateManager.Instance.StartMinigameTimer(10f);
             
             ChangeState(MinigameState.Game);
             

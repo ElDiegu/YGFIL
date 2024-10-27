@@ -99,7 +99,7 @@ namespace YGFIL.Minigames.Managers
                 while (optionCard.IsSliding()) yield return null;
             }
             
-            DateManager.Instance.StartMinigameTimer(30f);
+            DateManager.Instance.StartMinigameTimer(10f);
             
             ChangeState(MinigameState.Game);
         }
