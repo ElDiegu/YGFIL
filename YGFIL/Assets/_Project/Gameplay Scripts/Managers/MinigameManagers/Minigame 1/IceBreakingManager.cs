@@ -13,12 +13,12 @@ namespace YGFIL.Minigames.Managers
     {
         [SerializeField] private IceOptionSetSO optionsSet;
         public ScriptableObject ScriptableObject { get => optionsSet; set {} }
-        
-        [SerializeField] private MinigameState state;
 
         [SerializeField] private IceOptionSO selectedOption;
         [SerializeField] private GameObject submitButton;
         
+        private void Start() => optionsSet = (DateManager.Instance.Monster.ScriptableObject as MonsterSO).IceBreakingOptionSet;
+
         public void ChangeSelectedOption(IceOptionSO option) 
         {
             submitButton.SetActive(true);
@@ -30,6 +30,7 @@ namespace YGFIL.Minigames.Managers
             ChangeState(MinigameState.Ending);
         }
         
+        [SerializeField] private MinigameState state;
         public void ChangeState(MinigameState newState) 
         {
             state = newState;

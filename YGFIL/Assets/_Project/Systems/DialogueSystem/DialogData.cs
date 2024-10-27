@@ -36,6 +36,7 @@ namespace YGFIL.Enums
     public enum DialogTag 
     {
         End,
+        Introduction,
         IceBreaking_Start,
         IceBreaking_End,
         IceBreaking_Good,
@@ -55,5 +56,11 @@ namespace YGFIL.Enums
         Phase4_Bad,
         Phase4_Neutral,
         Affinity_Start,
+        Affinity_Good,
+        Affinity_Bad,
+        Affinity_End,
+        Ending,
+        Ending_Like,
+        Ending_Dislike
     }
 }

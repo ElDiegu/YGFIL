@@ -15,7 +15,7 @@ MonoBehaviour:
   <ID>k__BackingField: 0
   <Name>k__BackingField: Pedro Podrido
   <StartingLove>k__BackingField: 50
-  <LoveThreshold>k__BackingField: 0
+  <LoveThreshold>k__BackingField: 75
   <Sprite>k__BackingField: {fileID: 0}
   <Prefab>k__BackingField: {fileID: 0}
   <MonsterType>k__BackingField: 2

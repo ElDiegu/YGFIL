@@ -334,7 +334,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5452250133475214034}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YGFIL.Phase4Game, Assembly-CSharp
         m_MethodName: OnSubmitButtonPressed
         m_Mode: 1
@@ -603,7 +603,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5452250133475214034}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YGFIL.Phase4Game, Assembly-CSharp
         m_MethodName: OnOptionButtonPressed
         m_Mode: 3
@@ -736,7 +736,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5452250133475214034}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YGFIL.Phase4Game, Assembly-CSharp
         m_MethodName: OnOptionButtonPressed
         m_Mode: 3
@@ -782,8 +782,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26.1, y: 109.1}
-  m_SizeDelta: {x: 421.5, y: 184.3}
+  m_AnchoredPosition: {x: -18.23, y: 109.1}
+  m_SizeDelta: {x: 405.77, y: 184.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6934097706869076834
 CanvasRenderer:
@@ -840,14 +840,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 89.9
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 290.8
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -949,7 +949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: me cague encima
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0fd75d1867f30fa459d4fdd1c7300f74, type: 2}
   m_sharedMaterial: {fileID: 5279240613514134916, guid: 0fd75d1867f30fa459d4fdd1c7300f74, type: 2}
@@ -976,7 +976,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 89.45
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1047,7 +1047,7 @@ RectTransform:
   m_GameObject: {fileID: 4696886451041562078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 6.592778}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 269675481247607781}
@@ -1378,7 +1378,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5223937667093743290}
-  - component: {fileID: 5452250133475214034}
   m_Layer: 0
   m_Name: Phase4Game
   m_TagString: Untagged
@@ -1411,25 +1410,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5452250133475214034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7419770782839166963}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: badd1a15115653c4b96d25f558f63390, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textGame4: {fileID: 5523213853415380366}
-  fillText: {fileID: 8211686616934912102}
-  optionButtonTexts:
-  - {fileID: 2359460588341974426}
-  - {fileID: 2889270270705935616}
-  - {fileID: 399079301678593372}
-  submitButton: {fileID: 3219690400710970213}
 --- !u!1 &8536215674606201953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,7 +1531,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5452250133475214034}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: YGFIL.Phase4Game, Assembly-CSharp
         m_MethodName: OnOptionButtonPressed
         m_Mode: 3

@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 namespace YGFIL.Managers
 {
-    public class InputManager : PersistentSingleton<InputManager>
+    public class InputManager : StaticInstance<InputManager>
     {
         [SerializeField] private PlayerInput playerInput;
         public InputStruct InputStruct { get; private set; }

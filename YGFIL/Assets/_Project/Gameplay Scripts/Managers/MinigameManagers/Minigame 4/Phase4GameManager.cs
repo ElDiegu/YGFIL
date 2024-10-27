@@ -1,6 +1,8 @@
 using System.Collections;
 using Systems.EventSystem;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using YGFIL.Enums;
 using YGFIL.Events;
 using YGFIL.Managers;
@@ -9,22 +11,34 @@ using YGFIL.Systems;
 
 namespace YGFIL.Minigames.Managers
 {
-    public class Phase4GameManager : StaticInstance<Phase4GameManager>, ISOContainer
+    public class Phase4Manager : StaticInstance<Phase4Manager>, ISOContainer
     {
         [SerializeField] private Phase4OptionSetSO optionsSet;
         public ScriptableObject ScriptableObject { get => optionsSet; set {} }
-        
-        [SerializeField] private MinigameState state;
 
         [SerializeField] private Phase4OptionSO selectedOption;
-        
 
-        public void SubmitOption(int indexOption) 
+        [SerializeField] private TMP_Text cardText;
+        [SerializeField] private TMP_Text fillText;
+        [SerializeField] private Image cardImage;
+        [SerializeField] private TMP_Text[] optionButtonTexts;
+        [SerializeField] private Image[] optionButtonImage;
+        [SerializeField] private Button submitButton;
+        int currentOption = -1;
+        
+        private void Start()
         {
-            ChangeState(MinigameState.Ending);
-            selectedOption = optionsSet.Options[indexOption];
+            cardText.text = optionsSet.CardText;
+            cardImage.sprite = optionsSet.CardImage;
+            for (int i = 0; i < 3; i++)
+            {
+                optionButtonTexts[i].text = optionsSet.Options[i].Text;
+                optionButtonTexts[i].color = optionsSet.Options[i].TextColor;
+                optionButtonImage[i].sprite = optionsSet.Options[i].Image;
+            }
         }
         
+        [SerializeField] private MinigameState state;
         public void ChangeState(MinigameState newState) 
         {
             state = newState;
@@ -109,6 +123,19 @@ namespace YGFIL.Minigames.Managers
             yield return null;
             
             DateManager.Instance.ChangePhase(DatePhase.MinigameFive);
+        }
+        
+        public void SubmitOption(int indexOption) 
+        {
+            ChangeState(MinigameState.Ending);
+            selectedOption = optionsSet.Options[indexOption];
+        }
+        
+        public void OnOptionButtonPressed(int optionClicked)
+        {
+            currentOption = optionClicked;
+            fillText.text = optionButtonTexts[optionClicked].text;
+            submitButton.enabled = true;
         }
     }
 }

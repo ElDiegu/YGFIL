@@ -19,21 +19,9 @@ namespace YGFIL.Minigames.Managers
         [SerializeField] private List<IntroductionsOptionSO> selectedOptions;
         [SerializeField] private GameObject submitButton;
         [SerializeField] private List<IntroductionsOptionCard> optionCards;
-
-        protected override void Awake()
-        {
-            base.Awake();
-            
-            StartCoroutine(InitializationCoroutine());
-        }
         
-        private IEnumerator InitializationCoroutine() 
-        {
-            while (DateManager.Instance.Monster.ScriptableObject == null) yield return null;
-            
-            optionSet = ((MonsterSO)DateManager.Instance.Monster.ScriptableObject).IntroductionsOptionSet;
-        }
-
+        private void Start() => optionSet = ((MonsterSO)DateManager.Instance.Monster.ScriptableObject).IntroductionsOptionSet;
+        
 #region Minigame State Machine
         public MinigameState state;
         
@@ -92,6 +80,8 @@ namespace YGFIL.Minigames.Managers
             {
                 animationString = "HideIntroductionsMinigame"
             });
+            
+            yield return new WaitForSeconds(0.001f);
             
             while (UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             

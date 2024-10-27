@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 314034932b14cbb4eba7aeb0b75736b0, type: 3}
   m_Name: Zombie_3
   m_EditorClassIdentifier: 
-  <QuestionText>k__BackingField: "Si tuvieras que elegir una inversi\xF3n a largo
-    plazo, \xBFcu\xE1l ser\xEDa?"
+  <QuestionText>k__BackingField: "\xBFQu\xE9 m\xFAsica pondr\xEDas para una perfecta
+    noche en pareja?"
   <OptionsTexts>k__BackingField:
-  - Invertir en una vida juntos, hasta que la muerte nos separe.
-  - "Los ZombieCoins son una apuesta segura hoy en d\xEDa."
-  - Skins del Dota 2 para los dos.
-  - "\xBFAspiradoras?"
-  <LoveValues>k__BackingField: 0300000005000000fefffffffeffffff
+  - "Quiz\xE1s algo de m\xFAsica electr\xF3nica, algo r\xE1pido que suba la adrenalina,
+    pero sin mucho l\xEDo."
+  - "Cualquier cosa que no moleste, tal vez algo de lo-fi hip hop para mantener la
+    concentraci\xF3n."
+  - Taylor Swift, especialmente Shake It Off... Para ir bien motivados.
+  - "El m\xE1s puro silencio, la m\xFAsica molesta para lo que vamos a hacer."
+  <LoveValues>k__BackingField: 0300000005000000feffffff02000000

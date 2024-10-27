@@ -22,19 +22,21 @@ namespace YGFIL.Managers
         
         private IEnumerator StartPlayingCoroutine() 
         {
-            AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("DateScene");
-            
-            loadingOperation.allowSceneActivation = false;
-            
             titleAnimator.SetTrigger("TitleLeave");
             
             while (titleAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
             fadeOutAnimator.Play("FadeOutImage");
             
+            yield return new WaitForSeconds(0.001f);
+            
             while (fadeOutAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
-            while (loadingOperation.progress < 0.9f) yield return null; 
+            AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("DateScene");
+            
+            loadingOperation.allowSceneActivation = false;
+            
+            while (loadingOperation.progress < 0.9f) yield return null;
             
             loadingOperation.allowSceneActivation = true;
         }

@@ -21,10 +21,11 @@ namespace YGFIL
         private int solvedMazes;
         [SerializeField] private List<GameObject> options;
         [SerializeField] private GameObject mazeZone, optionsZone;
-        private int selectedIndex;
+        [SerializeField] private int selectedIndex;
+        
+        private void Start() => brainConnectionsOptionSet = (DateManager.Instance.Monster.ScriptableObject as MonsterSO).BrainConnectionsOptionSet;
         
         [SerializeField] private MinigameState state;
-        
         public void ChangeState(MinigameState newState) 
         {
             state = newState;
@@ -71,16 +72,16 @@ namespace YGFIL
             
             switch (selectedIndex) 
             {
-                case 1:
+                case 0:
                     tag = DialogTag.Brain_One;
                     break;
-                case 2:
+                case 1:
                     tag = DialogTag.Brain_Two;
                     break;
-                case 3:
+                case 2:
                     tag = DialogTag.Brain_Three;
                     break;
-                case 4:
+                case 3:
                     tag = DialogTag.Brain_Four;
                     break;
             }
