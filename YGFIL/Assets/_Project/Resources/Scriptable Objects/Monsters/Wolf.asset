@@ -18,7 +18,7 @@ MonoBehaviour:
   <LoveThreshold>k__BackingField: 70
   <Sprite>k__BackingField: {fileID: 0}
   <Prefab>k__BackingField: {fileID: 3222872065320229681, guid: d8ddec76cd83afd4fabffa5de8fcb963, type: 3}
-  <MonsterType>k__BackingField: 8
+  <MonsterType>k__BackingField: 7
   <IceBreakingOptionSet>k__BackingField: {fileID: 11400000, guid: 63836a3b7f7dd2c45b8173ffdcf66b1f, type: 2}
   <IntroductionsOptionSet>k__BackingField: {fileID: 11400000, guid: 63ec1f72e68d26a4787fb3c2e254bf3e, type: 2}
   <BrainConnectionsOptionSet>k__BackingField: {fileID: 11400000, guid: dcf6af5f923d62d499fd8cd796a70908, type: 2}

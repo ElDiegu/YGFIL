@@ -147,6 +147,8 @@ namespace YGFIL.Managers
         {
             timerCoroutine = null;
             
+            timerIcon.SetActive(false);
+            
             switch (DatePhase) 
             {
                 case DatePhase.MinigameOne:
@@ -172,6 +174,7 @@ namespace YGFIL.Managers
             if (timerCoroutine != null) StopCoroutine(timerCoroutine);
             timerCoroutine = null;
             timer.text = "";
+            timerIcon.SetActive(false);
         }
         
         EventBinding<OnTimerFinishedEvent> onTimerFinishedBinding;

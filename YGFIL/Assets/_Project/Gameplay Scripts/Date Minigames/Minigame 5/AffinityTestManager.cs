@@ -151,7 +151,7 @@ namespace YGFIL
             
             while(UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
-            DateManager.Instance.StartMinigameTimer(30f);
+            DateManager.Instance.StartMinigameTimer(20f);
             
             DateManager.Instance.SetInteraction(true);
         }

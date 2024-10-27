@@ -2318,7 +2318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37152a6c761aa594ab50d71609f0fbb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monsterSO: {fileID: 11400000, guid: 68052888ece898b48b94de835c9876f4, type: 2}
+  monsterSO: {fileID: 11400000, guid: 91f9f1e8497c9d144abc9b5563a69562, type: 2}
   loveValue: 50
   monsterType: 2
   werewolfTransformed: {fileID: 6252754274001517344, guid: cd1aeb92a6a09324cbcdb0f58c430937, type: 3}
@@ -5518,7 +5518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 921613485140363131, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1126151438723415597, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5726,11 +5726,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6813057031044282679, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 350
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6813057031044282679, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -150
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6853291596371511836, guid: 2e0c1352e7c2ee34797edd30cd2cdd48, type: 3}
       propertyPath: m_IsActive
