@@ -35,7 +35,6 @@ namespace YGFIL.Systems
             if (DirtyDictionary["Phase4Option"]) LoadPhase4SO(loadingPath, savingPath);
             if (DirtyDictionary["AffinityTestOption"]) LoadAffinityTestSO(loadingPath, savingPath);
         }
-#endif
 
         public static void LoadIceOption(string loadingPath, string savingPath) 
         {
@@ -71,5 +70,6 @@ namespace YGFIL.Systems
             
             for (int i = 1; i < parsedData.Count; i++) AssetDatabase.CreateAsset(new AffinityTestQuestionSO(parsedData[i]), savingPath + "AffinityTest/" + parsedData[i][0] + ".asset");
         }
+#endif
     }
 }

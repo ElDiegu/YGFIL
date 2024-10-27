@@ -9,9 +9,7 @@ namespace YGFIL.Managers
 public class AudioManager : StaticInstance<AudioManager>
     {
     public Sound[] sounds;
-
-    public static AudioManager instance;
-    void Awake()
+    protected override void Awake()
     {
         base.Awake();
 

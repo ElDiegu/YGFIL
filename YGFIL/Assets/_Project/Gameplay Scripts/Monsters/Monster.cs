@@ -31,13 +31,15 @@ namespace YGFIL.Monsters
 
         private void Awake()
         {
-            monsterSO = GameManager.Instance.Monster;
+            if (GameManager.Instance != null) monsterSO = GameManager.Instance.Monster;
             monsterType = monsterSO.MonsterType;
         }
         
         private void Start() 
         {
-            Instantiate(monsterSO.Prefab, new Vector3(0f, 0f, 0f), new Quaternion(), transform);
+            var monsterObject = Instantiate(monsterSO.Prefab, transform);
+            monsterObject.transform.localPosition = Vector3.zero;
+            monsterObject.transform.localScale = Vector3.one;
         }
 
         public void UpdateLoveValue(UpdateLoveValueEvent updateLoveValueEvent) 
