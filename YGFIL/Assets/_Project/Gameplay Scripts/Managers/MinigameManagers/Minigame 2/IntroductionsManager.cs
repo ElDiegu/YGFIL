@@ -5,7 +5,6 @@ using UnityEngine;
 using YGFIL.Enums;
 using YGFIL.Events;
 using YGFIL.Managers;
-using YGFIL.Minigames.PhaseTwo;
 using YGFIL.ScriptableObjects;
 using YGFIL.Systems;
 
@@ -21,6 +20,35 @@ namespace YGFIL.Minigames.Managers
         [SerializeField] private List<IntroductionsOptionCard> optionCards;
         
         private void Start() => optionSet = ((MonsterSO)DateManager.Instance.Monster.ScriptableObject).IntroductionsOptionSet;
+        
+        public void ChangeOptionStatus(IntroductionsOptionSO introductionOption, bool selected) 
+        {
+            if (selected && !selectedOptions.Contains(introductionOption)) selectedOptions.Add(introductionOption);
+            else if (!selected && selectedOptions.Contains(introductionOption)) selectedOptions.Remove(introductionOption);
+            
+            if (selectedOptions.Count >= 3) submitButton.SetActive(true);
+        }
+        
+        public void SubmitIntroduction() 
+        {
+            DateManager.Instance.EndTimerEarly();
+            ChangeState(MinigameState.Ending);
+            return;
+        }
+        
+        public void TimeOut() 
+        {
+            while (selectedOptions.Count < 3) 
+            {
+                var option = optionSet.Options[Random.Range(0, optionSet.Options.Count)];
+                
+                if (selectedOptions.Contains(option)) continue;
+
+                selectedOptions.Add(option);
+            }
+            
+            ChangeState(MinigameState.Ending);
+        }
         
 #region Minigame State Machine
         public MinigameState state;
@@ -71,6 +99,8 @@ namespace YGFIL.Minigames.Managers
                 while (optionCard.IsSliding()) yield return null;
             }
             
+            DateManager.Instance.StartMinigameTimer(30f);
+            
             ChangeState(MinigameState.Game);
         }
         
@@ -112,19 +142,5 @@ namespace YGFIL.Minigames.Managers
             DateManager.Instance.ChangePhase(DatePhase.MinigameThree);
         }
 #endregion
-        
-        public void ChangeOptionStatus(IntroductionsOptionSO introductionOption, bool selected) 
-        {
-            if (selected && !selectedOptions.Contains(introductionOption)) selectedOptions.Add(introductionOption);
-            else if (!selected && selectedOptions.Contains(introductionOption)) selectedOptions.Remove(introductionOption);
-            
-            if (selectedOptions.Count >= 3) submitButton.SetActive(true);
-        }
-        
-        public void SubmitIntroduction() 
-        {
-            ChangeState(MinigameState.Ending);
-            return;
-        }
     }
 }

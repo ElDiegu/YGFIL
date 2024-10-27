@@ -22,3 +22,5 @@ MonoBehaviour:
   <IceBreakingOptionSet>k__BackingField: {fileID: 11400000, guid: 9f7803a3b10d4d040a3f62a68a6a42d5, type: 2}
   <IntroductionsOptionSet>k__BackingField: {fileID: 11400000, guid: 47077abee651da84bbdc8d9bbb8fa0a8, type: 2}
   <BrainConnectionsOptionSet>k__BackingField: {fileID: 11400000, guid: 8db83d37687a3df43a12f10546ad6ac5, type: 2}
+  <Phase4optionSet>k__BackingField: {fileID: 11400000, guid: 68d0fdfed8323764bbcf673496006e99, type: 2}
+  <AffinityTestQuestionSetSO>k__BackingField: {fileID: 11400000, guid: 9d5c1e0c6ef234449a7f2ce4d89742bf, type: 2}

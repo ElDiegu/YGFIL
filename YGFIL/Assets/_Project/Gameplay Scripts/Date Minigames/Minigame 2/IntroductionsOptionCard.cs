@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEditor.UI;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using YGFIL.ScriptableObjects;
@@ -9,8 +8,9 @@ using UnityEditor;
 using TMPro;
 using YGFIL.Databases;
 using YGFIL.Utils;
+using System.Collections;
 
-namespace YGFIL.Minigames.PhaseTwo
+namespace YGFIL.Minigames
 {
     public class IntroductionsOptionCard : MonoBehaviour, IDraggable, ISOContainer
     {
@@ -30,12 +30,17 @@ namespace YGFIL.Minigames.PhaseTwo
             GetComponent<Image>().alphaHitTestMinimumThreshold = 0.00000000001f;
         }
         
-        private void Start() 
+        private IEnumerator Start() 
         {
             var index = transform.GetSiblingIndex() - 1;
+            
+            while (IntroductionsManager.Instance.ScriptableObject == null) yield return null;
+            
             optionSO = ((IntroductionsOptionSetSO)IntroductionsManager.Instance.ScriptableObject).Options[index];
             
             image.sprite = ImagesDatabase.IntroductionsSprites[optionSO.ImageIndex];
+            
+            image.SetNativeSize();
             
             var textIndex = Mathf.FloorToInt(optionSO.ImageIndex / 3);
             
@@ -46,7 +51,7 @@ namespace YGFIL.Minigames.PhaseTwo
         
         public void OnBeginDrag(PointerEventData eventData)
         {
-            originalPosition = transform.position;
+            originalPosition = (transform as RectTransform).anchoredPosition;
             originalParent = transform.parent;
             
             transform.SetParent(transform.parent.transform.parent);
@@ -73,14 +78,23 @@ namespace YGFIL.Minigames.PhaseTwo
             if (hitResults.Count <= 0) 
             {
                 transform.SetParent(originalParent);
-                transform.position = originalPosition;
+                (transform as RectTransform).anchoredPosition = originalPosition;
                 return;
             }
             
             foreach (var hitResult in hitResults) 
-                if (hitResult.gameObject.tag == "IntroductionContainer") DroppedOnSelector(hitResult);
-                else if (hitResult.gameObject.tag == "IntroductionMenu") DroppedOnMenu(hitResult);
-                else Debug.Log(hitResult.gameObject.name);
+                if (hitResult.gameObject.tag == "IntroductionContainer") 
+                {
+                    DroppedOnSelector(hitResult);
+                    break;    
+                } 
+                else if (hitResult.gameObject.tag == "IntroductionMenu") 
+                {
+                    DroppedOnMenu(hitResult);
+                    break;   
+                }
+            
+            ResetCard();
         }
         
         private void DroppedOnSelector(RaycastResult hit) 
@@ -104,7 +118,11 @@ namespace YGFIL.Minigames.PhaseTwo
             slideCoroutine = StartCoroutine(SlideUtils.SlideCoroutineWithAnchoredPosition(gameObject, slidePosition, slideSpeed, slideMultiplier));
         }
         public bool IsSliding() => Mathf.Abs(slidePosition.y - (transform as RectTransform).anchoredPosition.y) > 10;
-    
+        private void ResetCard() 
+        {
+            transform.parent = originalParent;
+            (transform as RectTransform).anchoredPosition = originalPosition;
+        }
     }
 
 #if UNITY_EDITOR

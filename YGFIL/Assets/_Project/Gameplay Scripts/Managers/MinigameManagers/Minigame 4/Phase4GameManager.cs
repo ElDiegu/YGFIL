@@ -13,8 +13,8 @@ namespace YGFIL.Minigames.Managers
 {
     public class Phase4Manager : StaticInstance<Phase4Manager>, ISOContainer
     {
-        [SerializeField] private Phase4OptionSetSO optionsSet;
-        public ScriptableObject ScriptableObject { get => optionsSet; set {} }
+        [SerializeField] private Phase4OptionSetSO optionSet;
+        public ScriptableObject ScriptableObject { get => optionSet; set {} }
 
         [SerializeField] private Phase4OptionSO selectedOption;
 
@@ -26,16 +26,39 @@ namespace YGFIL.Minigames.Managers
         [SerializeField] private Button submitButton;
         int currentOption = -1;
         
-        private void Start()
+        private IEnumerator Start()
         {
-            cardText.text = optionsSet.CardText;
-            cardImage.sprite = optionsSet.CardImage;
+            while (DateManager.Instance.Monster.ScriptableObject == null) yield return null;
+            
+            optionSet = (DateManager.Instance.Monster.ScriptableObject as MonsterSO).Phase4optionSet;
+            
+            cardText.text = optionSet.CardText;
+            cardImage.sprite = optionSet.CardImage;
             for (int i = 0; i < 3; i++)
             {
-                optionButtonTexts[i].text = optionsSet.Options[i].Text;
-                optionButtonTexts[i].color = optionsSet.Options[i].TextColor;
-                optionButtonImage[i].sprite = optionsSet.Options[i].Image;
+                optionButtonTexts[i].text = optionSet.Options[i].Text;
+                optionButtonTexts[i].color = optionSet.Options[i].TextColor;
+                optionButtonImage[i].sprite = optionSet.Options[i].Image;
             }
+        }
+        
+        public void SubmitOption(int indexOption) 
+        {
+            selectedOption = optionSet.Options[indexOption];
+            DateManager.Instance.EndTimerEarly();
+            ChangeState(MinigameState.Ending);
+        }
+        
+        public void OnOptionButtonPressed(int optionClicked)
+        {
+            currentOption = optionClicked;
+            fillText.text = optionButtonTexts[optionClicked].text;
+            submitButton.enabled = true;
+        }
+        
+        public void TimeOut() 
+        {
+            SubmitOption(Random.Range(0, 3));
         }
         
         [SerializeField] private MinigameState state;
@@ -74,6 +97,8 @@ namespace YGFIL.Minigames.Managers
             });
             
             while(UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
+            
+            DateManager.Instance.StartMinigameTimer(30f);
             
             ChangeState(MinigameState.Game);
             
@@ -123,19 +148,6 @@ namespace YGFIL.Minigames.Managers
             yield return null;
             
             DateManager.Instance.ChangePhase(DatePhase.MinigameFive);
-        }
-        
-        public void SubmitOption(int indexOption) 
-        {
-            ChangeState(MinigameState.Ending);
-            selectedOption = optionsSet.Options[indexOption];
-        }
-        
-        public void OnOptionButtonPressed(int optionClicked)
-        {
-            currentOption = optionClicked;
-            fillText.text = optionButtonTexts[optionClicked].text;
-            submitButton.enabled = true;
         }
     }
 }

@@ -1,10 +1,11 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using YGFIL.Minigames.Managers;
 using YGFIL.ScriptableObjects;
 
-namespace YGFIL
+namespace YGFIL.Minigames
 {
     public class IceOption : MonoBehaviour, ISOContainer
     {
@@ -17,9 +18,11 @@ namespace YGFIL
 
         [SerializeField] private int buttonIndex;
 
-        private void Start()
+        private IEnumerator Start()
         {
             buttonIndex = transform.GetSiblingIndex();
+            
+            while (IceBreakingManager.Instance.ScriptableObject == null) yield return null;
             
             iceOptionSO = (IceBreakingManager.Instance.ScriptableObject as IceOptionSetSO).Options[buttonIndex];
             

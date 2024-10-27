@@ -2,8 +2,8 @@ id	monster	expression	text	next_id	tag	tag
 0	Caster	Neutral	¡Bienvenidos a una nueva edición de You're Gonna Fall: In Love!	1	Introduction	
 1	Caster	Neutral	Como cada año, los humanos envían a su elegido para enfrentarse a nuestros encantadores monstruos y, con suerte, encontrar el amor. ¿Caerá el concursante en las garras del amor?		End		
 2	Caster	Neutral	Atiende humano, voy a explicarte cómo funcionan las diferentes fases de una cita. Así que presta mucha atención, al fin y al cabo tu desenlace amoroso depende de ello.	3	IceBreaking_Start	
-3	Caster	Neutral	Aquí, mi carnoso amigo, deberás encontrar la forma de romper el hielo con tu monstruosa cita.	4		
-4	Caster	Neutral	Haz click sobre las opciones para descubrirlas, ¡pero date prisa! No querrás dejar que tu cita se enfríe...		End	
+3	Caster	Neutral	Aquí mi carnoso amigo deberás romper los hielos para conseguir las posibles respuestas que te ayudarán a romper el hielo con tu monstruosa cita.	4		
+4	Caster	Neutral	Así que date prisa y ponte a picar, ya que deberás seleccionar la que mejor te venga.		End	
 5	Caster	Neutral	!Hey!, llega el momento de presentarse, toma la carta y selecciona los gustos que más te ayuden a superar esta cita.	6	Introductions_Start	
 6	Caster	Neutral	Una vez los selecciones arrastralos a los huecos superiores para completar la frase de Me gusta _______ También ________ Y además _________.	20		
 7	Caster	Neutral	!!!Piensa rápido humano!!! Vas a tener que completar una serie de laberintos para conseguir ideas que te hagan salir de esta.	8	Brain_Start	
