@@ -27,7 +27,7 @@ namespace YGFIL.Managers
         
         protected void Start() 
         {
-            ChangePhase(DatePhase.MinigameFive);
+            ChangePhase(DatePhase.Introduction);
         }    
 
         public void ChangePhase(DatePhase newPhase) 

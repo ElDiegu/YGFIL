@@ -16,5 +16,19 @@ namespace YGFIL.ScriptableObjects
 
         [field: SerializeField]
         public int LoveValue { get; set; }
+        
+        public IntroductionsOptionSO(string[] parameters) 
+        {
+            ImageIndex = int.Parse(parameters[1]);
+            
+            Text = parameters[2];
+            
+            Color textColor = new Color();
+            bool valid = ColorUtility.TryParseHtmlString(parameters[3], out textColor);
+            if (valid) TextColor = textColor;
+            else TextColor = Color.black;
+            
+             LoveValue = int.Parse(parameters[4]);
+        }
     }
 }

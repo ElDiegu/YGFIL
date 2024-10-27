@@ -17,5 +17,12 @@ namespace YGFIL.ScriptableObjects
 
         [field: SerializeField]
         public int LoveValue { get; private set; }
+        
+        public IceOptionSO(string[] parameters) 
+        {
+            NoteType = int.Parse(parameters[1]);
+            Text = parameters[2];
+            LoveValue = int.Parse(parameters[3]);
+        }
     }
 }
