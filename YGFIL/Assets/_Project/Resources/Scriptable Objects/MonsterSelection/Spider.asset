@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e6ab81296b0714fa3d52cc7ef5d742, type: 3}
+  m_Name: Spider
+  m_EditorClassIdentifier: 
+  <FaceImage>k__BackingField: {fileID: -839125005355648239, guid: d78421582e9fbe840871ffd9bab38afb, type: 3}
+  <Name>k__BackingField: "Telma Telara\xF1a"
+  <MonsterType>k__BackingField: Spider
+  <SelectorImage>k__BackingField: {fileID: 2385035415837807455, guid: 5ccc983f20ecede47bcc7644a03e2ff9, type: 3}
+  <datesCompletedNeeded>k__BackingField: 2
