@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a130bed920a964a8eaaf608cf3d134, type: 3}
   m_Name: Zombie_Question_Set
   m_EditorClassIdentifier: 
-  <Questions>k__BackingField: []
+  <Questions>k__BackingField:
+  - {fileID: 11400000, guid: 89d0b97a8225cca48a6622919b133bc2, type: 2}
+  - {fileID: 11400000, guid: 2a44363195fb7454fad3d43083c5d870, type: 2}
+  - {fileID: 11400000, guid: f414cb8d67d34af46a04188b7b66ecb0, type: 2}

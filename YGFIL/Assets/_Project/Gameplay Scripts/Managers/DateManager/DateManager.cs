@@ -1,11 +1,13 @@
+using System.Collections;
 using System.Collections.Generic;
 using Systems.EventSystem;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using YGFIL.Enums;
-using YGFIL.Events;
 using YGFIL.Minigames.Managers;
 using YGFIL.Monsters;
+using YGFIL.ScriptableObjects;
 using YGFIL.Systems;
 
 namespace YGFIL.Managers
@@ -38,14 +40,29 @@ namespace YGFIL.Managers
                     break;
                 case DatePhase.MinigameTwo:
                     IntroductionsManager.Instance.ChangeState(MinigameState.Introduction);
+                    minigameObjects[0].SetActive(false);
                     break;
                 case DatePhase.MinigameThree:
                     BrainConnectionsManager.Instance.ChangeState(MinigameState.Introduction);
+                    minigameObjects[1].SetActive(false);
+                    break;
+                case DatePhase.MinigameFour:
+                    Phase4Manager.Instance.ChangeState(MinigameState.Introduction);
+                    minigameObjects[2].SetActive(false);
+                    break;
+                case DatePhase.MinigameFive:
+                    AffinityTestManager.Instance.ChangeState(MinigameState.Introduction);
+                    minigameObjects[3].SetActive(false);
+                    break;
+                case DatePhase.Ending:
+                    SetInteraction(false);
+                    minigameObjects[4].SetActive(false);
+                    StartCoroutine(EndingCoroutine());
                     break;
             }
         }
         
-        public System.Collections.IEnumerator IntroducctionCoroutine() 
+        public IEnumerator IntroducctionCoroutine() 
         {
             Debug.Log("Starting Coroutine");
             
@@ -56,7 +73,33 @@ namespace YGFIL.Managers
             
             while (UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
-            ChangePhase(DatePhase.MinigameThree);
+            DialogManager.Instance.PlayDialog(DialogTag.Introduction.ToString());
+            
+            while (DialogManager.Instance.dialogState) yield return null;
+            
+            ChangePhase(DatePhase.MinigameOne);
+        }
+        
+        private IEnumerator EndingCoroutine() 
+        {
+            DialogManager.Instance.PlayDialog(DialogTag.Ending.ToString());
+            
+            while(DialogManager.Instance.dialogState) yield return null;
+            
+            var result = Monster.loveValue >= (Monster.ScriptableObject as MonsterSO).LoveThreshold ? DialogTag.Ending_Like : DialogTag.Ending_Dislike;
+            
+            DialogManager.Instance.PlayDialog(result.ToString());
+            
+            while(DialogManager.Instance.dialogState) yield return null;
+            
+            EventBus<PlayAnimationEvent>.Raise(new PlayAnimationEvent()
+            {
+                animationString = "FadeOut"
+            });
+            
+            while (UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
+            
+            AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MainMenu");
         }
         
         public void ActivateMinigame(int index) 

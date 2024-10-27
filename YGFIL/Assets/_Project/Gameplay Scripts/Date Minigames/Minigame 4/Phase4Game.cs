@@ -35,7 +35,7 @@ namespace YGFIL
         public void OnSubmitButtonPressed() 
         {
             submitButton.enabled = false;
-            Phase4GameManager.Instance.SubmitOption(currentOption);
+            Phase4Manager.Instance.SubmitOption(currentOption);
         }
     }
 }

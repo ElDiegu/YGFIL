@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 4638091361818438105}
   - component: {fileID: 21030882131178730}
   - component: {fileID: 5819497265884332859}
+  - component: {fileID: 8284427530752716521}
+  - component: {fileID: 6133968011056912085}
   m_Layer: 0
   m_Name: Minigames
   m_TagString: Untagged
@@ -127,4 +129,44 @@ MonoBehaviour:
   - {fileID: 0}
   mazeZone: {fileID: 0}
   optionsZone: {fileID: 0}
+  state: 0
+--- !u!114 &8284427530752716521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029049638872218128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4e51869cc832249be1fc8a609dbe29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionsSet: {fileID: 0}
+  selectedOption: {fileID: 0}
+  cardText: {fileID: 0}
+  fillText: {fileID: 0}
+  cardImage: {fileID: 0}
+  optionButtonTexts: []
+  optionButtonImage: []
+  submitButton: {fileID: 0}
+  state: 0
+--- !u!114 &6133968011056912085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029049638872218128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db745f0b54f0f8f42a13a9a0b50f3f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionText: {fileID: 0}
+  optionButtonTexts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   state: 0
