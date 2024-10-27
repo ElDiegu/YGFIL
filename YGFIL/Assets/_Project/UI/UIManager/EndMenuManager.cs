@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YGFIL.Managers;
+using YGFIL.Monsters;
 
 namespace YGFIL.Managers
 {
@@ -40,9 +41,32 @@ namespace YGFIL.Managers
             loadingOperation.allowSceneActivation = true;
         }
 
-        public void setEnd(int monsterIndex)
+        public void setEnd(MonsterType type)
         {
-            backgroundImage.sprite = ends[monsterIndex];
+            switch (type)
+            {
+                case MonsterType.Zombie:
+                    backgroundImage.sprite = ends[0];
+                    break;
+                case MonsterType.Medusa:
+                    backgroundImage.sprite = ends[1];
+                    break;
+                case MonsterType.Vampire:
+                    backgroundImage.sprite = ends[2];
+                    break;
+                case MonsterType.Spider:
+                    backgroundImage.sprite = ends[3];
+                    break;
+                case MonsterType.Wolf:
+                    backgroundImage.sprite = ends[4];
+                    break;
+                case MonsterType.Wolf2:
+                    backgroundImage.sprite = ends[4];
+                    break;
+                case MonsterType.Succubus:
+                    backgroundImage.sprite = ends[5];
+                    break;
+            }
         }
     }
 }

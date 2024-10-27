@@ -103,10 +103,13 @@ namespace YGFIL.Managers
 
             if(Monster.loveValue >= (Monster.ScriptableObject as MonsterSO).LoveThreshold)
             {
+                EndMenuManager.Instance.setEnd(Monster.monsterType);
+                AudioManager.instance.Play("dateLost");
                 AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("EndDate");
             }
             else
             {
+                AudioManager.instance.Play("dateWin");
                 AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MonsterSelector");
             }
             
