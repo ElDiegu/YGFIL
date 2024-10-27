@@ -100,8 +100,16 @@ namespace YGFIL.Managers
             });
             
             while (UIManager.Instance.UIAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
+
+            if(Monster.loveValue >= (Monster.ScriptableObject as MonsterSO).LoveThreshold)
+            {
+                AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("EndDate");
+            }
+            else
+            {
+                AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MonsterSelector");
+            }
             
-            AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MainMenu");
         }
         
         public void ActivateMinigame(int index) 

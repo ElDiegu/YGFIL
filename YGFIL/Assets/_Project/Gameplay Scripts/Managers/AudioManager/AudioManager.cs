@@ -13,20 +13,9 @@ public class AudioManager : StaticInstance<AudioManager>
     public static AudioManager instance;
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }
+        base.Awake();
 
         InitializeSounds();
-        //UpdateMusic(PlayerPrefs.GetFloat("music", 0.5f));
-        //UpdateVolume(PlayerPrefs.GetFloat("noise", 0.5f));
     }
 
     private void OnEnable()

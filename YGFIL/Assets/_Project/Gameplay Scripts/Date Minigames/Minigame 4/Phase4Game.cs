@@ -4,6 +4,7 @@ using TMPro;
 using YGFIL.Minigames.Managers;
 using YGFIL.ScriptableObjects;
 using YGFIL.Enums;
+using YGFIL.Managers;
 
 namespace YGFIL
 {
@@ -28,6 +29,7 @@ namespace YGFIL
 
         public void OnOptionButtonPressed(int optionClicked)
         {
+            AudioManager.Instance.Play("papper");
             currentOption = optionClicked;
             fillText.text = optionButtonTexts[optionClicked].text;
             submitButton.enabled = true;
@@ -35,7 +37,7 @@ namespace YGFIL
         public void OnSubmitButtonPressed() 
         {
             submitButton.enabled = false;
-            Phase4Manager.Instance.SubmitOption(currentOption);
+            Phase4Manager.Instance.SubmitOption();
         }
     }
 }
