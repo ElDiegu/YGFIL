@@ -13,7 +13,7 @@ namespace YGFIL
         [SerializeField] Image selectorImage;
         [SerializeField] GameObject locker;
         [SerializeField] public GameObject completed;
-        [SerializeField] Button button;
+        [SerializeField] public Button button;
 
         void Start()
         {

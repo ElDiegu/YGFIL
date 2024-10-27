@@ -20,7 +20,11 @@ namespace YGFIL
             foreach (SelectionDisplayed selection in monstersSelections)
             {
                 selection.checkUnlockSelection();
-                if(selection.monsterSelectionSO.MonsterType == monster.monsterType.ToString()) selection.completed.SetActive(true);
+                if (selection.monsterSelectionSO.MonsterType == monster.monsterType.ToString())
+                {
+                    selection.completed.SetActive(true);
+                    selection.button.interactable = false;
+                }
             }
         }  
 
