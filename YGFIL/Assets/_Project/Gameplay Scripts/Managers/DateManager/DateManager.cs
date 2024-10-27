@@ -113,8 +113,17 @@ namespace YGFIL.Managers
                 AudioManager.Instance.Play("dateWin");
                 MonsterSelectorManager.Instance.DateCompleted(Monster);
                 AudioManager.Instance.Stop("dateMusic");
-                AudioManager.Instance.Play("showMusic");
-                AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MonsterSelector");
+                if (Monster.monsterType == MonsterType.Succubus)
+                {
+                    EndMenuManager.Instance.gameCompleted = true;
+                    EndMenuManager.Instance.setEnd(Monster.monsterType);
+                    AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("EndDate");
+                }
+                else
+                {  
+                    AudioManager.Instance.Play("showMusic");
+                    AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MonsterSelector");
+                }
             }
             
         }

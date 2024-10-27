@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using YGFIL.Managers;
@@ -13,6 +14,9 @@ namespace YGFIL.Managers
         [SerializeField] private Animator fadeOutAnimator;
         [SerializeField] private List<Sprite> ends;
         [SerializeField] private SpriteRenderer backgroundImage;
+        [SerializeField] private TMP_Text tittleText;
+        [SerializeField] private TMP_Text bordetittleText;
+        public bool gameCompleted = false;
 
         private void Update()
         {
@@ -65,7 +69,12 @@ namespace YGFIL.Managers
                     backgroundImage.sprite = ends[4];
                     break;
                 case MonsterType.Succubus:
-                    backgroundImage.sprite = ends[5];
+                    backgroundImage.sprite = gameCompleted? ends[6] : ends[5];
+                    if(gameCompleted) 
+                    { 
+                        tittleText.text = "¡Lograste sobrevivir a You are gonna fall: In Love!";
+                        bordetittleText.text = "¡Lograste sobrevivir a You are gonna fall: In Love!";
+                    }
                     break;
             }
         }
