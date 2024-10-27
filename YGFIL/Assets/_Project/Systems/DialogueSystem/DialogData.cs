@@ -49,6 +49,10 @@ namespace YGFIL.Enums
         Brain_One,
         Brain_Two,
         Brain_Three,
-        Brain_Four
+        Brain_Four,
+        Phase4_Start,
+        Phase4_Good,
+        Phase4_Bad,
+        Phase4_Neutral
     }
 }

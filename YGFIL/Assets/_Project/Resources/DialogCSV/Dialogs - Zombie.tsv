@@ -24,9 +24,9 @@ id	monster	expression	text	next_id	tag	tag
 22	Zombie	Dislike	Eres peor que un error en el blockchain... ni con un reinicio arreglamos esto.		Introductions_Bad	End
 23	Zombie	Neutral	¿Qué prefieres: un apocalipsis zombie o un colapso del mercado cripto? Yo ya viví ambos y no sé cuál es peor…		End	
 24	Zombie	Neutral	Te quería preguntar….	23		
-25	Zombie	Neutral	Bueno, conozco a algunos amigos de ahí, pero prefiero mucho más quedarme en casa.			
-26	Zombie	Dislike	Tienes un gusto horrible. Si no se me hubieran podrido las orejas ya hace mucho me las arrancaría antes de ir a eso.			
-27	Zombie	Happy	Me parece un plan perfecto, tu y yo en la grieta del invocador. No sé, piensalo.			
+25	Zombie	Neutral	Bueno, conozco a algunos amigos de ahí, pero prefiero mucho más quedarme en casa.	Phase4_Neutral		
+26	Zombie	Dislike	Tienes un gusto horrible. Si no se me hubieran podrido las orejas ya hace mucho me las arrancaría antes de ir a eso.	Phase4_Bad		
+27	Zombie	Happy	Me parece un plan perfecto, tu y yo en la grieta del invocador. No sé, piensalo.	Phase4_Good		
 28	Zombie	Happy	Veo un gran futuro contigo, definitivamente voy a invertir mi tiempo en tí.			
 29	Zombie	Dislike	No sé cómo lo haces pero contigo me siento más muerto de lo que ya estoy. Adiós.			
 30	Caster	Neutral	Esa respuesta me congeló hasta los huesos.		Frases Genericas	
