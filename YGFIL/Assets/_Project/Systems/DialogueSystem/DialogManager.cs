@@ -1,24 +1,27 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Systems;
 using Systems.EventSystem;
 using TMPro;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using YGFIL.Databases;
 using YGFIL.Managers;
 using YGFIL.Monsters;
+using YGFIL.ScriptableObjects;
 
 namespace YGFIL.Systems
 {
     public class DialogManager : StaticInstance<DialogManager>
     {
         [SerializeField] public List<Image> characterImages;
+        [SerializeField] public List<Image> characterBackground;
         [SerializeField] public List<GameObject> dialogUI;
-        [SerializeField] private Monster monster;
+        [SerializeField] private MonsterSO monsterSO;
         [SerializeField] private Typewriter typewriter;
+        [SerializeField] private TextMeshProUGUI nameText, dialogText, casterText;
+        [SerializeField] private GameObject characterNameObject, monsterNameObject, dialogBackground;
         
         private List<DialogData> dialogList;
         [SerializeField] private bool writing, endDialog;
@@ -49,14 +52,18 @@ namespace YGFIL.Systems
             EventBus<OnTypewriterStartEvent>.Deregister(onTypewriterStartBinding);
         }
 #endregion
-
-        protected override void Awake()
+        
+        private IEnumerator Start() 
         {
-            base.Awake();
+            while (DateManager.Instance.Monster.ScriptableObject == null) yield return null;
             
-            LoadDialogData(monster.monsterType);
+            monsterSO = DateManager.Instance.Monster.ScriptableObject as MonsterSO;
             
-            characterImages[2].sprite = MonsterExpressionDatabase.GetSprite(monster.monsterType, MonsterExpressionType.Neutral);
+            LoadDialogData(monsterSO.MonsterType);
+            
+            characterImages[2].sprite = MonsterExpressionDatabase.GetSprite(monsterSO.MonsterType, MonsterExpressionType.Neutral);
+            
+            monsterNameObject.GetComponent<TextMeshProUGUI>().text = monsterSO.Name;
             
             SetDialogUI(true);
         }
@@ -117,12 +124,44 @@ namespace YGFIL.Systems
         {
             var index = Mathf.Clamp((int)monsterType, 0, 2);
             characterImages[index].sprite = MonsterExpressionDatabase.GetSprite(monsterType, expression);
+            
+            switch (monsterType) 
+            {
+                case MonsterType.MainCharacter:
+                    characterBackground[0].sprite = ImagesDatabase.DialogSprites[0];
+                    characterBackground[1].sprite = ImagesDatabase.DialogSprites[1];
+                    characterNameObject.SetActive(true);
+                    monsterNameObject.SetActive(false);
+                    dialogBackground.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+                    break;
+                case MonsterType.Caster:
+                    characterBackground[0].sprite = ImagesDatabase.DialogSprites[1];
+                    characterBackground[1].sprite = ImagesDatabase.DialogSprites[1];
+                    break;
+                default:
+                    characterBackground[0].sprite = ImagesDatabase.DialogSprites[1];
+                    characterBackground[1].sprite = ImagesDatabase.DialogSprites[0];
+                    characterNameObject.SetActive(false);
+                    monsterNameObject.SetActive(true);
+                    dialogBackground.transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+                    break;
+            }
         }
         
         public void SetDialogUI(bool state) 
         {
             //foreach (GameObject UIObject in dialogUI) UIObject.SetActive(state);
             dialogState = state;
+        }
+        
+        public void ClearDialog() 
+        {
+            nameText.text = "";
+            dialogText.text = "";
+            casterText.text = "";
+            
+            characterBackground[0].sprite = ImagesDatabase.DialogSprites[2];
+            characterBackground[1].sprite = ImagesDatabase.DialogSprites[2];
         }
     }
 

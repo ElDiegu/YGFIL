@@ -82,19 +82,23 @@ namespace YGFIL.Minigames
                 return;
             }
             
+            bool validHit = false;
+            
             foreach (var hitResult in hitResults) 
                 if (hitResult.gameObject.tag == "IntroductionContainer") 
                 {
                     DroppedOnSelector(hitResult);
+                    validHit = true;
                     break;    
                 } 
                 else if (hitResult.gameObject.tag == "IntroductionMenu") 
                 {
                     DroppedOnMenu(hitResult);
+                    validHit = true;
                     break;   
                 }
             
-            ResetCard();
+            if (!validHit) ResetCard();
         }
         
         private void DroppedOnSelector(RaycastResult hit) 
@@ -120,7 +124,7 @@ namespace YGFIL.Minigames
         public bool IsSliding() => Mathf.Abs(slidePosition.y - (transform as RectTransform).anchoredPosition.y) > 10;
         private void ResetCard() 
         {
-            transform.parent = originalParent;
+            transform.SetParent(originalParent);
             (transform as RectTransform).anchoredPosition = originalPosition;
         }
     }

@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6955c0218dddc54ea88a13d3cf693cd, type: 3}
   m_Name: Vampire_Set
   m_EditorClassIdentifier: 
-  <Options>k__BackingField: []
+  <Options>k__BackingField:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

@@ -34,6 +34,11 @@ namespace YGFIL.Monsters
             monsterSO = GameManager.Instance.Monster;
             monsterType = monsterSO.MonsterType;
         }
+        
+        private void Start() 
+        {
+            Instantiate(monsterSO.Prefab, new Vector3(0f, 0f, 0f), new Quaternion(), transform);
+        }
 
         public void UpdateLoveValue(UpdateLoveValueEvent updateLoveValueEvent) 
         {

@@ -19,7 +19,7 @@ MonoBehaviour:
   <Sprite>k__BackingField: {fileID: 0}
   <Prefab>k__BackingField: {fileID: 7221936610709889073, guid: 678a29422391e17468deebee365dce78, type: 3}
   <MonsterType>k__BackingField: 0
-  <IceBreakingOptionSet>k__BackingField: {fileID: 0}
+  <IceBreakingOptionSet>k__BackingField: {fileID: 11400000, guid: 6b388acb5d3f1ee4d84701f4a8c3a93f, type: 2}
   <IntroductionsOptionSet>k__BackingField: {fileID: 0}
   <BrainConnectionsOptionSet>k__BackingField: {fileID: 0}
   <Phase4optionSet>k__BackingField: {fileID: 0}

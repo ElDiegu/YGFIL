@@ -33,7 +33,7 @@ namespace YGFIL.Minigames
 
         public void PressOption() 
         {
-            if (pressCount >= iceOptionSO.Images.Count - 1) 
+            if (pressCount >= ImagesDatabase.IceSprites[iceOptionSO.NoteType].Length - 1) 
             {
                 SelectOption();
                 return;
@@ -49,7 +49,7 @@ namespace YGFIL.Minigames
             
             button.image.sprite = ImagesDatabase.IceSprites[iceOptionSO.NoteType][pressCount];
             
-            if (pressCount >= iceOptionSO.Images.Count - 1) 
+            if (pressCount >= ImagesDatabase.IceSprites[iceOptionSO.NoteType].Length - 1) 
             {
                 AudioManager.Instance.Play("iceBreak");
                 var textObject = transform.GetChild(iceOptionSO.NoteType).gameObject; 
