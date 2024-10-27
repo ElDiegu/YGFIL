@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace YGFIL.Managers
 {
-public class AudioManager : StaticInstance<AudioManager>
+public class AudioManager : PersistentSingleton<AudioManager>
     {
     public Sound[] sounds;
     protected override void Awake()

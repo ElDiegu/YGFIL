@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using YGFIL.Managers;
 using YGFIL.Monsters;
@@ -28,10 +29,11 @@ namespace YGFIL
             }
         }  
 
-        public void StartDate(string monsterType)
+        public void StartDate(int monsterType)
         {
             AudioManager.Instance.Play("button");
-            //change scene
+            GameManager.Instance.setMonster(monsterType);
+            SceneManager.LoadSceneAsync("DateScene");
         }
     }
 }

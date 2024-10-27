@@ -32,7 +32,7 @@ namespace YGFIL.Managers
             
             while (fadeOutAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1) yield return null;
             
-            AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("DateScene");
+            AsyncOperation loadingOperation = SceneManager.LoadSceneAsync("MonsterSelection");
             
             loadingOperation.allowSceneActivation = false;
             
