@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a9ae43cfbb9624395dbd084afa1588, type: 3}
+  m_Name: Wolf_Set
+  m_EditorClassIdentifier: 
+  <Options>k__BackingField:
+  - {fileID: 11400000, guid: 0e0a259564ff16147a6b437170aab435, type: 2}
+  - {fileID: 11400000, guid: 1138f9f4a872a1f4d91206f686826c39, type: 2}
+  - {fileID: 11400000, guid: 819901ddb60f8644c99859987673cbdb, type: 2}
+  - {fileID: 11400000, guid: 36929437fb339d54eb9b17c7b8aeb4fe, type: 2}
+  - {fileID: 11400000, guid: e90322e1e30735442b24a9bab7e5b23b, type: 2}
+  - {fileID: 11400000, guid: 2ee2b6208c0ddfe4d85da8c5b55eadc9, type: 2}
+  - {fileID: 11400000, guid: ffdfaf0115d3c0f42b6fe70af3aedf7e, type: 2}
+  - {fileID: 11400000, guid: 78f338a1b8880a342bc38d5921043c11, type: 2}

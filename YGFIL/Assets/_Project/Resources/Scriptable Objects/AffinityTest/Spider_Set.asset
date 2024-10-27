@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7a130bed920a964a8eaaf608cf3d134, type: 3}
+  m_Name: Spider_Set
+  m_EditorClassIdentifier: 
+  <Questions>k__BackingField:
+  - {fileID: 11400000, guid: 1257e57f4df51d649ba5b0b81ff3ace2, type: 2}
+  - {fileID: 11400000, guid: f813c93cf253d6342a317477196d330d, type: 2}
+  - {fileID: 11400000, guid: 642aa3e5fe4d8e34cb7fc461d4cca892, type: 2}

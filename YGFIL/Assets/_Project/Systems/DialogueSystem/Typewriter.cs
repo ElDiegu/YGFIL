@@ -62,7 +62,18 @@ namespace YGFIL.Systems
             monsterText.text = "";
             casterText.text = "";
             
-            var writingText = (int)dialog.Monster == 1 ? casterText : monsterText;
+            TextMeshProUGUI writingText;
+            
+            if ((int)dialog.Monster == 1) 
+            {
+                writingText = casterText;
+                casterText.transform.parent.gameObject.SetActive(true);
+            }
+            else 
+            {
+                writingText = monsterText;
+                casterText.transform.parent.gameObject.SetActive(false);
+            }
             
             currentChar = 0;
 

@@ -99,13 +99,13 @@ namespace YGFIL.Minigames.Managers
             
             switch (selectedOption.LoveValue) 
             {
-                case 5:
+                case 15:
                     result = DialogTag.IceBreaking_Good;
                     break;
-                case 3:
+                case 0:
                     result = DialogTag.IceBreaking_Neutral;
                     break;
-                case -2:
+                case -10:
                     result = DialogTag.IceBreaking_Bad;
                     break;
             }

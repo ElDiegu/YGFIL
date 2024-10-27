@@ -7,10 +7,11 @@ namespace YGFIL.Utils
 {
     public class TimerUtils 
     {
-        public static IEnumerator StartTimer(TextMeshProUGUI timerText, float time) 
+        public static IEnumerator StartTimer(TextMeshProUGUI timerText, GameObject icon, float time) 
         {
             var timeLeft = time;
             timerText.text = timeLeft.ToString();
+            icon.SetActive(true);
             
             while (timeLeft > 0) 
             {
@@ -20,6 +21,7 @@ namespace YGFIL.Utils
             }
             
             timerText.text = "";
+            icon.SetActive(false);
             EventBus<OnTimerFinishedEvent>.Raise(new OnTimerFinishedEvent());
             
             yield return null;

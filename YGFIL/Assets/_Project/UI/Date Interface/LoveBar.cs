@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using Systems.EventSystem;
 using UnityEditor;
 using UnityEngine;
@@ -24,6 +25,17 @@ namespace YGFIL
         [SerializeField] private Transform heartTransform;
         [SerializeField] private float heartScalingFactor, heartBeatingSpeed, heartBeatingSpeedIncrement;
         private bool fastBeating;
+        
+        [Header("Images")]
+        [SerializeField] private MonsterSO monsterSO;
+        [SerializeField] private List<Sprite> heartSprite;
+        [SerializeField] private Image heartImage;
+        [SerializeField] private List<Sprite> borderSprite;
+        [SerializeField] private Image borderImage;
+        [SerializeField] private List<Sprite> fillSprite;
+        [SerializeField] private Image fillImage;
+        [SerializeField] private List<Sprite> backgroundSprite;
+        [SerializeField] private Image backgroundImage;
         
         [Header("Animations")]
         [SerializeField] private Animator animator;
@@ -55,6 +67,18 @@ namespace YGFIL
             SetLoveThreshold();
             
             BeatingHeart(false);
+        }
+        
+        private IEnumerator Start() 
+        {
+            while (DateManager.Instance.Monster.ScriptableObject == null) yield return null;
+            
+            monsterSO = DateManager.Instance.Monster.ScriptableObject as MonsterSO;
+            
+            heartImage.sprite = heartSprite[(int)monsterSO.MonsterType - 2];
+            borderImage.sprite = borderSprite[(int)monsterSO.MonsterType - 2];
+            fillImage.sprite = fillSprite[(int)monsterSO.MonsterType - 2];
+            backgroundImage.sprite = backgroundSprite[(int)monsterSO.MonsterType - 2];
         }
 #endregion
 

@@ -16,6 +16,8 @@ namespace YGFIL.Monsters
         public float loveValue = 50f;
         public MonsterType monsterType;
         
+        [SerializeField] private GameObject werewolfTransformed;
+        
         EventBinding<UpdateLoveValueEvent> updateLoveValueEventBinding;
         
         private void OnEnable()
@@ -31,13 +33,16 @@ namespace YGFIL.Monsters
 
         private void Awake()
         {
-            monsterSO = GameManager.Instance.Monster;
+            if (GameManager.Instance != null) monsterSO = GameManager.Instance.Monster;
             monsterType = monsterSO.MonsterType;
+            loveValue = monsterSO.StartingLove;
         }
         
         private void Start() 
         {
-            Instantiate(monsterSO.Prefab, new Vector3(0f, 0f, 0f), new Quaternion(), transform);
+            var monsterObject = Instantiate(monsterSO.Prefab, transform);
+            monsterObject.transform.localPosition = Vector3.zero;
+            monsterObject.transform.localScale = Vector3.one;
         }
 
         public void UpdateLoveValue(UpdateLoveValueEvent updateLoveValueEvent) 
@@ -59,6 +64,15 @@ namespace YGFIL.Monsters
                 loveValue = loveValue,
             });
         }
+        
+        public void ChangeWerewolf() 
+        {
+            Destroy(transform.GetChild(0));
+            
+            var monsterObject = Instantiate(werewolfTransformed, transform);
+            monsterObject.transform.localPosition = Vector3.zero;
+            monsterObject.transform.localScale = Vector3.one;
+        }
     }
     
     public enum MonsterType
@@ -70,8 +84,8 @@ namespace YGFIL.Monsters
         Medusa,
         Vampire,
         Succubus,
-        Mummy,
         Wolf,
+        Mummy,
         Wolf2
     }
     

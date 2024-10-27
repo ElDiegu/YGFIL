@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Zombie_3
   m_EditorClassIdentifier: 
   <ImageIndex>k__BackingField: 5
-  <Text>k__BackingField: "La buena m\xFAsica, como Taylor Swift"
+  <Text>k__BackingField: Taylor Swift
   <TextColor>k__BackingField: {r: 0.2784314, g: 0.1882353, b: 0.4117647, a: 1}
-  <LoveValue>k__BackingField: 0
+  <LoveValue>k__BackingField: -10

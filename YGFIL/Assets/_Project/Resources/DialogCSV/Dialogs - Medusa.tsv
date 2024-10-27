@@ -1,0 +1,34 @@
+id	monster	expression	text	next_id	tag	tag
+0	MainCharacter	Neutral	Oye, ¡bonitas gafas! Me gusta como te quedan.	1	IceBreaking_Bad	
+1	Medusa	Dislike	… Gracias, supongo. No es como que las lleve obligada… No creo que te apetezca mirarme a los ojos.	2		
+2	MainCharacter	Neutral	Ah… claro.		End	
+3	MainCharacter	Neutral	Hey, una duda que me surje, ¿tus serpientes de la cabeza piensan ellas mismas o las controlas tú?	4	IceBreaking_Neutral	
+4	Medusa	Neutral	Pues yo no tengo ningún control sobre ellas la verdad, de hecho hay veces que se pelean, se enredan y me fastidian todo el look, ¡y es horrible!		End	
+5	MainCharacter	Neutral	A mí me gusta bastante la mitología griega la verdad.		IceBreaking_Good	
+6	Medusa	Happy	¿Ah sí? A mí creo que se me describe un poco mal pero por lo demás está bien. Sirve de mucha inspiración en el arte.	6	End	
+7	Medusa	Neutral	Ssssigamos con lo que estábamos. Yo soy Carolina Culebras, famosa por mis esculturas que parecen cobrar vida. Mi signo es ofiuco y me gusta mucho la buena música.	8	Introductions_Start	
+8	Medusa	Neutral	Si no te gusta salir de tu zona de confort, sssimplemente no estamos en la misma sintonía.		End	
+9	Medusa	Happy	Bueno, podría ser peor. De momento te libras de quitarme las gafas.		Introductions_Good	End
+10	Medusa	Dislike	Pfff. ¿De verdad no había humanos más interesantes? Me quedo de piedra.		Introductions_Bad	End
+11	Medusa	Neutral	Duda ¿Qué prefieres en tu vida, un piscis o un escorpio?		End	
+12	Medusa	Happy	¡Ay!, somosss compatiblesss, que bien.		End	
+13	Medusa	Dislike	¡Agh!, eso es tan géminis de tu parte.		End	
+14	Medusa	Neutral	Bueno venga, cuéntame algo más… que me tienes un poco aburrida.		End	
+15	Medusa	Dislike	¿Insinuas que el hecho de que fuese lesbiana tiene algo que ver? Cuánto facha estos días…		Phase4_Bad	End
+16	Medusa	Happy	Bueno… Por lo menos tienes interés y lo has intentado, es mejor no rendirse. Espero que no seas austriaco por cierto…		Phase4_Good	End
+17	Medusa	Neutral	Ahms… No esperaba que me contases algo así la verdad, me has sorprendido eso te lo doy.		Phase4_Neutral	End
+18	Medusa	Happy	Ssssiento que esta puede ser una grandiosssa relación.		Ending_Like	End
+19	Medusa	Dislike	No te Ssssoporto más, me voy.		Ending_Dislike	End
+20	Caster	Neutral	Menuda ssssorpresa tenemos esta noche. A continuación, nuestra seseante concursante. Les presentamos a..... Carolina Culebras. 	21	Introduction	
+21	Caster	Neutral	El primer paso siempre es el más difícil... ¿pero logrará nuestro concursante abrir una grieta en el gélido muro que los separa del amor?		End	
+22	Caster	Neutral	¡Vaya comienzo! Pero antes de seguir, es hora de que tanto el monstruo como el concursante nos revelen sus pasiones y aficiones. ¡Es el momento de brillar y sorprendernos a todos!	11	Brain_Start	
+23	Medusa	Neutral	Hmmm, nada que ver la verdad…		End	
+24	MainCharacter	Neutral	¿Qué? No no, no creo en chorradas gracias	13	Brain_One	
+25	MainCharacter	Neutral	Escorpio, ¡obviamente!	12	Brain_Two	
+26	MainCharacter	Neutral	Me dan más miedo los escorpiones la verdad	23	Brain_Three	
+27	MainCharacter	Neutral	Ehhms… ¿ascendente lunar o solar?	23	Brain_Four	
+28	Caster	Neutral	¡Vaya, vaya! Parece que el monstruo quiere asegurarse de que el jugador nunca olvide esta cita. ¡Esa mancha quedará como recuerdo!	14	Phase4_Start	
+29	Caster	Neutral	¡El final está cerca! Ahora que ya se conocen mejor, es hora de ver qué tan compatibles son con el test de afinidad. ¡Las respuestas decidirán el destino de esta cita!		Affinity_Start	End
+30	Caster	Neutral	Hemos llegado al final de esta interesante cita. Pero el momento clave es ahora, cuando nuestros concursantes deciden si abrir su corazón al amor o vuelven su corazón de piedra		Ending	End
+31	Medusa	Happy	Hemosss coincidido en unas cuantass, ¡que bien!		Affinity_Good	End
+32	Medusa	Dislike	Vaya panorama... 		Affinity_Bad	End

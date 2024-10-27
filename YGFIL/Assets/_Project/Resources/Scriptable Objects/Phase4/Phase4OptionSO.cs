@@ -25,7 +25,7 @@ namespace YGFIL.ScriptableObjects
             Text = parameters[2];
             
             Color textColor = new Color();
-            bool valid = ColorUtility.TryParseHtmlString(parameters[3], out textColor);
+            bool valid = ColorUtility.TryParseHtmlString("#" + parameters[3], out textColor);
             if (valid) TextColor = textColor;
             else TextColor = Color.black;
             

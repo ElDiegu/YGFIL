@@ -1,19 +1,19 @@
 Object Name	NoteType	Text	LoveValue	
-Zombie_0	1	"Desconocía que los zombies existían"	3	Neutral
-Zombie_1	3	Pregunta si es su primera cita en el programa	5	Good
-Zombie_2	2	Bromea sobre no ser la cena de la cita	-2	Bad
-Spider_0	0	Pregunta por las arañas	3	Neutral
-Spider_1	1	Pregunta por su estetica	5	Good
-Spider_2	0	Pregunta por sus extremidades	-2	Bad
-Medusa_0	2	Dile que tiene unas gafas bonitas	-2	Bad
-Medusa_1	3	Pregunta por las serpientes	3	Neutral
-Medusa_2	0	Habla sobre mitología	5	Good
-Vampire_0	2	Pregunta si te huele el aliento a ajo	-2	Bad
-Vampire_1	0	Habla sobre crepúsculo	3	Neutral
-Vampire_2	1	"A mí me gustan mayores"	5	Good
-Succubus_0	3	Mirale el pecho descaradamente	5	Good
-Succubus_1	1	Halaga su cosplay	5	Good
-Succubus_2	2	Saluda formalmente	-2	Bad
-Wolf_0	0	Hazle un cumplido sobre sus músculos	5	Good
-Wolf_1	3	"Me gusta tu camiseta"	3	Neutral
-Wolf_2	1	Habla sobre la uni	-2	Bad
+Zombie_0	1	"Desconocía que los zombies existían"	0	Neutral
+Zombie_1	3	Pregunta si es su primera cita en el programa	15	Good
+Zombie_2	2	Bromea sobre no ser la cena de la cita	-10	Bad
+Spider_0	0	Pregunta por las arañas	0	Neutral
+Spider_1	1	Pregunta por su estetica	15	Good
+Spider_2	0	Pregunta por sus extremidades	-10	Bad
+Medusa_0	2	Dile que tiene unas gafas bonitas	-10	Bad
+Medusa_1	3	Pregunta por las serpientes	0	Neutral
+Medusa_2	0	Habla sobre mitología	15	Good
+Vampire_0	2	Pregunta si te huele el aliento a ajo	-10	Bad
+Vampire_1	0	Habla sobre crepúsculo	0	Neutral
+Vampire_2	1	"A mí me gustan mayores"	15	Good
+Succubus_0	3	Mirale el pecho descaradamente	15	Good
+Succubus_1	1	Halaga su cosplay	15	Good
+Succubus_2	2	Saluda formalmente	-10	Bad
+Wolf_0	0	Hazle un cumplido sobre sus músculos	15	Good
+Wolf_1	3	"Me gusta tu camiseta"	0	Neutral
+Wolf_2	1	Habla sobre la uni	-10	Bad

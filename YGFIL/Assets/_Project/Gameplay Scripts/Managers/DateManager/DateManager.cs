@@ -22,6 +22,7 @@ namespace YGFIL.Managers
         [SerializeField] private List<GameObject> minigameObjects;
         [SerializeField] private GameObject blockingImage;
         [SerializeField] private TextMeshProUGUI timer;
+        [SerializeField] private GameObject timerIcon;
         private Coroutine timerCoroutine = null;
         [field: SerializeField] public Monster Monster { get; private set; }
         
@@ -48,6 +49,7 @@ namespace YGFIL.Managers
                     break;
                 case DatePhase.MinigameThree:
                     BrainConnectionsManager.Instance.ChangeState(MinigameState.Introduction);
+                    Monster.ChangeWerewolf();
                     minigameObjects[1].SetActive(false);
                     break;
                 case DatePhase.MinigameFour:
@@ -139,7 +141,7 @@ namespace YGFIL.Managers
             blockingImage.SetActive(!state);
         }
         
-        public void StartMinigameTimer(float seconds) => timerCoroutine = StartCoroutine(TimerUtils.StartTimer(timer, seconds));
+        public void StartMinigameTimer(float seconds) => timerCoroutine = StartCoroutine(TimerUtils.StartTimer(timer, timerIcon, seconds));
     
         public void TimeOut() 
         {

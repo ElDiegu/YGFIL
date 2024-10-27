@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Vampire_Set
   m_EditorClassIdentifier: 
   <Options>k__BackingField:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: e723ddd6119c3c44683f54bf09a4002a, type: 2}
+  - {fileID: 11400000, guid: adafb54b7030b464da02407101d2e174, type: 2}
+  - {fileID: 11400000, guid: 779320b56974ddd42a9c344c8edc9538, type: 2}

@@ -1,0 +1,36 @@
+id	monster	expression	text	next_id	tag	tag
+0	MainCharacter	Neutral	Hola buenas, no es por molestar pero… ¿me podrías comprobar si me huele el aliento a ajo?.	1	IceBreaking_Bad	
+1	Vampire	Dislike	¡Qué horror! Prefiero que no me hables directamente a la cara.	2		
+2	MainCharacter	Neutral	Uy….. Disculpame.		End	
+3	MainCharacter	Neutral	Hey buenas, eres uno de esos chupasangre de las películas de Crepúsculo. Soy muy fan de la saga.	4	IceBreaking_Neutral	
+4	Vampire	Neutral	Pues sí sí soy uno de esos chupasangres que dices, me alegro de que conozcas a los de mi especie, así me ahorras explicaciones.		End	
+5	MainCharacter	Neutral	¿Cuántos años tienes? Es que siempre he tenido interés por las personas más mayorcitas.	6	IceBreaking_Good	
+6	Vampire	Happy	¿Ah, sí? Pues tienes suerte, porque yo tengo más de mil años y sigo manteniendo un cuerpazo impresionante. La eterna juventud es un regalo, querido.		End	
+7	Vampire	Neutral	Permíteme presentarme, soy el Conde Chupón, el vampiro más distinguido de la noche. La sangría es mi deleite, y tengo una debilidad por la juventud.	8		
+8	Vampire	Neutral	Aprecio un buen ambiente, siempre que se mantenga alejado de, ya sabes, lo que odiamos los vampiros. ¡Vamos a disfrutar de esta velada juntos!		End	
+9	Vampire	Happy	Interesante, casi parece que tenemos un paladar similar... ¡Quién lo diría!		Introductions_Good	End
+10	Vampire	Dislike	Qué decepción, parece que de ti no corre una sangre que valga la pena.		Introductions_Bad	End
+11	Vampire	Neutral	¿Qué vinos te gustan? Yo suelo inclinarme por los de reserva... aunque, claro, mi reserva es un poco más... especial.		End	
+12	Vampire	Happy	Ahora tengo grandes ansias de asistir a un banquete contigo.		End	
+13	Vampire	Dislike	Qué decepción, ni gusto tienes.		End	
+14	Vampire	Neutral	Sorpréndeme, cuéntame algo que me haga hervir la sangre.		End	
+15	Vampire	Dislike	No sé cómo pudiste, yo necesitaría mucho más espacio. Hay que estar poco cuerdo para irse a vivir así.		Phase4_Bad	End
+16	Vampire	Happy	Jejeje… si la sangría era de buena calidad, me imagino que me habría comportado igual en tu lugar. La clase nunca falla.		Phase4_Good	End
+17	Vampire	Neutral	Hmm… no creo que eso tuviera nada que ver con alguno de mis ilustres familiares, pero apuesto a que fue un espectáculo divertido.		Phase4_Neutral	End
+18	Vampire	Happy	Me siento deleitado con tu compañía, espero poder alargarla mucho más.		Ending_Like	End
+19	Vampire	Dislike	Por tu cuerpo no corre sangre decente, prefiero buscar sangre en otra parte. Adiós.		Ending_Dislike	End
+20	Vampire	Happy	Veo que somos extremadamente compatibles... Estoy listo para una transfusión.		Affinity_Good	End
+21	Vampire	Dislike	Siento que nuestros tipos sanguíneos no son compatibles.		Affinity_Bad	End
+22	Caster	Neutral	El siguiente concursante, viene con un gusto exquisito. Presentamos...... al grandioso Conde Chupon. El monstruo más elegante de la noche.		Introduction	End
+23	MainCharacter	Neutral	La verdad yo soy más de cerveza.	13	Brain_One	
+24	MainCharacter	Neutral	Un buen vino tinto !!!Delicioso!!!	12	Brain_Two	
+25	MainCharacter	Neutral	Un vinito blanco para acompañar la comida.	13	Brain_Three	
+26	MainCharacter	Neutral	Solo tomo vino en ocasiones especiales.	13	Brain_Four	
+27	Caster	Happy	Un arranque un poco... frío, pero nunca se sabe, ¿podría esa primera impresión romper el hielo o dejarnos con escalofríos?		IceBreaking_Start	End
+28	Caster	Neutral	¡Impresionante! Pero no podemos seguir sin antes conocer a nuestros participantes.	29	Introductions_Start	
+29	Caster	Excited	Monstruo, humano, es su turno de contarnos qué les apasiona o cuáles son sus hobbies. ¡Sorprendednos!	7		
+30	Caster	Surprised	¡Cuidado, cuidado! El monstruo tiene una pregunta inesperada para ti, humano. ¡Espero que estés listo, porque esto se pone serio!	11	Brain_Start	
+31	Caster	Excited	¡Vaya, vaya! Parece que el monstruo quiere asegurarse de que el jugador nunca olvide esta cita. ¡Esa mancha quedará como recuerdo!	14	Phase4_Start	
+32	Caster	Dislike	Parece que la velada ha llegado a su fin. Ahora solo nos queda una última pregunta... ¿Qué opinará el monstruo? 	33	Ending	
+33	Caster	Surprised	¡¿Querrá tener una segunda cita?!		End	
+34	Caster	Neutral	¡Y hemos llegado al momento decisivo! Es hora de descubrir cuánta química hay entre nuestro monstruo y el humano. ¡Prepárense para el test de afinidad!		Affinity_Start	End

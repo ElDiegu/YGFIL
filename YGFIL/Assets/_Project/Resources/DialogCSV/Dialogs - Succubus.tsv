@@ -1,0 +1,33 @@
+id	monster	expression	text	next_id	tag	tag
+0	MainCharacter	Neutral	Hmm, déjame decir que no puedo evitar mirarte. Tu pecho es… muy llamativo.	1	IceBreaking_Good	
+1	Succubus	Happy	¡Oh, cariño! Me gusta que seas directo. La confianza es muy sexy, ¿quieres que te muestre más?		End	
+2	MainCharacter	Neutral	Uy, ¿Eso que llevas es un cosplay?, te queda muy bien.	3	IceBreaking_Good	
+3	Succubus	Happy	Aiiii jajajajja, me alegro mucho de que te guste, creo que es de los que mejor me ha quedado, si quieres te lo enseño a fondo UwU.		End	
+4	MainCharacter	Neutral	Encantado, quiero conocerte y descubrir tus gustos.	5	IceBreaking_Neutral	
+5	Succubus	Neutral	¡Qué dulce! Me encanta que tengas interés. Mis gustos son un poco traviesos, pero estoy segura de que a ti te gustarán. ¿Listo para descubrirlos?		End	
+6	Succubus	Neutral	Hola, amorcito UwU, soy Penélope Pechugona, la súcubo más irresistible que jamás hayas conocido, nya.	7		
+7	Succubus	Neutral	Adoro la diversión y, si me preguntas, ¡cuanto más desarreglada voy, mejor! No hay nada que me guste más que una noche apasionada. Así que, ¿estás listo para dejarte llevar?		End	
+8	Succubus	Happy	Me encanta... Creo que estamos hechos para disfrutar juntitos		Introductions_Good	End
+9	Succubus	Neutral	Hmm, no estoy muy convencida... pero ¿por qué no me lo susurras al oído? Quizá así me convenzas...		Introductions_Bad	End
+10	Succubus	Neutral	Si nos tuviéramos que vestir a juego para alguna convención o “algo similar” ¿De que te gustaría ir?		End	
+11	Succubus	Happy	Seguro estaríamos genial, pero imagínate sin ropa !!!UwU!!!.		End	
+12	Succubus	Neutral	Seguro se nos ocurren mejores opciones de cielo, ya las descubriremos !grrr!.		End	
+13	Succubus	Neutral	Dime algo que me haga sorprenderme OwO.		End	
+14	Succubus	Happy	¿De verdad…? Bua me habría encantado estar allí contigo, en fiestas así me pongo muy perrona.		End	
+15	Succubus	Happy	jijijiji…. Vaya, te lo hizo pasar muy mal. Yo te cuidare mejor cielo.		End	
+16	Succubus	Neutral	Hay cielo, si pretendías que eso me sorprendiera estás muy equivocado. Se sorprende así: *Besito en la mejilla*		End	
+17	Succubus	Happy	Amor, déjate sorprender con todo lo que vamos a hacer juntitos.		Ending_Like	End
+18	Succubus	Neutral	Pero serás desgraciado, tienes cero interés por mí, no compartimos gustos ni aficiones, no se como pero eres el counter de la lujuria. Adiós.		Ending_Dislike	End
+19	Caster	Neutral	Llegada del mismisimo infierno, y con un apetito voraz. Presentamos a....... Penelope Pechugona. La súcubo más sexy de la ciudad de los monstruos.		Introduction	End
+20	Caster	Excited	Nuestro concursante parece estar en terreno resbaladizo, ¿será capaz de encontrar el equilibrio y deslizarse hacia el corazón de su cita o se quedará congelado en el intento?		IceBreaking_Start	End
+21	Caster	Happy	¡Esto se pone cada vez más emocionante! Pero antes de continuar, es importante que tanto el monstruo como el jugador nos cuenten algo sobre ellos. ¿Cuáles son sus gustos y aficiones?	6	Introductions_Start	
+22	Caster	Neutral	¡Atención! Nuestro monstruo tiene una pregunta bajo la manga y está a punto de lanzarla. Humano, ¿estás preparado para lo inesperado? ¡Aquí viene!	10	Brain_Start	
+23	MainCharacter	Neutral	Yo prefiero no disfrazarme la verdad.		Brain_One	End
+24	MainCharacter	Neutral	De dueña y perrito.		Brain_Two	End
+25	MainCharacter	Neutral	A juego bien sexys los dos.		Brain_Three	End
+26	MainCharacter	Neutral	De lo que tu prefieras		Brain_Four	End
+27	Caster	Surprised	¡Pero qué! El monstruo no ha podido resistirse a derramar una mancha sobre el humano, dejando un recuerdo difícil de olvidar.	13	Phase4_Start	
+28	Caster	Neutral	¡Llegamos a la última fase! Donde se pondrá a prueba la compatibilidad entre el monstruo y el jugador. ¿Será amor verdadero? ¡Descubramoslo con el test de afinidad!		Affinity_Start	End
+29	Succubus	Happy	Estamos destinados a estar juntos cielo, escapemonos los dos UwU.		Affinity_Good	End
+30	Succubus	Neutral	Seguro que no piensas de verdad así amor, dale otra vueltina a las respuestas.		Affinity_Bad	End
+31	Caster	Neutral	Eso es todo amigos, toca saber que responderá nuestra dulce súcubo ¿Qué decisión tomará?		Ending	End

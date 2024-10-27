@@ -20,7 +20,7 @@ MonoBehaviour:
   <Prefab>k__BackingField: {fileID: 4933048130604307757, guid: 2cfabc9b5a8eda1439bdd8648ba6a604, type: 3}
   <MonsterType>k__BackingField: 2
   <IceBreakingOptionSet>k__BackingField: {fileID: 11400000, guid: 9f7803a3b10d4d040a3f62a68a6a42d5, type: 2}
-  <IntroductionsOptionSet>k__BackingField: {fileID: 11400000, guid: 47077abee651da84bbdc8d9bbb8fa0a8, type: 2}
-  <BrainConnectionsOptionSet>k__BackingField: {fileID: 11400000, guid: 8db83d37687a3df43a12f10546ad6ac5, type: 2}
-  <Phase4optionSet>k__BackingField: {fileID: 11400000, guid: 68d0fdfed8323764bbcf673496006e99, type: 2}
+  <IntroductionsOptionSet>k__BackingField: {fileID: 11400000, guid: 719bb44e3b059054cb5517d828eacbb3, type: 2}
+  <BrainConnectionsOptionSet>k__BackingField: {fileID: 11400000, guid: 56c2e95be669a9c4eaafc934f352cb89, type: 2}
+  <Phase4optionSet>k__BackingField: {fileID: 11400000, guid: f98d34cae8228254196ac63545cb00b6, type: 2}
   <AffinityTestQuestionSetSO>k__BackingField: {fileID: 11400000, guid: 9d5c1e0c6ef234449a7f2ce4d89742bf, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d929ec0906e5b4c840553a36e6b2be, type: 3}
   m_Name: Zombie_0
   m_EditorClassIdentifier: 
-  <Image>k__BackingField: {fileID: 2814834105534103304, guid: da4a2ac9fab1ad94796b988a219d8dc1, type: 3}
+  <Image>k__BackingField: {fileID: -4241681084022678718, guid: da4a2ac9fab1ad94796b988a219d8dc1, type: 3}
   <Text>k__BackingField: Un cementerio
-  <TextColor>k__BackingField: {r: 0.8039216, g: 0.85882354, b: 0.95686275, a: 0}
-  <LoveValue>k__BackingField: 3
+  <TextColor>k__BackingField: {r: 0.8039216, g: 0.85882354, b: 0.95686275, a: 1}
+  <LoveValue>k__BackingField: 0
