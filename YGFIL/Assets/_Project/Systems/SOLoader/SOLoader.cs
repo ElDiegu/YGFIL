@@ -31,7 +31,7 @@ namespace YGFIL.Systems
         {
             if (DirtyDictionary["IceBreakingSO"]) LoadIceOption(loadingPath, savingPath);
             if (DirtyDictionary["IntroductionsOptionSO"]) LoadIntroductionsSO(loadingPath, savingPath);
-            if (DirtyDictionary["BreainMazeOptionSO"]) LoadBrainMazeSO(loadingPath, savingPath);
+            if (DirtyDictionary["BrainMazeOptionSO"]) LoadBrainMazeSO(loadingPath, savingPath);
             if (DirtyDictionary["Phase4Option"]) LoadPhase4SO(loadingPath, savingPath);
             if (DirtyDictionary["AffinityTestOption"]) LoadAffinityTestSO(loadingPath, savingPath);
         }
