@@ -3234,7 +3234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1Elije tu siguiente cita!"
+  m_text: "\xA1Elije tu cita!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f515073492af66b42ba1dcf5b249f5f0, type: 2}
   m_sharedMaterial: {fileID: 3334025136450937426, guid: f515073492af66b42ba1dcf5b249f5f0, type: 2}

@@ -45,3 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Monster>k__BackingField: {fileID: 11400000, guid: 8bdc811f779633e48acd5f2acc6f28b4, type: 2}
+  monsterList:
+  - {fileID: 11400000, guid: 8bdc811f779633e48acd5f2acc6f28b4, type: 2}
+  - {fileID: 11400000, guid: 68052888ece898b48b94de835c9876f4, type: 2}
+  - {fileID: 11400000, guid: c0f0555f0b5465d4cac9f24a7eaaf355, type: 2}
+  - {fileID: 11400000, guid: 1c888fb7c059a0b4bb2b6b158e035e66, type: 2}
+  - {fileID: 11400000, guid: 91f9f1e8497c9d144abc9b5563a69562, type: 2}
+  - {fileID: 11400000, guid: 5fd2e802f93cdea4a8eb3c3e428ef9e1, type: 2}
